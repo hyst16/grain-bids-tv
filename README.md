@@ -45,9 +45,16 @@ scraper opens it in headless Chromium (Playwright) and reads the rendered tables
 ### Reliability behavior
 - **A location drops out of the widget** → its board keeps the last good prices with a red "Showing last known prices" notice.
 - **The widget can't be read** → the Action run fails (GitHub emails the repo owner) and screens keep the old data.
-- **Data older than 75 min** → the top bar turns red and reads "⚠ Data stale".
+- **Data older than 30 min** → the top bar turns red and reads "⚠ Data stale".
 - **Screen can't reach GitHub** → keeps showing the last loaded prices with a "Connection issue" notice.
-- The scraper only commits when prices change, plus a heartbeat every 30 min so "Last updated" stays current overnight.
+- The scraper saves on every successful run, so "Last updated" is the time of the last check.
+
+### What triggers the scraper
+GitHub's own `schedule` trigger is unreliable (runs can be late or skipped entirely), so an
+external cron service (cron-job.org) calls GitHub's `workflow_dispatch` API every 10 minutes
+using a fine-grained token limited to this repo's Actions. The `schedule` stays as a backup.
+If that token expires, runs stop and the TVs show "Data stale"; create a new token and paste it
+into the cron-job.org job's `Authorization` header.
 - Screens re-fetch data every 10 minutes and fully reload every 6 hours.
 
 ## One-time setup
@@ -60,7 +67,7 @@ scraper opens it in headless Chromium (Playwright) and reads the rendered tables
 - **Rename how a location displays:** add it to `LABELS` in `lib/bids.js` (e.g. `'Tecumsech': 'Tecumseh'`).
   This also changes its URL, so update PosterBooking.
 - **New crop / color:** add a `CROP_NAME_MAP` entry in `lib/bids.js`, a `--crop-*` color and `.crop-*` class in `styles.css`, and the key in `cropClassMap` in `app.js`.
-- **Stale threshold:** `STALE_MINUTES` in `app.js` (keep it well above `HEARTBEAT_MINUTES` in `scraper.js`).
+- **Stale threshold:** `STALE_MINUTES` in `app.js`.
 - **Scrape frequency:** the `cron` line in the workflow.
 
 ## Running locally

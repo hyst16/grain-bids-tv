@@ -16,11 +16,6 @@ const OUT_DIR = path.join(__dirname, 'data');
 const OUT_FILE = path.join(OUT_DIR, 'grain-bids.json');
 const TARGETS_FILE = path.join(OUT_DIR, 'targets.json');
 
-// Write at least this often even when prices are unchanged, so the
-// frontend's stale-data check keeps passing overnight and on weekends.
-// Must stay well under STALE_MINUTES in app.js.
-const HEARTBEAT_MINUTES = 30;
-
 function todayCentral() {
   return new Intl.DateTimeFormat('en-CA', { timeZone: 'America/Chicago' }).format(new Date());
 }
@@ -98,11 +93,6 @@ function readPrevious() {
   }
 }
 
-// Strip fields that change every run so we only commit real changes.
-function fingerprint(payload) {
-  return JSON.stringify((payload?.locations || []).map(l => ({ id: l.id, ok: l.ok, notices: l.notices, crops: l.crops })));
-}
-
 function writeLocationPages(pages) {
   for (const p of pages) {
     const file = path.join(__dirname, p.id, 'index.html');
@@ -116,12 +106,8 @@ function writeLocationPages(pages) {
   }
 }
 
-function writeOutput(payload, previous) {
-  const prevAgeMin = previous?.generatedAt ? (Date.now() - Date.parse(previous.generatedAt)) / 60000 : Infinity;
-  if (previous && fingerprint(previous) === fingerprint(payload) && prevAgeMin < HEARTBEAT_MINUTES) {
-    console.log(`No changes; last write ${prevAgeMin.toFixed(0)} min ago. Not rewriting.`);
-    return;
-  }
+// Written on every successful run, so generatedAt ("Last updated" on the TVs) is the last check time.
+function writeOutput(payload) {
   fs.mkdirSync(OUT_DIR, { recursive: true });
   fs.writeFileSync(OUT_FILE, JSON.stringify(payload, null, 2) + '\n');
   const targets = payload.locations.map(l => ({ id: l.id, label: l.label, sources: l.sources, url: SITE_URL + l.id + '/' }));
@@ -142,7 +128,7 @@ async function main() {
     // Keep showing the last good prices, flagged, and fail the run so GitHub emails the owner.
     if (previous) {
       const flagged = previous.locations.map(l => ({ ...l, ok: false, error: err.message }));
-      writeOutput({ generatedAt: previous.generatedAt, locations: flagged }, null);
+      writeOutput({ generatedAt: previous.generatedAt, locations: flagged });
     }
     process.exit(1);
   }
@@ -170,7 +156,7 @@ async function main() {
   locations.sort((a, b) => a.label.localeCompare(b.label));
 
   writeLocationPages(locations);
-  writeOutput({ generatedAt: now, sourceUpdated: widget.updated || null, locations }, previous);
+  writeOutput({ generatedAt: now, sourceUpdated: widget.updated || null, locations });
   const bad = locations.filter(l => !l.ok).map(l => l.id);
   annotate(bad.length ? 'warning' : 'notice',
     `Scraped ${widget.groups.length} widget locations into ${locations.length} pages` +

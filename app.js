@@ -7,8 +7,8 @@
 
   var REFRESH_MS = 600000;                 // re-fetch data every 10 minutes
   var RELOAD_MS = 6 * 60 * 60 * 1000;      // full reload every 6 hours to pick up code changes
-  // The scraper writes at least every 30 min (HEARTBEAT_MINUTES); allow for GitHub cron delays.
-  var STALE_MINUTES = 75;
+  // The scraper saves on every run (~10 min); this allows for a couple of missed or late runs.
+  var STALE_MINUTES = 30;
   var TZ = 'America/Chicago';
   var FS_MIN = 0.5;
   var FS_MAX = 1.8;
