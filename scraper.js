@@ -25,35 +25,66 @@ function todayCentral() {
   return new Intl.DateTimeFormat('en-CA', { timeZone: 'America/Chicago' }).format(new Date());
 }
 
+// GitHub shows these as annotations on the run summary (readable without signing in).
+const annotate = (level, msg) => console.log(`::${level}::${String(msg).replace(/\r?\n/g, ' | ')}`);
+
+// Wait for widget rows to exist in `frame`, then until their count holds steady for 3 seconds.
+async function waitForRows(frame, timeout) {
+  await frame.waitForSelector('.bid-group .bid-table-row', { state: 'attached', timeout });
+  let last = -1;
+  let stable = 0;
+  for (let i = 0; i < 30 && stable < 3; i++) {
+    const n = await frame.locator('.bid-table-row').count();
+    stable = n === last ? stable + 1 : 0;
+    last = n;
+    await frame.waitForTimeout(1000);
+  }
+}
+
 async function scrapeWidget() {
   const browser = await chromium.launch();
   try {
-    // Central time so the widget's "Updated" timestamp matches Nebraska.
-    const context = await browser.newContext({ timezoneId: 'America/Chicago', locale: 'en-US' });
+    const context = await browser.newContext({
+      // Central time so the widget's "Updated" timestamp matches Nebraska.
+      timezoneId: 'America/Chicago',
+      locale: 'en-US',
+      viewport: { width: 1600, height: 1200 },
+      // Headless Chromium's default UA says "HeadlessChrome", which some sites block.
+      userAgent: 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36',
+    });
     const page = await context.newPage();
 
-    // Read the widget URL from Frontier's page so we follow any changes they make to it.
     await page.goto(SOURCE_PAGE, { waitUntil: 'domcontentloaded', timeout: 60000 });
     const iframe = await page.waitForSelector(WIDGET_IFRAME, { state: 'attached', timeout: 30000 });
     const widgetUrl = await iframe.getAttribute('src');
     if (!widgetUrl) throw new Error('cash bids widget iframe has no src');
 
-    await page.goto(widgetUrl, { waitUntil: 'domcontentloaded', timeout: 60000 });
-    await page.waitForSelector('.bid-group .bid-table-row', { timeout: 60000 });
-
-    // Rows stream in; wait until the count holds steady for 3 seconds.
-    let last = -1;
-    let stable = 0;
-    for (let i = 0; i < 30 && stable < 3; i++) {
-      const n = await page.locator('.bid-table-row').count();
-      stable = n === last ? stable + 1 : 0;
-      last = n;
-      await page.waitForTimeout(1000);
+    // Preferred: read the widget inside Frontier's page (it may only load there).
+    // Scroll it into view in case it lazy-loads.
+    let frame = null;
+    try {
+      await iframe.scrollIntoViewIfNeeded().catch(() => {});
+      frame = await iframe.contentFrame();
+      if (!frame) throw new Error('iframe has no content frame');
+      await waitForRows(frame, 45000);
+    } catch (err) {
+      annotate('warning', `Widget did not load inside Frontier's page (${err.message}); opening it directly.`);
+      frame = page;
+      await page.goto(widgetUrl, { waitUntil: 'domcontentloaded', timeout: 60000, referer: SOURCE_PAGE });
+      await waitForRows(page, 60000);
     }
 
-    const widget = await page.evaluate(bids.extractWidget);
+    const widget = await frame.evaluate(bids.extractWidget);
     if (!widget.groups.length) throw new Error('widget rendered no locations (markup may have changed)');
     return widget;
+  } catch (err) {
+    // Note what the page looked like when it failed, for the annotation.
+    try {
+      const pages = browser.contexts().flatMap(c => c.pages());
+      const p = pages[pages.length - 1];
+      if (p) err.message += ` [at ${p.url().slice(0, 120)}; text: ${(await p.innerText('body')).slice(0, 300)}]`;
+    } catch {}
+    throw err;
   } finally {
     await browser.close();
   }
@@ -107,7 +138,7 @@ async function main() {
   try {
     widget = await scrapeWidget();
   } catch (err) {
-    console.error(`FAIL scraping widget: ${err.message}`);
+    annotate('error', `Scraping the cash bids widget failed: ${err.message}`);
     // Keep showing the last good prices, flagged, and fail the run so GitHub emails the owner.
     if (previous) {
       const flagged = previous.locations.map(l => ({ ...l, ok: false, error: err.message }));
@@ -140,9 +171,13 @@ async function main() {
 
   writeLocationPages(locations);
   writeOutput({ generatedAt: now, sourceUpdated: widget.updated || null, locations }, previous);
+  const bad = locations.filter(l => !l.ok).map(l => l.id);
+  annotate(bad.length ? 'warning' : 'notice',
+    `Scraped ${widget.groups.length} widget locations into ${locations.length} pages` +
+    (bad.length ? `; not current: ${bad.join(', ')}` : '') + `. Widget updated ${widget.updated || '?'}.`);
 }
 
 main().catch(err => {
-  console.error(err);
+  annotate('error', err.stack || err.message);
   process.exit(1);
 });
