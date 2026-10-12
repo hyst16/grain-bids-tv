@@ -91,9 +91,11 @@
     title.appendChild(el('span', 'title-sub', 'Cash Bids · Frontier Cooperative'));
     top.appendChild(title);
     var upd = el('div', 'updated');
-    upd.appendChild(el('span', 'updated-label', 'Last updated'));
+    upd.appendChild(el('span', 'updated-label', 'Bids updated'));
     ui.updatedTime = el('span', 'updated-time', 'Loading…');
     upd.appendChild(ui.updatedTime);
+    ui.checkedTime = el('span', 'checked-time');
+    upd.appendChild(ui.checkedTime);
     top.appendChild(upd);
 
     ui.board = el('main', 'board');
@@ -216,7 +218,8 @@
     crops.forEach(function (c) { ui.board.appendChild(renderPanel(c)); });
     if (!crops.length) ui.board.appendChild(el('div', 'board-message', 'No bids posted for this location.'));
 
-    renderUpdated(payload);
+    ui.currentLoc = loc;
+    renderUpdated(payload, loc);
     var notices = (loc.notices || []).filter(function (n) { return n && n !== 'Waiting for update'; });
     if (!notices.length) notices = ['Data provided by StoneX. All prices delayed 10 minutes.'];
     var warn = [];
@@ -259,9 +262,22 @@
   }
 
   // ---------- Shared bars ----------
-  function renderUpdated(payload) {
+  // StoneX's own timestamp, already Central time: "10/12/26 01:25 PM" -> "1:25 PM CT · Mon, Oct 12"
+  function fmtSourceTime(s) {
+    var m = /(\d{1,2})\/(\d{1,2})\/(\d{2,4})\s+(\d{1,2}):(\d{2})\s*([AP]M)/i.exec(s || '');
+    if (!m) return null;
+    var y = m[3].length === 2 ? 2000 + parseInt(m[3], 10) : parseInt(m[3], 10);
+    var day = new Date(Date.UTC(y, parseInt(m[1], 10) - 1, parseInt(m[2], 10)))
+      .toLocaleDateString('en-US', { timeZone: 'UTC', weekday: 'short', month: 'short', day: 'numeric' });
+    return parseInt(m[4], 10) + ':' + m[5] + ' ' + m[6].toUpperCase() + ' CT · ' + day;
+  }
+
+  function renderUpdated(payload, loc) {
     var ts = payload && payload.generatedAt;
-    ui.updatedTime.textContent = ts ? fmtTime(ts) : '—';
+    var source = fmtSourceTime((loc && loc.sourceUpdated) || (payload && payload.sourceUpdated));
+    // Prefer when Frontier last changed the bids; fall back to when we last checked.
+    ui.updatedTime.textContent = source || (ts ? fmtTime(ts) : '—');
+    ui.checkedTime.textContent = ts ? 'Checked ' + fmtTime(ts).split(' · ')[0] : '';
     var ageMin = ts ? (Date.now() - Date.parse(ts)) / 60000 : Infinity;
     ui.topBar.classList.toggle('is-stale', !(ageMin < STALE_MINUTES));
   }
@@ -314,6 +330,6 @@
   loadData();
   setInterval(loadData, REFRESH_MS);
   // Re-check staleness every minute even between fetches.
-  setInterval(function () { if (lastPayload) renderUpdated(lastPayload); }, 60000);
+  setInterval(function () { if (lastPayload) renderUpdated(lastPayload, ui.currentLoc); }, 60000);
   setTimeout(function () { location.reload(); }, RELOAD_MS);
 })();
