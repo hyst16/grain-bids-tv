@@ -1,52 +1,50 @@
 # grain-bids-tv
 
 TV-optimized cash grain bids for PosterBooking, one full-screen board per location.
-A GitHub Action scrapes Frontier Cooperative's BrightSign pages every 10 minutes and
-commits `data/grain-bids.json`; GitHub Pages serves the display.
+A GitHub Action reads Frontier Cooperative's [cash bids](https://www.frontiercooperative.com/grain/cash-bids)
+every 10 minutes and commits `data/grain-bids.json`; GitHub Pages serves the display.
 
 ## TV URLs
 
-Point each PosterBooking screen at its location's URL:
+Each location has its own URL:
 
-| Location | URL |
-|---|---|
-| Schuyler | https://hyst16.github.io/grain-bids-tv/schuyler/ |
-| Yanka | https://hyst16.github.io/grain-bids-tv/yanka/ |
-| Cedar Bluffs | https://hyst16.github.io/grain-bids-tv/cedar-bluffs/ |
-| North Bend | https://hyst16.github.io/grain-bids-tv/north-bend/ |
-| Syracuse | https://hyst16.github.io/grain-bids-tv/syracuse/ |
-| Elmwood | https://hyst16.github.io/grain-bids-tv/elmwood/ |
-| Tarnov | https://hyst16.github.io/grain-bids-tv/tarnov/ |
-| Prague | https://hyst16.github.io/grain-bids-tv/prague/ |
-| Adams | https://hyst16.github.io/grain-bids-tv/adams/ |
-| Osceola | https://hyst16.github.io/grain-bids-tv/osceola/ |
-| Brainard | https://hyst16.github.io/grain-bids-tv/brainard/ |
-| Ceresco | https://hyst16.github.io/grain-bids-tv/ceresco/ |
+```
+https://hyst16.github.io/grain-bids-tv/<location>/
+```
 
-The site root (https://hyst16.github.io/grain-bids-tv/) lists all of them.
-`?loc=<id>` on the root URL also works.
+`<location>` is the location name in lowercase with dashes, for example `schuyler`, `cedar-bluffs`,
+`north-bend`, `nebraska-city`, `sire-cb`, `st-mary`, `tecumseh-north`.
+**Yanka and David City - Elevator share one board:** `yanka-david-city`.
+
+The site root (https://hyst16.github.io/grain-bids-tv/) lists every location, and
+`data/targets.json` has the full list with URLs. Every location in Frontier's cash bids
+widget gets a page automatically, including new ones.
 
 ## What each board shows
 
-One panel per crop, side by side (Corn | Soybeans | Wheat …), listing **every delivery
-period** the Frontier page lists: delivery month, futures contract, futures change
-(cents, ▲/▼), basis, and cash price. Text automatically scales to the largest size
-that fits the screen, so a 1-crop location is big and a 17-row location still fits.
+One panel per crop, side by side (Corn | Soybeans | HRW Wheat), listing **every delivery
+period**: delivery month, futures month, futures change (cents, ▲/▼), basis, and cash
+price. Text automatically scales to the largest size that fits the screen. On combined
+boards each panel is labelled with the location its bids come from.
 
 The page is laid out on a fixed 1920×1080 stage scaled to the screen, so the top bar
 ("Last updated") and bottom bar (StoneX / delayed / CME notices) are never cropped.
 
 ## How it works
 
+Frontier's cash bids page embeds a StoneX widget that renders in the browser, so the
+scraper opens it in headless Chromium (Playwright) and reads the rendered tables.
+
 | File | Purpose |
 |---|---|
-| `scraper.js` | Reads the StoneX table (`#stonex-Futures-detailed-datatable`) from each location page, writes `data/grain-bids.json`, and generates each `<id>/index.html` |
+| `scraper.js` | Opens the widget, writes `data/grain-bids.json` and `data/targets.json`, and generates each `<id>/index.html` |
+| `lib/bids.js` | Widget extraction and page-building logic, plus `COMBINED_PAGES` and `LABELS` config |
 | `.github/workflows/update-grain-bids.yml` | Runs the scraper every 10 min and commits changes |
 | `app.js`, `styles.css`, `index.html` | The display. Location pages are tiny shells that load these shared files |
 
 ### Reliability behavior
-- **One location fails** → its board keeps the last good prices with a red "Showing last known prices" notice.
-- **All locations fail** → the Action run fails (GitHub emails the repo owner) and screens keep the old data.
+- **A location drops out of the widget** → its board keeps the last good prices with a red "Showing last known prices" notice.
+- **The widget can't be read** → the Action run fails (GitHub emails the repo owner) and screens keep the old data.
 - **Data older than 75 min** → the top bar turns red and reads "⚠ Data stale".
 - **Screen can't reach GitHub** → keeps showing the last loaded prices with a "Connection issue" notice.
 - The scraper only commits when prices change, plus a heartbeat every 30 min so "Last updated" stays current overnight.
@@ -58,8 +56,10 @@ The page is laid out on a fixed 1920×1080 stage scaled to the screen, so the to
 3. **Actions → Update Grain Bids → Run workflow** to test it immediately.
 
 ## Common changes
-- **Add/remove a location:** edit `TARGETS` in `scraper.js`. The next run creates its `<id>/` page.
-- **New crop / color:** add a `CROP_NAME_MAP` entry in `scraper.js`, a `--crop-*` color and `.crop-*` class in `styles.css`, and the key in `cropClassMap` in `app.js`.
+- **Combine locations onto one board:** add an entry to `COMBINED_PAGES` in `lib/bids.js`.
+- **Rename how a location displays:** add it to `LABELS` in `lib/bids.js` (e.g. `'Tecumsech': 'Tecumseh'`).
+  This also changes its URL, so update PosterBooking.
+- **New crop / color:** add a `CROP_NAME_MAP` entry in `lib/bids.js`, a `--crop-*` color and `.crop-*` class in `styles.css`, and the key in `cropClassMap` in `app.js`.
 - **Stale threshold:** `STALE_MINUTES` in `app.js` (keep it well above `HEARTBEAT_MINUTES` in `scraper.js`).
 - **Scrape frequency:** the `cron` line in the workflow.
 
@@ -67,12 +67,13 @@ The page is laid out on a fixed 1920×1080 stage scaled to the screen, so the to
 Needs Node 20+ and Python (for the static server).
 ```bash
 npm install
+npx playwright install chromium
 node scraper.js
 python -m http.server 8000
 ```
 Then open http://localhost:8000/schuyler/.
 
 ## Troubleshooting
-- **"Prices unavailable" / Action logs show `bid table not found`:** Frontier changed their page markup. Update `parsePage()` in `scraper.js`.
+- **Action logs show `widget rendered no locations` or a timeout:** Frontier or StoneX changed the widget. Update `extractWidget()` in `lib/bids.js` (it reads `.bid-group`, `.bid-table`, `.bid-table-row`).
 - **Action fails on `git push`:** workflow permissions aren't read/write (setup step 1), or branch protection on `main` blocks the bot.
 - **Scheduled runs stopped:** GitHub disables scheduled workflows after 60 days with no repo activity. Re-enable on the Actions tab.

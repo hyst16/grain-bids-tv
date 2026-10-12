@@ -162,22 +162,24 @@ html, body {
   color: var(--ink-soft);
 }
 
+.crop-head { display: flex; align-items: baseline; justify-content: space-between; gap: 16px; }
+.crop-location { font-size: 0.55em; font-weight: 700; opacity: 0.85; white-space: nowrap; }
+
 /* ---------- Directory (site root) ---------- */
-.directory-mode .board { align-content: start; }
+.directory-mode .board { gap: 12px; }
 .dir-link {
   display: flex;
-  flex-direction: column;
-  gap: 8px;
-  padding: 28px 30px;
+  align-items: center;
+  min-height: 0;
+  padding: 0 22px;
   background: var(--card);
   border: 2px solid var(--line);
-  border-radius: 16px;
+  border-radius: 12px;
   color: var(--ink);
   text-decoration: none;
 }
 .dir-link:hover { border-color: var(--bar); }
-.dir-name { font-size: 40px; font-weight: 800; }
-.dir-url { font-size: 18px; color: var(--ink-soft); overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.dir-name { font-size: 28px; font-weight: 800; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
 
 /* ---------- Bottom bar ---------- */
 .bottom-bar {

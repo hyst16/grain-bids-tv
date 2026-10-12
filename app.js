@@ -160,7 +160,10 @@
 
   function renderPanel(c) {
     var panel = el('section', 'crop-panel ' + (cropClassMap[c.color] || 'crop-other'));
-    panel.appendChild(el('h2', 'crop-head', c.name));
+    var head = el('h2', 'crop-head');
+    head.appendChild(el('span', null, c.name));
+    if (c.location) head.appendChild(el('span', 'crop-location', c.location));
+    panel.appendChild(head);
 
     var table = el('table', 'bids');
     var thead = el('thead');
@@ -212,17 +215,20 @@
     document.body.classList.add('directory-mode');
     ui.locName.textContent = 'Grain Bids';
     ui.board.innerHTML = '';
-    ui.board.style.gridTemplateColumns = 'repeat(4, minmax(0, 1fr))';
-    ui.board.style.gridTemplateRows = '';
-    (payload.locations || []).forEach(function (l) {
+    var locs = payload.locations || [];
+    var cols = locs.length > 24 ? 6 : 4;
+    ui.board.style.gridTemplateColumns = 'repeat(' + cols + ', minmax(0, 1fr))';
+    ui.board.style.gridTemplateRows = 'repeat(' + Math.max(Math.ceil(locs.length / cols), 1) + ', minmax(0, 1fr))';
+    locs.forEach(function (l) {
       var a = el('a', 'dir-link');
       a.href = SITE_ROOT + l.id + '/';
+      a.title = SITE_ROOT + l.id + '/';
       a.appendChild(el('span', 'dir-name', l.label));
-      a.appendChild(el('span', 'dir-url', SITE_ROOT + l.id + '/'));
       ui.board.appendChild(a);
     });
     renderUpdated(payload);
-    renderNotices(fetchFailed ? ['Connection issue'] : [], ['Choose a location. Each one has its own TV URL.']);
+    renderNotices(fetchFailed ? ['Connection issue'] : [],
+      ['Each location has its own TV URL: ' + SITE_ROOT + '<location>/']);
   }
 
   function renderNotFound(payload) {
