@@ -147,3 +147,6 @@ vite.config.ts.timestamp-*
 
 # Turbo Repo
 .turbo
+
+# npm install runs in CI; no lockfile committed
+package-lock.json

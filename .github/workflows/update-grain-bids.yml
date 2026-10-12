@@ -1,0 +1,46 @@
+name: Update Grain Bids
+
+on:
+  schedule:
+    # Every 10 minutes. GitHub may delay scheduled runs by several minutes under load.
+    - cron: '*/10 * * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: update-grain-bids
+  cancel-in-progress: false
+
+jobs:
+  scrape:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Install dependencies
+        run: npm install --no-audit --no-fund
+
+      - name: Scrape grain bids
+        run: node scraper.js
+
+      - name: Commit updated data
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          # data/ plus any generated <location>/index.html pages
+          git add -A
+          if git diff --cached --quiet; then
+            echo "No data changes."
+            exit 0
+          fi
+          git commit -m "Update grain bids $(date -u +'%Y-%m-%dT%H:%MZ')"
+          # Rebase in case someone pushed code while we were scraping.
+          git pull --rebase origin main
+          git push origin HEAD:main

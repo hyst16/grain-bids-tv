@@ -1,0 +1,203 @@
+/* Light, high-contrast TV theme. All sizes are px on a 1920x1080 stage that app.js scales to fit. */
+:root {
+  --bg: #eef0ec;
+  --card: #ffffff;
+  --ink: #111417;
+  --ink-soft: #4a5259;
+  --line: #d5dad4;
+  --zebra: #f4f6f2;
+  --bar: #14301f;
+  --bar-ink: #ffffff;
+  --up: #1b7a2e;
+  --down: #c62828;
+  --stale: #c62828;
+
+  --crop-corn: #e3a400;
+  --crop-soy: #2e7d32;
+  --crop-wheat: #b86b1e;
+  --crop-milo: #8e3b3b;
+  --crop-oats: #9a8a4c;
+  --crop-barley: #6d5a99;
+  --crop-beans: #5d4037;
+  --crop-other: #546e7a;
+
+  --safe: 30px;      /* margin kept clear for TV overscan */
+  --top-h: 120px;
+  --bottom-h: 76px;
+  --gap: 20px;
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+html, body {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background: var(--bg);
+  color: var(--ink);
+  font-family: "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+#stage {
+  --fs: 1;           /* table text scale; app.js picks the largest value that fits */
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 1920px;
+  height: 1080px;
+  transform-origin: 0 0;
+  padding: var(--safe);
+  display: flex;
+  flex-direction: column;
+  gap: var(--gap);
+  background: var(--bg);
+}
+
+/* ---------- Top bar ---------- */
+.top-bar {
+  flex: 0 0 var(--top-h);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+  padding: 0 44px;
+  background: var(--bar);
+  color: var(--bar-ink);
+  border-radius: 16px;
+}
+.title { display: flex; align-items: baseline; gap: 26px; min-width: 0; white-space: nowrap; }
+.title-main { font-size: 72px; font-weight: 800; letter-spacing: -1px; line-height: 1; }
+.title-sub { font-size: 30px; font-weight: 500; opacity: 0.8; }
+
+.updated { display: flex; flex-direction: column; align-items: flex-end; white-space: nowrap; }
+.updated-label { font-size: 22px; opacity: 0.8; text-transform: uppercase; letter-spacing: 1.5px; }
+.updated-time { font-size: 44px; font-weight: 700; font-variant-numeric: tabular-nums; line-height: 1.1; }
+
+.top-bar.is-stale { background: var(--stale); }
+.top-bar.is-stale .updated-label::before { content: "⚠ Data stale · "; font-weight: 800; opacity: 1; }
+
+/* ---------- Board: one panel per crop ---------- */
+.board {
+  flex: 1 1 auto;
+  min-height: 0;
+  display: grid;
+  gap: var(--gap);
+}
+
+.crop-panel {
+  min-height: 0;
+  min-width: 0;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  background: var(--card);
+  border: 2px solid var(--line);
+  border-top: 0;
+  border-radius: 16px;
+}
+.crop-head {
+  flex: 0 0 auto;
+  padding: calc(12px * var(--fs)) calc(26px * var(--fs));
+  background: var(--crop-color);
+  color: #fff;
+  font-size: calc(44px * var(--fs));
+  font-weight: 800;
+  line-height: 1.1;
+  border-radius: 16px 16px 0 0;
+}
+/* Gold is too light for white text. */
+.crop-corn .crop-head, .crop-oats .crop-head { color: var(--ink); }
+
+.bids {
+  width: 100%;
+  border-collapse: collapse;
+  font-variant-numeric: tabular-nums;
+}
+.bids th {
+  font-size: calc(20px * var(--fs));
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: var(--ink-soft);
+  text-align: right;
+  padding: calc(10px * var(--fs)) calc(10px * var(--fs)) calc(6px * var(--fs));
+  border-bottom: 2px solid var(--ink);
+  white-space: nowrap;
+}
+.bids td {
+  font-size: calc(30px * var(--fs));
+  font-weight: 600;
+  text-align: right;
+  height: var(--row-h, auto);
+  padding: calc(6px * var(--fs)) calc(10px * var(--fs));
+  white-space: nowrap;
+  border-bottom: 1px solid var(--line);
+}
+.bids th:first-child, .bids td:first-child { text-align: left; padding-left: calc(22px * var(--fs)); }
+.bids th:last-child, .bids td:last-child { padding-right: calc(22px * var(--fs)); }
+.bids tbody tr:nth-child(even) td { background: var(--zebra); }
+.bids tbody tr:last-child td { border-bottom: 0; }
+
+.c-delivery { font-weight: 700; }
+.c-futures, .c-basis { color: var(--ink-soft); }
+.c-change.up { color: var(--up); }
+.c-change.down { color: var(--down); }
+.bids td.c-cash { font-size: calc(38px * var(--fs)); font-weight: 800; color: var(--ink); }
+
+.crop-corn   { --crop-color: var(--crop-corn); }
+.crop-soy    { --crop-color: var(--crop-soy); }
+.crop-wheat  { --crop-color: var(--crop-wheat); }
+.crop-milo   { --crop-color: var(--crop-milo); }
+.crop-oats   { --crop-color: var(--crop-oats); }
+.crop-barley { --crop-color: var(--crop-barley); }
+.crop-beans  { --crop-color: var(--crop-beans); }
+.crop-other  { --crop-color: var(--crop-other); }
+
+.board-message {
+  grid-column: 1 / -1;
+  align-self: center;
+  justify-self: center;
+  font-size: 48px;
+  color: var(--ink-soft);
+}
+
+/* ---------- Directory (site root) ---------- */
+.directory-mode .board { align-content: start; }
+.dir-link {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 28px 30px;
+  background: var(--card);
+  border: 2px solid var(--line);
+  border-radius: 16px;
+  color: var(--ink);
+  text-decoration: none;
+}
+.dir-link:hover { border-color: var(--bar); }
+.dir-name { font-size: 40px; font-weight: 800; }
+.dir-url { font-size: 18px; color: var(--ink-soft); overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+
+/* ---------- Bottom bar ---------- */
+.bottom-bar {
+  flex: 0 0 var(--bottom-h);
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 0 24px;
+  background: var(--card);
+  border: 2px solid var(--line);
+  border-radius: 16px;
+  overflow: hidden;
+}
+.notices { display: flex; align-items: center; gap: 14px; white-space: nowrap; min-width: 0; }
+.notice {
+  font-size: 26px;
+  font-weight: 600;
+  padding: 8px 20px;
+  border-radius: 999px;
+  background: #e6ebe5;
+  color: var(--ink);
+}
+.notice.warn { background: var(--stale); color: #fff; }

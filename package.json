@@ -1,0 +1,17 @@
+{
+  "name": "grain-bids-tv",
+  "version": "1.0.0",
+  "private": true,
+  "description": "TV-optimized Grain Bids display + scraper for PosterBooking",
+  "license": "MIT",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "scrape": "node scraper.js",
+    "serve": "python -m http.server 8000"
+  },
+  "dependencies": {
+    "cheerio": "1.0.0"
+  }
+}
