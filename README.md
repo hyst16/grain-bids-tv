@@ -50,11 +50,14 @@ scraper opens it in headless Chromium (Playwright) and reads the rendered tables
 - The scraper saves on every successful run, so "Last updated" is the time of the last check.
 
 ### What triggers the scraper
-GitHub's own `schedule` trigger is unreliable (runs can be late or skipped entirely), so an
-external cron service (cron-job.org) calls GitHub's `workflow_dispatch` API every 10 minutes
-using a fine-grained token limited to this repo's Actions. The `schedule` stays as a backup.
-If that token expires, runs stop and the TVs show "Data stale"; create a new token and paste it
-into the cron-job.org job's `Authorization` header.
+GitHub's own `schedule` trigger is unreliable (runs can be late or skipped for hours), so the
+workflow doesn't rely on it. One run stays open and scrapes every 10 minutes (at :00, :10, :20…)
+for about 5h40m, then starts its own replacement. The 30-minute `schedule` and code pushes also
+start a loop, so it recovers on its own if a loop ever stops; while a loop is running, those
+extra runs exit after a few seconds. To restart it by hand: **Actions → Update Grain Bids → Run workflow**.
+
+Code changes pushed while a loop is running are picked up on its next round (each round pulls
+`main` first). Changes to `package.json` or the workflow file take effect on the next loop.
 - Screens re-fetch data every 10 minutes and fully reload every 6 hours.
 
 ## One-time setup

@@ -1,55 +1,87 @@
 name: Update Grain Bids
 
+# GitHub's schedule trigger is unreliable (runs can be late or skipped for hours), so instead
+# of one short run per 10 minutes, one long run scrapes every 10 minutes for ~5h40m and then
+# starts its own replacement. The schedule is only a backup that restarts the loop if it
+# ever stops; while a loop is running, backup runs exit after a few seconds.
 on:
   schedule:
-    # Every 10 minutes. GitHub may delay scheduled runs by several minutes under load.
-    - cron: '*/10 * * * *'
+    - cron: '*/30 * * * *'
   workflow_dispatch:
+  # Code pushes start a loop too (the bot's own data commits don't trigger workflows).
+  push:
+    branches: [main]
+    paths: ['.github/workflows/update-grain-bids.yml', 'scraper.js', 'lib/**', 'package.json']
 
 permissions:
-  contents: write
-
-concurrency:
-  group: update-grain-bids
-  cancel-in-progress: false
+  contents: write   # commit data
+  actions: write    # see other runs, start the next loop
 
 jobs:
   scrape:
     runs-on: ubuntu-latest
-    timeout-minutes: 10
+    timeout-minutes: 355
+    env:
+      GH_TOKEN: ${{ github.token }}
     steps:
+      - name: Skip if a loop is already running
+        id: guard
+        run: |
+          older=$(gh run list --repo "$GITHUB_REPOSITORY" --workflow update-grain-bids.yml \
+            --status in_progress --json databaseId \
+            --jq "[.[] | select(.databaseId < $GITHUB_RUN_ID)] | length")
+          if [ "${older:-0}" -gt 0 ]; then
+            echo "Another loop is already scraping; exiting."
+            echo "skip=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "skip=false" >> "$GITHUB_OUTPUT"
+          fi
+
       - uses: actions/checkout@v4
+        if: steps.guard.outputs.skip == 'false'
 
       - uses: actions/setup-node@v4
+        if: steps.guard.outputs.skip == 'false'
         with:
           node-version: 20
 
       - name: Install dependencies
+        if: steps.guard.outputs.skip == 'false'
         run: npm install --no-audit --no-fund
 
       - name: Cache Playwright browser
+        if: steps.guard.outputs.skip == 'false'
         uses: actions/cache@v4
         with:
           path: ~/.cache/ms-playwright
           key: playwright-${{ runner.os }}-${{ hashFiles('package.json') }}
 
       - name: Install Chromium
+        if: steps.guard.outputs.skip == 'false'
         run: npx playwright install --with-deps chromium
 
-      - name: Scrape grain bids
-        run: node scraper.js
-
-      - name: Commit updated data
+      - name: Scrape every 10 minutes
+        if: steps.guard.outputs.skip == 'false'
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          # data/ plus any generated <location>/index.html pages
-          git add -A
-          if git diff --cached --quiet; then
-            echo "No data changes."
-            exit 0
-          fi
-          git commit -m "Update grain bids $(date -u +'%Y-%m-%dT%H:%MZ')"
-          # Rebase in case someone pushed code while we were scraping.
-          git pull --rebase origin main
-          git push origin HEAD:main
+          end=$(( $(date +%s) + 340 * 60 ))
+          while [ "$(date +%s)" -lt "$end" ]; do
+            # Pick up any code pushed since this loop started.
+            git pull -q --rebase origin main || git rebase --abort || true
+            node scraper.js || echo "Scrape failed; screens keep the last good prices."
+            git add -A
+            if ! git diff --cached --quiet; then
+              git commit -q -m "Update grain bids $(date -u +'%Y-%m-%dT%H:%MZ')"
+              git push -q origin HEAD:main \
+                || { git pull -q --rebase origin main && git push -q origin HEAD:main; } \
+                || echo "::warning::Could not push data this round."
+            fi
+            # Sleep until the next 10-minute mark (:00, :10, :20, ...).
+            now=$(date +%s)
+            sleep $(( 600 - now % 600 ))
+          done
+
+      - name: Start the next loop
+        if: always() && steps.guard.outputs.skip == 'false'
+        run: gh workflow run update-grain-bids.yml --repo "$GITHUB_REPOSITORY" --ref main
