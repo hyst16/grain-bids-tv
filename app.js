@@ -109,11 +109,27 @@
     ui.topBar = top;
   }
 
-  function fitStage() {
-    var s = Math.min(window.innerWidth / 1920, window.innerHeight / 1080);
-    var x = (window.innerWidth - 1920 * s) / 2;
-    var y = (window.innerHeight - 1080 * s) / 2;
-    ui.stage.style.transform = 'translate(' + x + 'px,' + y + 'px) scale(' + s + ')';
+  // The stage itself is sized by CSS (rem tied to vw/vh). This only re-fits table text
+  // when the screen size changes, since some players settle their size after loading.
+  var lastSize = '';
+  function refit() {
+    var size = window.innerWidth + 'x' + window.innerHeight;
+    if (size === lastSize) return;
+    lastSize = size;
+    if (ui.board.querySelector('.crop-panel')) fitBoard();
+    if (ui.debug) renderDebug();
+  }
+
+  // Add ?debug to any URL to see what the screen reports (useful for TV players).
+  function renderDebug() {
+    var de = document.documentElement;
+    ui.debug.textContent = 'inner ' + window.innerWidth + 'x' + window.innerHeight +
+      ' · client ' + de.clientWidth + 'x' + de.clientHeight +
+      ' · screen ' + screen.width + 'x' + screen.height +
+      ' · dpr ' + window.devicePixelRatio +
+      ' · 1rem=' + getComputedStyle(de).fontSize +
+      ' · fs ' + (ui.stage.style.getPropertyValue('--fs') || '1') +
+      '\n' + navigator.userAgent;
   }
 
   // Largest text scale at which no panel overflows (binary search).
@@ -208,6 +224,8 @@
     if (loc.ok === false) warn.push(loc.lastSuccessAt ? 'Showing last known prices' : 'Prices unavailable');
     renderNotices(warn, notices);
     fitBoard();
+    lastSize = window.innerWidth + 'x' + window.innerHeight;
+    if (ui.debug) renderDebug();
   }
 
   // ---------- Directory (site root) ----------
@@ -286,8 +304,13 @@
   }
 
   buildStage();
-  window.addEventListener('resize', fitStage);
-  fitStage();
+  if (/[?&]debug\b/.test(location.search)) {
+    ui.debug = el('pre', 'debug');
+    document.body.appendChild(ui.debug);
+  }
+  window.addEventListener('resize', refit);
+  window.addEventListener('orientationchange', refit);
+  setInterval(refit, 2000);
   loadData();
   setInterval(loadData, REFRESH_MS);
   // Re-check staleness every minute even between fetches.
