@@ -10,6 +10,8 @@ const bids = require('./lib/bids');
 
 const SOURCE_PAGE = 'https://www.frontiercooperative.com/grain/cash-bids';
 const WIDGET_IFRAME = 'iframe[src*="stonehedge.stonex.com/component/bids"]';
+// Widget columns, by the class names extractWidget() reads.
+const WIDGET_COLS = 'date,month,change,basis,cash';
 const SITE_URL = 'https://hyst16.github.io/grain-bids-tv/';
 
 const OUT_DIR = path.join(__dirname, 'data');
@@ -54,23 +56,34 @@ async function scrapeWidget() {
     const widgetUrl = await iframe.getAttribute('src');
     if (!widgetUrl) throw new Error('cash bids widget iframe has no src');
 
-    // Preferred: read the widget inside Frontier's page (it may only load there).
-    // Scroll it into view in case it lazy-loads.
-    let frame = null;
+    // Frontier's page decides which columns its widget shows (on 2026-10-15 it dropped the
+    // delivery dates and futures month). Keep their widget key and options, but always ask
+    // for the full set of columns the TV boards display.
+    const fullUrl = new URL(widgetUrl, SOURCE_PAGE);
+    fullUrl.searchParams.set('cols', WIDGET_COLS);
+
+    let frame = page;
     try {
-      await iframe.scrollIntoViewIfNeeded().catch(() => {});
-      frame = await iframe.contentFrame();
+      await page.goto(fullUrl.href, { waitUntil: 'domcontentloaded', timeout: 60000, referer: SOURCE_PAGE });
+      await waitForRows(page, 60000);
+    } catch (err) {
+      // Fallback: read the widget as embedded on Frontier's page, with whatever columns it has.
+      annotate('warning', `Widget did not load directly (${err.message}); reading it inside Frontier's page.`);
+      await page.goto(SOURCE_PAGE, { waitUntil: 'domcontentloaded', timeout: 60000 });
+      const embedded = await page.waitForSelector(WIDGET_IFRAME, { state: 'attached', timeout: 30000 });
+      await embedded.scrollIntoViewIfNeeded().catch(() => {});
+      frame = await embedded.contentFrame();
       if (!frame) throw new Error('iframe has no content frame');
       await waitForRows(frame, 45000);
-    } catch (err) {
-      annotate('warning', `Widget did not load inside Frontier's page (${err.message}); opening it directly.`);
-      frame = page;
-      await page.goto(widgetUrl, { waitUntil: 'domcontentloaded', timeout: 60000, referer: SOURCE_PAGE });
-      await waitForRows(page, 60000);
     }
 
     const widget = await frame.evaluate(bids.extractWidget);
     if (!widget.groups.length) throw new Error('widget rendered no locations (markup may have changed)');
+    const rows = widget.groups.flatMap(g => g.tables.flatMap(t => t.rows));
+    const missing = ['date', 'month'].filter(c => rows.length && rows.every(r => !r[c]));
+    if (missing.length) {
+      annotate('warning', `Widget rows have no ${missing.join(' or ')} column; boards will show reduced detail.`);
+    }
     return widget;
   } catch (err) {
     // Note what the page looked like when it failed, for the annotation.
