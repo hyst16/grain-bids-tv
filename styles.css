@@ -1,17 +1,35 @@
-/* Light, high-contrast TV theme. Designed on a 1920x1080 grid where 1rem = 16px at full HD. */
+/* Frontier Cooperative TV theme (brand guide colors + type), light and high contrast.
+   Designed on a 1920x1080 grid where 1rem = 16px at full HD. */
+
+/* Brand fonts are Bison (headlines) and Avenir Next (body). They're commercial, so they're used
+   when available and otherwise fall back to close free matches: Bebas Neue and Nunito Sans. */
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Nunito+Sans:wght@400;600;700;800;900&display=swap");
+
 :root {
-  --bg: #eef0ec;
+  /* Brand palette */
+  --brand-gold: #ca9d3b;
+  --brand-charcoal: #242223;
+  --brand-blue: #1a658f;
+  --brand-light-blue: #b6ced0;
+  --brand-red: #e1523e;
+  --brand-tan: #d6d2c4;
+
+  --font-head: "Bison", "Bebas Neue", "Oswald", Impact, "Arial Narrow", sans-serif;
+  --font-body: "Avenir Next", "Nunito Sans", "Segoe UI", Roboto, Arial, sans-serif;
+
+  --bg: #f1efe8;          /* light tint of brand tan */
   --card: #ffffff;
-  --ink: #111417;
-  --ink-soft: #4a5259;
-  --line: #d5dad4;
-  --zebra: #f4f6f2;
-  --bar: #14301f;
+  --ink: var(--brand-charcoal);
+  --ink-soft: #5b5850;
+  --line: var(--brand-tan);
+  --zebra: #f7f5f0;
+  --bar: var(--brand-charcoal);
   --bar-ink: #ffffff;
   --up: #1b7a2e;
   --down: #c62828;
-  --stale: #c62828;
+  --stale: #c6392a;       /* brand red, darkened for white text */
 
+  /* Crop colors (unchanged) */
   --crop-corn: #e3a400;
   --crop-soy: #2e7d32;
   --crop-wheat: #b86b1e;
@@ -21,7 +39,7 @@
   --crop-beans: #5d4037;
   --crop-other: #546e7a;
 
-  --safe: 1.875rem;      /* margin kept clear for TV overscan */
+  --safe: 1.875rem;       /* margin kept clear for TV overscan */
   --top-h: 7.5rem;
   --bottom-h: 4.75rem;
   --gap: 1.25rem;
@@ -44,7 +62,7 @@ html, body {
   overflow: hidden;
   background: var(--bg);
   color: var(--ink);
-  font-family: "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  font-family: var(--font-body);
   -webkit-font-smoothing: antialiased;
 }
 
@@ -70,33 +88,64 @@ html, body {
 
 /* ---------- Top bar ---------- */
 .top-bar {
-  flex: 0 0 var(--top-h);
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  gap: 2.5rem;
-  padding: 0 2.75rem;
+  padding: 0 2.5rem;
   background: var(--bar);
   color: var(--bar-ink);
   border-radius: 1rem;
+  border-bottom: 0.375rem solid var(--brand-gold);
 }
-.title { display: flex; align-items: baseline; gap: 1.625rem; min-width: 0; white-space: nowrap; }
-.title-main { font-size: 4.5rem; font-weight: 800; letter-spacing: -0.0625rem; line-height: 1; }
-.title-sub { font-size: 1.875rem; font-weight: 500; opacity: 0.8; }
+.brand-logo {
+  flex: 0 0 auto;
+  height: 4.75rem;
+  width: auto;
+  margin-right: 2rem;
+  padding-right: 2rem;
+  border-right: 0.125rem solid rgba(255, 255, 255, 0.25);
+}
+.brand-none .brand-logo, .brand-none .tagline { display: none; }
 
-.updated { display: flex; flex-direction: column; align-items: flex-end; white-space: nowrap; }
-.updated-label { font-size: 1.375rem; opacity: 0.8; text-transform: uppercase; letter-spacing: 0.0938rem; }
-.updated-time { font-size: 2.75rem; font-weight: 700; font-variant-numeric: tabular-nums; line-height: 1.1; }
+.title { flex: 1 1 auto; display: flex; flex-direction: column; justify-content: center; min-width: 0; white-space: nowrap; }
+.title-main {
+  font-family: var(--font-head);
+  font-size: 4.75rem;
+  font-weight: 400;
+  line-height: 0.95;
+  letter-spacing: 0.0625rem;
+  text-transform: uppercase;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.title-sub {
+  font-family: var(--font-head);
+  font-size: 1.75rem;
+  letter-spacing: 0.25rem;
+  text-transform: uppercase;
+  color: var(--brand-gold);
+}
+
+.updated { flex: 0 0 auto; display: flex; flex-direction: column; align-items: flex-end; margin-left: 2rem; white-space: nowrap; }
+.updated-label {
+  font-family: var(--font-head);
+  font-size: 1.5rem;
+  letter-spacing: 0.1875rem;
+  text-transform: uppercase;
+  color: var(--brand-gold);
+}
+.updated-time { font-size: 2.625rem; font-weight: 800; font-variant-numeric: tabular-nums; line-height: 1.1; }
 .checked-time { font-size: 1.25rem; opacity: 0.75; font-variant-numeric: tabular-nums; }
 
-.top-bar.is-stale { background: var(--stale); }
-.top-bar.is-stale .updated-label::before { content: "⚠ Data stale · "; font-weight: 800; opacity: 1; }
+.top-bar.is-stale { background: var(--stale); border-bottom-color: var(--stale); }
+.top-bar.is-stale .updated-label { color: #fff; }
+.top-bar.is-stale .updated-label::before { content: "⚠ Data stale · "; }
+.top-bar.is-stale .title-sub { color: #fff; }
 
 /* ---------- Board: one panel per crop ---------- */
 .board {
-  flex: 1 1 auto;
   min-height: 0;
   display: grid;
+  grid-gap: var(--gap);
   gap: var(--gap);
 }
 
@@ -113,16 +162,23 @@ html, body {
 }
 .crop-head {
   flex: 0 0 auto;
-  padding: calc(0.75rem * var(--fs)) calc(1.625rem * var(--fs));
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  padding: calc(0.625rem * var(--fs)) calc(1.625rem * var(--fs)) calc(0.375rem * var(--fs));
   background: var(--crop-color);
   color: #fff;
-  font-size: calc(2.75rem * var(--fs));
-  font-weight: 800;
-  line-height: 1.1;
+  font-family: var(--font-head);
+  font-size: calc(3.25rem * var(--fs));
+  font-weight: 400;
+  letter-spacing: 0.125rem;
+  line-height: 1.05;
+  text-transform: uppercase;
   border-radius: 1rem 1rem 0 0;
 }
 /* Gold is too light for white text. */
 .crop-corn .crop-head, .crop-oats .crop-head { color: var(--ink); }
+.crop-location { margin-left: 1rem; font-size: 0.6em; letter-spacing: 0.125rem; opacity: 0.85; white-space: nowrap; }
 
 .bids {
   width: 100%;
@@ -130,19 +186,20 @@ html, body {
   font-variant-numeric: tabular-nums;
 }
 .bids th {
-  font-size: calc(1.25rem * var(--fs));
-  font-weight: 700;
+  font-family: var(--font-head);
+  font-size: calc(1.5rem * var(--fs));
+  font-weight: 400;
+  letter-spacing: 0.125rem;
   text-transform: uppercase;
-  letter-spacing: 0.0625rem;
   color: var(--ink-soft);
   text-align: right;
-  padding: calc(0.625rem * var(--fs)) calc(0.625rem * var(--fs)) calc(0.375rem * var(--fs));
+  padding: calc(0.625rem * var(--fs)) calc(0.625rem * var(--fs)) calc(0.25rem * var(--fs));
   border-bottom: 0.125rem solid var(--ink);
   white-space: nowrap;
 }
 .bids td {
   font-size: calc(1.875rem * var(--fs));
-  font-weight: 600;
+  font-weight: 700;
   text-align: right;
   height: var(--row-h, auto);
   padding: calc(0.375rem * var(--fs)) calc(0.625rem * var(--fs));
@@ -154,11 +211,11 @@ html, body {
 .bids tbody tr:nth-child(even) td { background: var(--zebra); }
 .bids tbody tr:last-child td { border-bottom: 0; }
 
-.c-delivery { font-weight: 700; }
-.c-futures, .c-basis { color: var(--ink-soft); }
+.c-delivery { font-weight: 800; }
+.c-futures, .c-basis { color: var(--ink-soft); font-weight: 600; }
 .c-change.up { color: var(--up); }
 .c-change.down { color: var(--down); }
-.bids td.c-cash { font-size: calc(2.375rem * var(--fs)); font-weight: 800; color: var(--ink); }
+.bids td.c-cash { font-size: calc(2.375rem * var(--fs)); font-weight: 900; color: var(--ink); }
 
 .crop-corn   { --crop-color: var(--crop-corn); }
 .crop-soy    { --crop-color: var(--crop-soy); }
@@ -177,11 +234,8 @@ html, body {
   color: var(--ink-soft);
 }
 
-.crop-head { display: flex; align-items: baseline; justify-content: space-between; gap: 1rem; }
-.crop-location { font-size: 0.55em; font-weight: 700; opacity: 0.85; white-space: nowrap; }
-
 /* ---------- Directory (site root) ---------- */
-.directory-mode .board { gap: 0.75rem; }
+.directory-mode .board { grid-gap: 0.75rem; gap: 0.75rem; }
 .dir-link {
   display: flex;
   align-items: center;
@@ -189,35 +243,55 @@ html, body {
   padding: 0 1.375rem;
   background: var(--card);
   border: 0.125rem solid var(--line);
+  border-left: 0.375rem solid var(--brand-gold);
   border-radius: 0.75rem;
   color: var(--ink);
   text-decoration: none;
 }
-.dir-link:hover { border-color: var(--bar); }
-.dir-name { font-size: 1.75rem; font-weight: 800; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.dir-link:hover { border-color: var(--brand-charcoal); }
+.dir-name {
+  font-family: var(--font-head);
+  font-size: 2rem;
+  letter-spacing: 0.0625rem;
+  text-transform: uppercase;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
 
 /* ---------- Bottom bar ---------- */
 .bottom-bar {
-  flex: 0 0 var(--bottom-h);
   display: flex;
   align-items: center;
-  gap: 0.875rem;
+  justify-content: space-between;
   padding: 0 1.5rem;
   background: var(--card);
   border: 0.125rem solid var(--line);
   border-radius: 1rem;
   overflow: hidden;
 }
-.notices { display: flex; align-items: center; gap: 0.875rem; white-space: nowrap; min-width: 0; }
+.notices { display: flex; align-items: center; min-width: 0; white-space: nowrap; }
 .notice {
-  font-size: 1.625rem;
+  margin-right: 0.875rem;
+  font-size: 1.5rem;
   font-weight: 600;
   padding: 0.5rem 1.25rem;
-  border-radius: 62.4375rem;
-  background: #e6ebe5;
+  border-radius: 62.5rem;
+  background: #ece8dd;
   color: var(--ink);
 }
 .notice.warn { background: var(--stale); color: #fff; }
+/* Brand tagline: Bison caps in gold, as in the brand guide. */
+.tagline {
+  flex: 0 0 auto;
+  margin-left: 1.5rem;
+  font-family: var(--font-head);
+  font-size: 2.125rem;
+  letter-spacing: 0.25rem;
+  text-transform: uppercase;
+  color: var(--brand-gold);
+  white-space: nowrap;
+}
 
 /* ?debug overlay */
 .debug {

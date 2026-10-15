@@ -16,6 +16,7 @@ on:
 permissions:
   contents: write   # commit data
   actions: write    # see other runs, start the next loop
+  issues: write     # open/close the "scraper needs attention" alert
 
 jobs:
   scrape:
@@ -65,11 +66,36 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          repo="$GITHUB_REPOSITORY"
+
+          # Open a GitHub issue (GitHub emails the repo owner) when data/health.json reports a
+          # problem two rounds in a row; keep it updated; close it once the scraper recovers.
+          bad_rounds=0
+          alert() {
+            [ -f data/health.json ] || return 0
+            open=$(gh issue list --repo "$repo" --label scraper-alert --state open --json number --jq '.[0].number // empty' 2>/dev/null)
+            if [ "$(jq -r .ok data/health.json)" = "false" ]; then
+              bad_rounds=$(( bad_rounds + 1 ))
+              [ "$bad_rounds" -ge 2 ] || return 0
+              body=$(jq -r '"The grain bids scraper found a problem (last checked \(.checkedAt)):\n\n" + ([.problems[] | "- " + .] | join("\n")) + "\n\nScreens keep showing the last good prices meanwhile. This issue updates itself and closes when the scraper recovers."' data/health.json)
+              if [ -z "$open" ]; then
+                gh label create scraper-alert --repo "$repo" --color e1523e --description "Opened automatically by the grain bids scraper" --force >/dev/null 2>&1
+                gh issue create --repo "$repo" --title "Grain bids scraper needs attention" --label scraper-alert --body "$body" >/dev/null
+              else
+                gh issue edit "$open" --repo "$repo" --body "$body" >/dev/null
+              fi
+            else
+              bad_rounds=0
+              [ -z "$open" ] || gh issue close "$open" --repo "$repo" --comment "Recovered at $(jq -r .checkedAt data/health.json): $(jq -r .summary data/health.json)" >/dev/null
+            fi
+          }
+
           end=$(( $(date +%s) + 340 * 60 ))
           while [ "$(date +%s)" -lt "$end" ]; do
             # Pick up any code pushed since this loop started.
             git pull -q --rebase origin main || git rebase --abort || true
             node scraper.js || echo "Scrape failed; screens keep the last good prices."
+            alert || echo "::warning::Could not update the alert issue."
             git add -A
             if ! git diff --cached --quiet; then
               git commit -q -m "Update grain bids $(date -u +'%Y-%m-%dT%H:%MZ')"

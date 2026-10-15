@@ -85,10 +85,15 @@
     stage.id = 'stage';
 
     var top = el('header', 'top-bar');
+    // Reversed (white) logo from the brand guide, for the dark bar. Hidden on non-Frontier pages.
+    var logo = el('img', 'brand-logo');
+    logo.src = new URL('assets/frontier-logo-reversed.svg', SITE_ROOT).href;
+    logo.alt = 'Frontier Cooperative';
+    top.appendChild(logo);
     var title = el('div', 'title');
     ui.locName = el('span', 'title-main', 'Grain Bids');
     title.appendChild(ui.locName);
-    title.appendChild(el('span', 'title-sub', 'Cash Bids · Frontier Cooperative'));
+    title.appendChild(el('span', 'title-sub', 'Cash Bids'));
     top.appendChild(title);
     var upd = el('div', 'updated');
     upd.appendChild(el('span', 'updated-label', 'Bids updated'));
@@ -102,6 +107,7 @@
     var bottom = el('footer', 'bottom-bar');
     ui.notices = el('div', 'notices');
     bottom.appendChild(ui.notices);
+    bottom.appendChild(el('div', 'tagline', 'Experience the Difference'));
 
     stage.appendChild(top);
     stage.appendChild(ui.board);
@@ -209,6 +215,7 @@
   function renderLocation(payload, loc) {
     document.title = loc.label + ' · Grain Bids';
     ui.locName.textContent = loc.label;
+    document.body.classList.toggle('brand-none', loc.brand === 'none');
     ui.board.innerHTML = '';
 
     var crops = loc.crops || [];
@@ -326,6 +333,10 @@
   }
   window.addEventListener('resize', refit);
   window.addEventListener('orientationchange', refit);
+  // Brand web fonts change text widths when they arrive; re-fit then.
+  if (document.fonts && document.fonts.ready) {
+    document.fonts.ready.then(function () { lastSize = ''; refit(); });
+  }
   setInterval(refit, 2000);
   loadData();
   setInterval(loadData, REFRESH_MS);

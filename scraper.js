@@ -17,6 +17,11 @@ const SITE_URL = 'https://hyst16.github.io/grain-bids-tv/';
 const OUT_DIR = path.join(__dirname, 'data');
 const OUT_FILE = path.join(OUT_DIR, 'grain-bids.json');
 const TARGETS_FILE = path.join(OUT_DIR, 'targets.json');
+const HEALTH_FILE = path.join(OUT_DIR, 'health.json');
+
+// A location that stops posting bids (or leaves the widget) keeps showing its last prices,
+// flagged, for this long; after that its page is removed. New locations appear immediately.
+const KEEP_LAST_KNOWN_HOURS = 24;
 
 function todayCentral() {
   return new Intl.DateTimeFormat('en-CA', { timeZone: 'America/Chicago' }).format(new Date());
@@ -80,10 +85,8 @@ async function scrapeWidget() {
     const widget = await frame.evaluate(bids.extractWidget);
     if (!widget.groups.length) throw new Error('widget rendered no locations (markup may have changed)');
     const rows = widget.groups.flatMap(g => g.tables.flatMap(t => t.rows));
-    const missing = ['date', 'month'].filter(c => rows.length && rows.every(r => !r[c]));
-    if (missing.length) {
-      annotate('warning', `Widget rows have no ${missing.join(' or ')} column; boards will show reduced detail.`);
-    }
+    widget.missingColumns = ['date', 'month', 'change', 'basis', 'cash'].filter(c => rows.length && rows.every(r => !r[c]));
+    widget.usedFallback = frame !== page;
     return widget;
   } catch (err) {
     // Note what the page looked like when it failed, for the annotation.
@@ -106,74 +109,118 @@ function readPrevious() {
   }
 }
 
-function writeLocationPages(pages) {
-  for (const p of pages) {
-    const file = path.join(__dirname, p.id, 'index.html');
-    const html = bids.locationPageHtml(p);
+// Create/refresh each published page's /<id>/index.html, and remove generated pages that are
+// no longer published (locations that stopped posting bids or left the widget).
+function syncLocationPages(locations, allowRemovals) {
+  const keep = new Set(locations.map(l => l.id));
+  for (const l of locations) {
+    const file = path.join(__dirname, l.id, 'index.html');
+    const html = bids.locationPageHtml(l);
     let current = null;
     try { current = fs.readFileSync(file, 'utf8'); } catch {}
     if (current === html) continue;
     fs.mkdirSync(path.dirname(file), { recursive: true });
     fs.writeFileSync(file, html);
-    console.log(`Wrote ${p.id}/index.html`);
+    console.log(`Wrote ${l.id}/index.html`);
+  }
+  if (!allowRemovals) return;
+  for (const entry of fs.readdirSync(__dirname, { withFileTypes: true })) {
+    if (!entry.isDirectory() || keep.has(entry.name)) continue;
+    const file = path.join(__dirname, entry.name, 'index.html');
+    let html = '';
+    try { html = fs.readFileSync(file, 'utf8'); } catch { continue; }
+    if (!html.includes(bids.GENERATED_MARKER)) continue;  // never touch folders we didn't create
+    fs.rmSync(path.join(__dirname, entry.name), { recursive: true, force: true });
+    console.log(`Removed ${entry.name}/ (no longer posting bids)`);
   }
 }
 
-// Written on every successful run, so generatedAt ("Last updated" on the TVs) is the last check time.
-function writeOutput(payload) {
-  fs.mkdirSync(OUT_DIR, { recursive: true });
-  fs.writeFileSync(OUT_FILE, JSON.stringify(payload, null, 2) + '\n');
-  const targets = payload.locations.map(l => ({ id: l.id, label: l.label, sources: l.sources, url: SITE_URL + l.id + '/' }));
-  fs.writeFileSync(TARGETS_FILE, JSON.stringify(targets, null, 2) + '\n');
-  console.log(`Wrote ${OUT_FILE} (${payload.locations.length} pages)`);
+function writeJson(file, value) {
+  fs.mkdirSync(path.dirname(file), { recursive: true });
+  fs.writeFileSync(file, JSON.stringify(value, null, 2) + '\n');
+}
+
+// data/health.json: what the workflow uses to open (and later close) an alert issue.
+function writeHealth(now, problems, summary) {
+  writeJson(HEALTH_FILE, { checkedAt: now, ok: problems.length === 0, problems, summary });
+  for (const p of problems) annotate('warning', p);
 }
 
 async function main() {
   const previous = readPrevious();
   const prevById = new Map((previous?.locations || []).map(l => [l.id, l]));
   const now = new Date().toISOString();
+  const problems = [];
 
   let widget;
   try {
     widget = await scrapeWidget();
   } catch (err) {
+    // Screens keep the last good prices; their "Data stale" warning appears after 30 minutes.
+    writeHealth(now, [`Could not read Frontier's cash bids widget: ${err.message}`], null);
     annotate('error', `Scraping the cash bids widget failed: ${err.message}`);
-    // Keep showing the last good prices, flagged, and fail the run so GitHub emails the owner.
-    if (previous) {
-      const flagged = previous.locations.map(l => ({ ...l, ok: false, error: err.message }));
-      writeOutput({ generatedAt: previous.generatedAt, locations: flagged });
-    }
     process.exit(1);
   }
 
-  const pages = bids.buildPages(widget, todayCentral());
-  const locations = pages.map(p => {
-    if (p.ok) {
-      console.log(`ok   ${p.id.padEnd(20)} ${p.crops.map(c => `${c.name} x${c.bids.length}`).join(', ')}`);
-      return { ...p, lastSuccessAt: now };
-    }
-    const prev = prevById.get(p.id);
-    console.error(`WARN ${p.id.padEnd(20)} missing from widget: ${p.missing.join(', ') || 'no bids'}` +
-      (prev?.lastSuccessAt ? ' (keeping last good data)' : ''));
-    return prev?.lastSuccessAt ? { ...prev, ok: false, missing: p.missing } : { ...p, lastSuccessAt: null };
-  });
+  if (widget.missingColumns.length) {
+    problems.push(`The widget no longer provides the ${widget.missingColumns.join(', ')} column(s); boards show reduced detail.`);
+  }
+  if (widget.usedFallback) {
+    problems.push('The full-column widget did not load, so data came from the widget embedded on Frontier\'s page.');
+  }
 
-  // Pages whose locations disappeared from the widget keep their last data (flagged) so screens don't go blank.
-  const current = new Set(locations.map(l => l.id));
+  const pages = bids.buildPages(widget, todayCentral());
+  const graceMs = KEEP_LAST_KNOWN_HOURS * 3600 * 1000;
+  const recent = l => l?.lastSuccessAt && Date.now() - Date.parse(l.lastSuccessAt) < graceMs;
+  const locations = [];
+  const hidden = [];
+
+  for (const p of pages) {
+    const prev = prevById.get(p.id);
+    if (p.ok) {
+      if (!prev) console.log(`NEW  ${p.id}`);
+      console.log(`ok   ${p.id.padEnd(20)} ${p.crops.map(c => `${c.name} x${c.bids.length}`).join(', ')}`);
+      locations.push({ ...p, lastSuccessAt: now });
+    } else if (recent(prev)) {
+      // Briefly missing or blank: keep the last good prices (flagged) rather than dropping the page.
+      console.warn(`WARN ${p.id.padEnd(20)} no bids right now (keeping last good data)`);
+      locations.push({ ...prev, ok: false, brand: p.brand });
+    } else {
+      hidden.push(p.label);
+    }
+  }
+  // Locations that vanished from the widget entirely: same grace period. Pages retired from
+  // config (e.g. a combined board whose locations are all still in the widget) go right away.
+  const seen = new Set(pages.map(p => p.id));
+  const widgetNames = new Set(widget.groups.map(g => bids.clean(g.name)));
   for (const prev of previous?.locations || []) {
-    if (!current.has(prev.id) && prev.lastSuccessAt && prev.sources) {
-      console.error(`WARN ${prev.id.padEnd(20)} no longer in widget (keeping last good data)`);
+    if (seen.has(prev.id) || !prev.sources) continue;
+    if (prev.sources.every(s => widgetNames.has(s))) continue;
+    if (recent(prev)) {
+      console.warn(`WARN ${prev.id.padEnd(20)} not in widget (keeping last good data)`);
       locations.push({ ...prev, ok: false });
+    } else {
+      hidden.push(prev.label);
     }
   }
   locations.sort((a, b) => a.label.localeCompare(b.label));
 
-  writeLocationPages(locations);
-  writeOutput({ generatedAt: now, sourceUpdated: widget.updated || null, locations });
-  const bad = locations.filter(l => !l.ok).map(l => l.id);
-  annotate(bad.length ? 'warning' : 'notice',
-    `Scraped ${widget.groups.length} widget locations into ${locations.length} pages` +
-    (bad.length ? `; not current: ${bad.join(', ')}` : '') + `. Widget updated ${widget.updated || '?'}.`);
+  // Sanity check before removing anything: a half-rendered widget must not wipe out pages.
+  const prevCount = (previous?.locations || []).filter(l => l.ok).length;
+  const liveCount = locations.filter(l => l.ok).length;
+  const looksPartial = prevCount >= 10 && liveCount < prevCount * 0.75;
+  if (looksPartial) {
+    problems.push(`Only ${liveCount} locations have bids now, down from ${prevCount}; not removing any pages until this recovers.`);
+  }
+
+  syncLocationPages(locations, !looksPartial);
+  writeJson(OUT_FILE, { generatedAt: now, sourceUpdated: widget.updated || null, locations });
+  writeJson(TARGETS_FILE, locations.map(l => ({ id: l.id, label: l.label, sources: l.sources, url: SITE_URL + l.id + '/' })));
+
+  const summary = `${widget.groups.length} widget locations, ${locations.length} pages` +
+    (hidden.length ? `; hidden (no bids): ${hidden.join(', ')}` : '') + `. Widget updated ${widget.updated || '?'}.`;
+  writeHealth(now, problems, summary);
+  annotate('notice', summary);
 }
 
 main().catch(err => {

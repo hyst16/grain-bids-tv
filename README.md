@@ -13,12 +13,20 @@ https://hyst16.github.io/grain-bids-tv/<location>/
 ```
 
 `<location>` is the location name in lowercase with dashes, for example `schuyler`, `cedar-bluffs`,
-`north-bend`, `nebraska-city`, `sire-cb`, `st-mary`, `tecumseh-north`.
+`north-bend`, `nebraska-city`, `sire-cb`, `agp-david-city`, `adm-columbus`.
 **Yanka and David City - Elevator share one board:** `yanka-david-city`.
 
 The site root (https://hyst16.github.io/grain-bids-tv/) lists every location, and
-`data/targets.json` has the full list with URLs. Every location in Frontier's cash bids
-widget gets a page automatically, including new ones.
+`data/targets.json` has the full list with URLs.
+
+Pages follow Frontier's cash bids widget automatically:
+- **New location** in the widget → its page appears on the next run.
+- **Location stops posting bids** (cash shows `--`) or leaves the widget → its board keeps the
+  last good prices, flagged "Showing last known prices", for 24 hours; then its page is removed.
+  A location that has never posted bids gets no page.
+
+Frontier locations show the Frontier logo and tagline. Locations listed in `NON_FRONTIER` in
+`lib/bids.js` (Sire CB, AGP - David City) get the same board without Frontier branding.
 
 ## What each board shows
 
@@ -42,9 +50,25 @@ scraper opens it in headless Chromium (Playwright) and reads the rendered tables
 | `.github/workflows/update-grain-bids.yml` | Runs the scraper every 10 min and commits changes |
 | `app.js`, `styles.css`, `index.html` | The display. Location pages are tiny shells that load these shared files |
 
+### Branding
+Colors, type and logo follow the Frontier brand guide: charcoal `#242223` and gold `#ca9d3b`
+with the reversed (white) logo in `assets/frontier-logo-reversed.svg`, extracted as vector art
+from the guide. Brand fonts are Bison (headings) and Avenir Next (body); they're commercial, so
+the pages use them when available and otherwise Bebas Neue and Nunito Sans from Google Fonts.
+If Frontier has web licenses for Bison/Avenir, add the font files and `@font-face` rules to
+`styles.css` and they'll be picked up automatically. Crop colors are unchanged.
+
+### Alerts
+Every run writes `data/health.json`. If it reports a problem two rounds in a row (widget
+unreadable, columns missing, many locations suddenly gone), the workflow opens an issue titled
+**"Grain bids scraper needs attention"** (GitHub emails the repo owner), keeps it updated, and
+closes it automatically when the scraper recovers.
+
 ### Reliability behavior
-- **A location drops out of the widget** → its board keeps the last good prices with a red "Showing last known prices" notice.
-- **The widget can't be read** → the Action run fails (GitHub emails the repo owner) and screens keep the old data.
+- **A location drops out of the widget** → its board keeps the last good prices with a red "Showing last known prices" notice (for 24 hours).
+- **The widget can't be read** → screens keep the old data, and the alert issue opens after two failed rounds.
+- **Frontier changes which columns their page shows** → no effect: the scraper always requests the full columns itself.
+- **The widget renders only part of the list** → no pages are removed that round, and the alert issue opens.
 - **Data older than 30 min** → the top bar turns red and reads "⚠ Data stale".
 - **Screen can't reach GitHub** → keeps showing the last loaded prices with a "Connection issue" notice.
 - The scraper saves on every successful run, so "Last updated" is the time of the last check.
