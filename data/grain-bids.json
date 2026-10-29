@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-10-29T05:00:01.251Z",
-  "sourceUpdated": "10/28/26 11:48 PM",
+  "generatedAt": "2026-10-29T05:10:00.636Z",
+  "sourceUpdated": "10/28/26 11:59 PM",
   "locations": [
     {
       "id": "adams",
@@ -15,7 +15,7 @@
         "Data provided by StoneX. All prices delayed 10 minutes.",
         "Market data: CME Group"
       ],
-      "sourceUpdated": "10/28/26 11:48 PM",
+      "sourceUpdated": "10/28/26 11:59 PM",
       "crops": [
         {
           "name": "Corn",
@@ -29,7 +29,7 @@
               "deliveryEnd": "2026-10-31",
               "delivery": "10/01/26-10/31/26",
               "basisMonth": "Dec 26",
-              "futuresChange": 0.0125,
+              "futuresChange": 0.01,
               "basis": -0.48,
               "cash": 4.05
             },
@@ -39,7 +39,7 @@
               "deliveryEnd": "2026-11-30",
               "delivery": "11/01/26-11/30/26",
               "basisMonth": "Dec 26",
-              "futuresChange": 0.0125,
+              "futuresChange": 0.01,
               "basis": -0.48,
               "cash": 4.05
             },
@@ -49,7 +49,7 @@
               "deliveryEnd": "2026-12-31",
               "delivery": "12/01/26-12/31/26",
               "basisMonth": "Dec 26",
-              "futuresChange": 0.0125,
+              "futuresChange": 0.01,
               "basis": -0.4,
               "cash": 4.13
             },
@@ -59,7 +59,7 @@
               "deliveryEnd": "2027-01-31",
               "delivery": "01/01/27-01/31/27",
               "basisMonth": "Mar 27",
-              "futuresChange": 0.01,
+              "futuresChange": 0.005,
               "basis": -0.48,
               "cash": 4.18
             },
@@ -69,7 +69,7 @@
               "deliveryEnd": "2027-02-28",
               "delivery": "02/01/27-02/28/27",
               "basisMonth": "Mar 27",
-              "futuresChange": 0.01,
+              "futuresChange": 0.005,
               "basis": -0.44,
               "cash": 4.22
             },
@@ -79,7 +79,7 @@
               "deliveryEnd": "2027-03-31",
               "delivery": "03/01/27-03/31/27",
               "basisMonth": "Mar 27",
-              "futuresChange": 0.01,
+              "futuresChange": 0.005,
               "basis": -0.41,
               "cash": 4.25
             },
@@ -89,14 +89,14 @@
               "deliveryEnd": "2027-10-31",
               "delivery": "10/01/27-10/31/27",
               "basisMonth": "Dec 27",
-              "futuresChange": 0.01,
+              "futuresChange": 0.0075,
               "basis": -0.54,
               "cash": 4.37
             }
           ],
           "cash": 4.05,
           "basis": -0.48,
-          "futuresChange": 0.0125,
+          "futuresChange": 0.01,
           "basisMonth": "Dec 26",
           "deliveryStart": "2026-10-01",
           "deliveryEnd": "2026-10-31"
@@ -197,7 +197,7 @@
               "deliveryEnd": "2026-10-31",
               "delivery": "10/01/26-10/31/26",
               "basisMonth": "Dec 26",
-              "futuresChange": -0.0075,
+              "futuresChange": -0.01,
               "basis": -0.75,
               "cash": 5.67
             },
@@ -207,7 +207,7 @@
               "deliveryEnd": "2026-11-30",
               "delivery": "11/01/26-11/30/26",
               "basisMonth": "Dec 26",
-              "futuresChange": -0.0075,
+              "futuresChange": -0.01,
               "basis": -0.75,
               "cash": 5.67
             },
@@ -224,13 +224,13 @@
           ],
           "cash": 5.67,
           "basis": -0.75,
-          "futuresChange": -0.0075,
+          "futuresChange": -0.01,
           "basisMonth": "Dec 26",
           "deliveryStart": "2026-10-01",
           "deliveryEnd": "2026-10-31"
         }
       ],
-      "lastSuccessAt": "2026-10-29T05:00:01.251Z"
+      "lastSuccessAt": "2026-10-29T05:10:00.636Z"
     },
     {
       "id": "adm-columbus",
@@ -245,7 +245,7 @@
         "Data provided by StoneX. All prices delayed 10 minutes.",
         "Market data: CME Group"
       ],
-      "sourceUpdated": "10/28/26 11:48 PM",
+      "sourceUpdated": "10/28/26 11:59 PM",
       "crops": [
         {
           "name": "Corn",
@@ -259,7 +259,7 @@
               "deliveryEnd": "2026-10-31",
               "delivery": "10/01/26-10/31/26",
               "basisMonth": "Dec 26",
-              "futuresChange": 0.0125,
+              "futuresChange": 0.01,
               "basis": -0.32,
               "cash": 4.21
             },
@@ -269,7 +269,7 @@
               "deliveryEnd": "2026-11-30",
               "delivery": "11/01/26-11/30/26",
               "basisMonth": "Dec 26",
-              "futuresChange": 0.0125,
+              "futuresChange": 0.01,
               "basis": -0.25,
               "cash": 4.28
             },
@@ -279,7 +279,7 @@
               "deliveryEnd": "2026-12-31",
               "delivery": "12/01/26-12/31/26",
               "basisMonth": "Dec 26",
-              "futuresChange": 0.0125,
+              "futuresChange": 0.01,
               "basis": -0.05,
               "cash": 4.48
             },
@@ -289,7 +289,7 @@
               "deliveryEnd": "2027-01-31",
               "delivery": "01/01/27-01/31/27",
               "basisMonth": "Mar 27",
-              "futuresChange": 0.01,
+              "futuresChange": 0.005,
               "basis": -0.17,
               "cash": 4.49
             },
@@ -299,7 +299,7 @@
               "deliveryEnd": "2027-02-28",
               "delivery": "02/01/27-02/28/27",
               "basisMonth": "Mar 27",
-              "futuresChange": 0.01,
+              "futuresChange": 0.005,
               "basis": -0.15,
               "cash": 4.51
             },
@@ -309,7 +309,7 @@
               "deliveryEnd": "2027-03-31",
               "delivery": "03/01/27-03/31/27",
               "basisMonth": "Mar 27",
-              "futuresChange": 0.01,
+              "futuresChange": 0.005,
               "basis": -0.13,
               "cash": 4.53
             },
@@ -319,20 +319,20 @@
               "deliveryEnd": "2027-10-31",
               "delivery": "10/01/27-10/31/27",
               "basisMonth": "Dec 27",
-              "futuresChange": 0.01,
+              "futuresChange": 0.0075,
               "basis": -0.2,
               "cash": 4.71
             }
           ],
           "cash": 4.21,
           "basis": -0.32,
-          "futuresChange": 0.0125,
+          "futuresChange": 0.01,
           "basisMonth": "Dec 26",
           "deliveryStart": "2026-10-01",
           "deliveryEnd": "2026-10-31"
         }
       ],
-      "lastSuccessAt": "2026-10-29T05:00:01.251Z"
+      "lastSuccessAt": "2026-10-29T05:10:00.636Z"
     },
     {
       "id": "adm-fremont",
@@ -347,7 +347,7 @@
         "Data provided by StoneX. All prices delayed 10 minutes.",
         "Market data: CME Group"
       ],
-      "sourceUpdated": "10/28/26 11:48 PM",
+      "sourceUpdated": "10/28/26 11:59 PM",
       "crops": [
         {
           "name": "Soybeans",
@@ -434,7 +434,7 @@
           "deliveryEnd": "2026-10-31"
         }
       ],
-      "lastSuccessAt": "2026-10-29T05:00:01.251Z"
+      "lastSuccessAt": "2026-10-29T05:10:00.636Z"
     },
     {
       "id": "adm-lincoln",
@@ -449,7 +449,7 @@
         "Data provided by StoneX. All prices delayed 10 minutes.",
         "Market data: CME Group"
       ],
-      "sourceUpdated": "10/28/26 11:48 PM",
+      "sourceUpdated": "10/28/26 11:59 PM",
       "crops": [
         {
           "name": "Soybeans",
@@ -536,7 +536,7 @@
           "deliveryEnd": "2026-10-31"
         }
       ],
-      "lastSuccessAt": "2026-10-29T05:00:01.251Z"
+      "lastSuccessAt": "2026-10-29T05:10:00.636Z"
     },
     {
       "id": "agp-david-city",
@@ -551,7 +551,7 @@
         "Data provided by StoneX. All prices delayed 10 minutes.",
         "Market data: CME Group"
       ],
-      "sourceUpdated": "10/28/26 11:48 PM",
+      "sourceUpdated": "10/28/26 11:59 PM",
       "crops": [
         {
           "name": "Soybeans",
@@ -638,7 +638,7 @@
           "deliveryEnd": "2026-10-31"
         }
       ],
-      "lastSuccessAt": "2026-10-29T05:00:01.251Z"
+      "lastSuccessAt": "2026-10-29T05:10:00.636Z"
     },
     {
       "id": "avoca",
@@ -653,7 +653,7 @@
         "Data provided by StoneX. All prices delayed 10 minutes.",
         "Market data: CME Group"
       ],
-      "sourceUpdated": "10/28/26 11:48 PM",
+      "sourceUpdated": "10/28/26 11:59 PM",
       "crops": [
         {
           "name": "Corn",
@@ -667,7 +667,7 @@
               "deliveryEnd": "2026-10-31",
               "delivery": "10/01/26-10/31/26",
               "basisMonth": "Dec 26",
-              "futuresChange": 0.0125,
+              "futuresChange": 0.01,
               "basis": -0.56,
               "cash": 3.97
             },
@@ -677,7 +677,7 @@
               "deliveryEnd": "2026-11-30",
               "delivery": "11/01/26-11/30/26",
               "basisMonth": "Dec 26",
-              "futuresChange": 0.0125,
+              "futuresChange": 0.01,
               "basis": -0.56,
               "cash": 3.97
             },
@@ -687,7 +687,7 @@
               "deliveryEnd": "2026-12-31",
               "delivery": "12/01/26-12/31/26",
               "basisMonth": "Dec 26",
-              "futuresChange": 0.0125,
+              "futuresChange": 0.01,
               "basis": -0.47,
               "cash": 4.06
             },
@@ -697,7 +697,7 @@
               "deliveryEnd": "2027-01-31",
               "delivery": "01/01/27-01/31/27",
               "basisMonth": "Mar 27",
-              "futuresChange": 0.01,
+              "futuresChange": 0.005,
               "basis": -0.55,
               "cash": 4.11
             },
@@ -707,7 +707,7 @@
               "deliveryEnd": "2027-02-28",
               "delivery": "02/01/27-02/28/27",
               "basisMonth": "Mar 27",
-              "futuresChange": 0.01,
+              "futuresChange": 0.005,
               "basis": -0.51,
               "cash": 4.15
             },
@@ -717,7 +717,7 @@
               "deliveryEnd": "2027-03-31",
               "delivery": "03/01/27-03/31/27",
               "basisMonth": "Mar 27",
-              "futuresChange": 0.01,
+              "futuresChange": 0.005,
               "basis": -0.48,
               "cash": 4.18
             },
@@ -727,14 +727,14 @@
               "deliveryEnd": "2027-10-31",
               "delivery": "10/01/27-10/31/27",
               "basisMonth": "Dec 27",
-              "futuresChange": 0.01,
+              "futuresChange": 0.0075,
               "basis": -0.61,
               "cash": 4.3
             }
           ],
           "cash": 3.97,
           "basis": -0.56,
-          "futuresChange": 0.0125,
+          "futuresChange": 0.01,
           "basisMonth": "Dec 26",
           "deliveryStart": "2026-10-01",
           "deliveryEnd": "2026-10-31"
@@ -824,7 +824,7 @@
           "deliveryEnd": "2026-10-31"
         }
       ],
-      "lastSuccessAt": "2026-10-29T05:00:01.251Z"
+      "lastSuccessAt": "2026-10-29T05:10:00.636Z"
     },
     {
       "id": "belgrade",
@@ -839,7 +839,7 @@
         "Data provided by StoneX. All prices delayed 10 minutes.",
         "Market data: CME Group"
       ],
-      "sourceUpdated": "10/28/26 11:48 PM",
+      "sourceUpdated": "10/28/26 11:59 PM",
       "crops": [
         {
           "name": "Corn",
@@ -853,7 +853,7 @@
               "deliveryEnd": "2026-10-31",
               "delivery": "10/01/26-10/31/26",
               "basisMonth": "Dec 26",
-              "futuresChange": 0.0125,
+              "futuresChange": 0.01,
               "basis": -0.46,
               "cash": 4.07
             },
@@ -863,7 +863,7 @@
               "deliveryEnd": "2026-11-30",
               "delivery": "11/01/26-11/30/26",
               "basisMonth": "Dec 26",
-              "futuresChange": 0.0125,
+              "futuresChange": 0.01,
               "basis": -0.46,
               "cash": 4.07
             },
@@ -873,7 +873,7 @@
               "deliveryEnd": "2026-12-31",
               "delivery": "12/01/26-12/31/26",
               "basisMonth": "Dec 26",
-              "futuresChange": 0.0125,
+              "futuresChange": 0.01,
               "basis": -0.37,
               "cash": 4.16
             },
@@ -883,7 +883,7 @@
               "deliveryEnd": "2027-01-31",
               "delivery": "01/01/27-01/31/27",
               "basisMonth": "Mar 27",
-              "futuresChange": 0.01,
+              "futuresChange": 0.005,
               "basis": -0.47,
               "cash": 4.19
             },
@@ -893,7 +893,7 @@
               "deliveryEnd": "2027-02-28",
               "delivery": "02/01/27-02/28/27",
               "basisMonth": "Mar 27",
-              "futuresChange": 0.01,
+              "futuresChange": 0.005,
               "basis": -0.43,
               "cash": 4.23
             },
@@ -903,7 +903,7 @@
               "deliveryEnd": "2027-03-31",
               "delivery": "03/01/27-03/31/27",
               "basisMonth": "Mar 27",
-              "futuresChange": 0.01,
+              "futuresChange": 0.005,
               "basis": -0.4,
               "cash": 4.26
             },
@@ -913,14 +913,14 @@
               "deliveryEnd": "2027-10-31",
               "delivery": "10/01/27-10/31/27",
               "basisMonth": "Dec 27",
-              "futuresChange": 0.01,
+              "futuresChange": 0.0075,
               "basis": -0.53,
               "cash": 4.38
             }
           ],
           "cash": 4.07,
           "basis": -0.46,
-          "futuresChange": 0.0125,
+          "futuresChange": 0.01,
           "basisMonth": "Dec 26",
           "deliveryStart": "2026-10-01",
           "deliveryEnd": "2026-10-31"
@@ -1010,7 +1010,7 @@
           "deliveryEnd": "2026-10-31"
         }
       ],
-      "lastSuccessAt": "2026-10-29T05:00:01.251Z"
+      "lastSuccessAt": "2026-10-29T05:10:00.636Z"
     },
     {
       "id": "bellwood",
@@ -1025,7 +1025,7 @@
         "Data provided by StoneX. All prices delayed 10 minutes.",
         "Market data: CME Group"
       ],
-      "sourceUpdated": "10/28/26 11:48 PM",
+      "sourceUpdated": "10/28/26 11:59 PM",
       "crops": [
         {
           "name": "Corn",
@@ -1039,7 +1039,7 @@
               "deliveryEnd": "2026-10-31",
               "delivery": "10/01/26-10/31/26",
               "basisMonth": "Dec 26",
-              "futuresChange": 0.0125,
+              "futuresChange": 0.01,
               "basis": -0.4,
               "cash": 4.13
             },
@@ -1049,7 +1049,7 @@
               "deliveryEnd": "2026-11-30",
               "delivery": "11/01/26-11/30/26",
               "basisMonth": "Dec 26",
-              "futuresChange": 0.0125,
+              "futuresChange": 0.01,
               "basis": -0.4,
               "cash": 4.13
             },
@@ -1059,7 +1059,7 @@
               "deliveryEnd": "2026-12-31",
               "delivery": "12/01/26-12/31/26",
               "basisMonth": "Dec 26",
-              "futuresChange": 0.0125,
+              "futuresChange": 0.01,
               "basis": -0.33,
               "cash": 4.2
             },
@@ -1069,7 +1069,7 @@
               "deliveryEnd": "2027-01-31",
               "delivery": "01/01/27-01/31/27",
               "basisMonth": "Mar 27",
-              "futuresChange": 0.01,
+              "futuresChange": 0.005,
               "basis": -0.43,
               "cash": 4.23
             },
@@ -1079,7 +1079,7 @@
               "deliveryEnd": "2027-02-28",
               "delivery": "02/01/27-02/28/27",
               "basisMonth": "Mar 27",
-              "futuresChange": 0.01,
+              "futuresChange": 0.005,
               "basis": -0.39,
               "cash": 4.27
             },
@@ -1089,7 +1089,7 @@
               "deliveryEnd": "2027-03-31",
               "delivery": "03/01/27-03/31/27",
               "basisMonth": "Mar 27",
-              "futuresChange": 0.01,
+              "futuresChange": 0.005,
               "basis": -0.36,
               "cash": 4.3
             },
@@ -1099,14 +1099,14 @@
               "deliveryEnd": "2027-10-31",
               "delivery": "10/01/27-10/31/27",
               "basisMonth": "Dec 27",
-              "futuresChange": 0.01,
+              "futuresChange": 0.0075,
               "basis": -0.49,
               "cash": 4.42
             }
           ],
           "cash": 4.13,
           "basis": -0.4,
-          "futuresChange": 0.0125,
+          "futuresChange": 0.01,
           "basisMonth": "Dec 26",
           "deliveryStart": "2026-10-01",
           "deliveryEnd": "2026-10-31"
@@ -1196,7 +1196,7 @@
           "deliveryEnd": "2026-10-31"
         }
       ],
-      "lastSuccessAt": "2026-10-29T05:00:01.251Z"
+      "lastSuccessAt": "2026-10-29T05:10:00.636Z"
     },
     {
       "id": "bennet",
@@ -1211,7 +1211,7 @@
         "Data provided by StoneX. All prices delayed 10 minutes.",
         "Market data: CME Group"
       ],
-      "sourceUpdated": "10/28/26 11:48 PM",
+      "sourceUpdated": "10/28/26 11:59 PM",
       "crops": [
         {
           "name": "Corn",
@@ -1225,7 +1225,7 @@
               "deliveryEnd": "2026-10-31",
               "delivery": "10/01/26-10/31/26",
               "basisMonth": "Dec 26",
-              "futuresChange": 0.0125,
+              "futuresChange": 0.01,
               "basis": -0.56,
               "cash": 3.97
             },
@@ -1235,7 +1235,7 @@
               "deliveryEnd": "2026-11-30",
               "delivery": "11/01/26-11/30/26",
               "basisMonth": "Dec 26",
-              "futuresChange": 0.0125,
+              "futuresChange": 0.01,
               "basis": -0.56,
               "cash": 3.97
             },
@@ -1245,7 +1245,7 @@
               "deliveryEnd": "2026-12-31",
               "delivery": "12/01/26-12/31/26",
               "basisMonth": "Dec 26",
-              "futuresChange": 0.0125,
+              "futuresChange": 0.01,
               "basis": -0.47,
               "cash": 4.06
             },
@@ -1255,7 +1255,7 @@
               "deliveryEnd": "2027-01-31",
               "delivery": "01/01/27-01/31/27",
               "basisMonth": "Mar 27",
-              "futuresChange": 0.01,
+              "futuresChange": 0.005,
               "basis": -0.55,
               "cash": 4.11
             },
@@ -1265,7 +1265,7 @@
               "deliveryEnd": "2027-02-28",
               "delivery": "02/01/27-02/28/27",
               "basisMonth": "Mar 27",
-              "futuresChange": 0.01,
+              "futuresChange": 0.005,
               "basis": -0.51,
               "cash": 4.15
             },
@@ -1275,7 +1275,7 @@
               "deliveryEnd": "2027-03-31",
               "delivery": "03/01/27-03/31/27",
               "basisMonth": "Mar 27",
-              "futuresChange": 0.01,
+              "futuresChange": 0.005,
               "basis": -0.48,
               "cash": 4.18
             },
@@ -1285,14 +1285,14 @@
               "deliveryEnd": "2027-10-31",
               "delivery": "10/01/27-10/31/27",
               "basisMonth": "Dec 27",
-              "futuresChange": 0.01,
+              "futuresChange": 0.0075,
               "basis": -0.61,
               "cash": 4.3
             }
           ],
           "cash": 3.97,
           "basis": -0.56,
-          "futuresChange": 0.0125,
+          "futuresChange": 0.01,
           "basisMonth": "Dec 26",
           "deliveryStart": "2026-10-01",
           "deliveryEnd": "2026-10-31"
@@ -1382,7 +1382,7 @@
           "deliveryEnd": "2026-10-31"
         }
       ],
-      "lastSuccessAt": "2026-10-29T05:00:01.251Z"
+      "lastSuccessAt": "2026-10-29T05:10:00.636Z"
     },
     {
       "id": "brainard",
@@ -1397,7 +1397,7 @@
         "Data provided by StoneX. All prices delayed 10 minutes.",
         "Market data: CME Group"
       ],
-      "sourceUpdated": "10/28/26 11:48 PM",
+      "sourceUpdated": "10/28/26 11:59 PM",
       "crops": [
         {
           "name": "Corn",
@@ -1411,7 +1411,7 @@
               "deliveryEnd": "2026-10-31",
               "delivery": "10/01/26-10/31/26",
               "basisMonth": "Dec 26",
-              "futuresChange": 0.0125,
+              "futuresChange": 0.01,
               "basis": -0.42,
               "cash": 4.11
             },
@@ -1421,7 +1421,7 @@
               "deliveryEnd": "2026-11-30",
               "delivery": "11/01/26-11/30/26",
               "basisMonth": "Dec 26",
-              "futuresChange": 0.0125,
+              "futuresChange": 0.01,
               "basis": -0.42,
               "cash": 4.11
             },
@@ -1431,7 +1431,7 @@
               "deliveryEnd": "2026-12-31",
               "delivery": "12/01/26-12/31/26",
               "basisMonth": "Dec 26",
-              "futuresChange": 0.0125,
+              "futuresChange": 0.01,
               "basis": -0.34,
               "cash": 4.19
             },
@@ -1441,7 +1441,7 @@
               "deliveryEnd": "2027-01-31",
               "delivery": "01/01/27-01/31/27",
               "basisMonth": "Mar 27",
-              "futuresChange": 0.01,
+              "futuresChange": 0.005,
               "basis": -0.43,
               "cash": 4.23
             },
@@ -1451,7 +1451,7 @@
               "deliveryEnd": "2027-02-28",
               "delivery": "02/01/27-02/28/27",
               "basisMonth": "Mar 27",
-              "futuresChange": 0.01,
+              "futuresChange": 0.005,
               "basis": -0.39,
               "cash": 4.27
             },
@@ -1461,7 +1461,7 @@
               "deliveryEnd": "2027-03-31",
               "delivery": "03/01/27-03/31/27",
               "basisMonth": "Mar 27",
-              "futuresChange": 0.01,
+              "futuresChange": 0.005,
               "basis": -0.36,
               "cash": 4.3
             },
@@ -1471,14 +1471,14 @@
               "deliveryEnd": "2027-10-31",
               "delivery": "10/01/27-10/31/27",
               "basisMonth": "Dec 27",
-              "futuresChange": 0.01,
+              "futuresChange": 0.0075,
               "basis": -0.49,
               "cash": 4.42
             }
           ],
           "cash": 4.11,
           "basis": -0.42,
-          "futuresChange": 0.0125,
+          "futuresChange": 0.01,
           "basisMonth": "Dec 26",
           "deliveryStart": "2026-10-01",
           "deliveryEnd": "2026-10-31"
@@ -1568,7 +1568,7 @@
           "deliveryEnd": "2026-10-31"
         }
       ],
-      "lastSuccessAt": "2026-10-29T05:00:01.251Z"
+      "lastSuccessAt": "2026-10-29T05:10:00.636Z"
     },
     {
       "id": "bruno",
@@ -1583,7 +1583,7 @@
         "Data provided by StoneX. All prices delayed 10 minutes.",
         "Market data: CME Group"
       ],
-      "sourceUpdated": "10/28/26 11:48 PM",
+      "sourceUpdated": "10/28/26 11:59 PM",
       "crops": [
         {
           "name": "Corn",
@@ -1597,7 +1597,7 @@
               "deliveryEnd": "2026-10-31",
               "delivery": "10/01/26-10/31/26",
               "basisMonth": "Dec 26",
-              "futuresChange": 0.0125,
+              "futuresChange": 0.01,
               "basis": -0.53,
               "cash": 4
             },
@@ -1607,7 +1607,7 @@
               "deliveryEnd": "2026-11-30",
               "delivery": "11/01/26-11/30/26",
               "basisMonth": "Dec 26",
-              "futuresChange": 0.0125,
+              "futuresChange": 0.01,
               "basis": -0.53,
               "cash": 4
             },
@@ -1617,7 +1617,7 @@
               "deliveryEnd": "2026-12-31",
               "delivery": "12/01/26-12/31/26",
               "basisMonth": "Dec 26",
-              "futuresChange": 0.0125,
+              "futuresChange": 0.01,
               "basis": -0.44,
               "cash": 4.09
             },
@@ -1627,7 +1627,7 @@
               "deliveryEnd": "2027-01-31",
               "delivery": "01/01/27-01/31/27",
               "basisMonth": "Mar 27",
-              "futuresChange": 0.01,
+              "futuresChange": 0.005,
               "basis": -0.54,
               "cash": 4.12
             },
@@ -1637,7 +1637,7 @@
               "deliveryEnd": "2027-02-28",
               "delivery": "02/01/27-02/28/27",
               "basisMonth": "Mar 27",
-              "futuresChange": 0.01,
+              "futuresChange": 0.005,
               "basis": -0.5,
               "cash": 4.16
             },
@@ -1647,7 +1647,7 @@
               "deliveryEnd": "2027-03-31",
               "delivery": "03/01/27-03/31/27",
               "basisMonth": "Mar 27",
-              "futuresChange": 0.01,
+              "futuresChange": 0.005,
               "basis": -0.47,
               "cash": 4.19
             },
@@ -1657,14 +1657,14 @@
               "deliveryEnd": "2027-10-31",
               "delivery": "10/01/27-10/31/27",
               "basisMonth": "Dec 27",
-              "futuresChange": 0.01,
+              "futuresChange": 0.0075,
               "basis": -0.6,
               "cash": 4.31
             }
           ],
           "cash": 4,
           "basis": -0.53,
-          "futuresChange": 0.0125,
+          "futuresChange": 0.01,
           "basisMonth": "Dec 26",
           "deliveryStart": "2026-10-01",
           "deliveryEnd": "2026-10-31"
@@ -1754,7 +1754,7 @@
           "deliveryEnd": "2026-10-31"
         }
       ],
-      "lastSuccessAt": "2026-10-29T05:00:01.251Z"
+      "lastSuccessAt": "2026-10-29T05:10:00.636Z"
     },
     {
       "id": "bunge-cb",
@@ -1769,7 +1769,7 @@
         "Data provided by StoneX. All prices delayed 10 minutes.",
         "Market data: CME Group"
       ],
-      "sourceUpdated": "10/28/26 11:48 PM",
+      "sourceUpdated": "10/28/26 11:59 PM",
       "crops": [
         {
           "name": "Soybeans",
@@ -1856,7 +1856,7 @@
           "deliveryEnd": "2026-10-31"
         }
       ],
-      "lastSuccessAt": "2026-10-29T05:00:01.251Z"
+      "lastSuccessAt": "2026-10-29T05:10:00.636Z"
     },
     {
       "id": "burr",
@@ -1871,7 +1871,7 @@
         "Data provided by StoneX. All prices delayed 10 minutes.",
         "Market data: CME Group"
       ],
-      "sourceUpdated": "10/28/26 11:48 PM",
+      "sourceUpdated": "10/28/26 11:59 PM",
       "crops": [
         {
           "name": "Corn",
@@ -1885,7 +1885,7 @@
               "deliveryEnd": "2026-10-31",
               "delivery": "10/01/26-10/31/26",
               "basisMonth": "Dec 26",
-              "futuresChange": 0.0125,
+              "futuresChange": 0.01,
               "basis": -0.56,
               "cash": 3.97
             },
@@ -1895,7 +1895,7 @@
               "deliveryEnd": "2026-11-30",
               "delivery": "11/01/26-11/30/26",
               "basisMonth": "Dec 26",
-              "futuresChange": 0.0125,
+              "futuresChange": 0.01,
               "basis": -0.56,
               "cash": 3.97
             },
@@ -1905,7 +1905,7 @@
               "deliveryEnd": "2026-12-31",
               "delivery": "12/01/26-12/31/26",
               "basisMonth": "Dec 26",
-              "futuresChange": 0.0125,
+              "futuresChange": 0.01,
               "basis": -0.49,
               "cash": 4.04
             },
@@ -1915,7 +1915,7 @@
               "deliveryEnd": "2027-01-31",
               "delivery": "01/01/27-01/31/27",
               "basisMonth": "Mar 27",
-              "futuresChange": 0.01,
+              "futuresChange": 0.005,
               "basis": -0.57,
               "cash": 4.09
             },
@@ -1925,7 +1925,7 @@
               "deliveryEnd": "2027-02-28",
               "delivery": "02/01/27-02/28/27",
               "basisMonth": "Mar 27",
-              "futuresChange": 0.01,
+              "futuresChange": 0.005,
               "basis": -0.53,
               "cash": 4.13
             },
@@ -1935,7 +1935,7 @@
               "deliveryEnd": "2027-03-31",
               "delivery": "03/01/27-03/31/27",
               "basisMonth": "Mar 27",
-              "futuresChange": 0.01,
+              "futuresChange": 0.005,
               "basis": -0.5,
               "cash": 4.16
             },
@@ -1945,14 +1945,14 @@
               "deliveryEnd": "2027-10-31",
               "delivery": "10/01/27-10/31/27",
               "basisMonth": "Dec 27",
-              "futuresChange": 0.01,
+              "futuresChange": 0.0075,
               "basis": -0.63,
               "cash": 4.28
             }
           ],
           "cash": 3.97,
           "basis": -0.56,
-          "futuresChange": 0.0125,
+          "futuresChange": 0.01,
           "basisMonth": "Dec 26",
           "deliveryStart": "2026-10-01",
           "deliveryEnd": "2026-10-31"
@@ -2042,7 +2042,7 @@
           "deliveryEnd": "2026-10-31"
         }
       ],
-      "lastSuccessAt": "2026-10-29T05:00:01.251Z"
+      "lastSuccessAt": "2026-10-29T05:10:00.636Z"
     },
     {
       "id": "cargill-blair",
@@ -2057,7 +2057,7 @@
         "Data provided by StoneX. All prices delayed 10 minutes.",
         "Market data: CME Group"
       ],
-      "sourceUpdated": "10/28/26 11:48 PM",
+      "sourceUpdated": "10/28/26 11:59 PM",
       "crops": [
         {
           "name": "Corn",
@@ -2071,7 +2071,7 @@
               "deliveryEnd": "2026-10-31",
               "delivery": "10/01/26-10/31/26",
               "basisMonth": "Dec 26",
-              "futuresChange": 0.0125,
+              "futuresChange": 0.01,
               "basis": -0.18,
               "cash": 4.35
             },
@@ -2081,7 +2081,7 @@
               "deliveryEnd": "2026-11-30",
               "delivery": "11/01/26-11/30/26",
               "basisMonth": "Dec 26",
-              "futuresChange": 0.0125,
+              "futuresChange": 0.01,
               "basis": -0.18,
               "cash": 4.35
             },
@@ -2091,7 +2091,7 @@
               "deliveryEnd": "2026-12-31",
               "delivery": "12/01/26-12/31/26",
               "basisMonth": "Dec 26",
-              "futuresChange": 0.0125,
+              "futuresChange": 0.01,
               "basis": -0.1,
               "cash": 4.43
             },
@@ -2101,7 +2101,7 @@
               "deliveryEnd": "2027-01-31",
               "delivery": "01/01/27-01/31/27",
               "basisMonth": "Mar 27",
-              "futuresChange": 0.01,
+              "futuresChange": 0.005,
               "basis": -0.15,
               "cash": 4.51
             },
@@ -2111,7 +2111,7 @@
               "deliveryEnd": "2027-02-28",
               "delivery": "02/01/27-02/28/27",
               "basisMonth": "Mar 27",
-              "futuresChange": 0.01,
+              "futuresChange": 0.005,
               "basis": -0.13,
               "cash": 4.53
             },
@@ -2121,7 +2121,7 @@
               "deliveryEnd": "2027-03-31",
               "delivery": "03/01/27-03/31/27",
               "basisMonth": "Mar 27",
-              "futuresChange": 0.01,
+              "futuresChange": 0.005,
               "basis": -0.1,
               "cash": 4.56
             },
@@ -2131,20 +2131,20 @@
               "deliveryEnd": "2027-10-31",
               "delivery": "10/01/27-10/31/27",
               "basisMonth": "Dec 27",
-              "futuresChange": 0.01,
+              "futuresChange": 0.0075,
               "basis": -0.2,
               "cash": 4.71
             }
           ],
           "cash": 4.35,
           "basis": -0.18,
-          "futuresChange": 0.0125,
+          "futuresChange": 0.01,
           "basisMonth": "Dec 26",
           "deliveryStart": "2026-10-01",
           "deliveryEnd": "2026-10-31"
         }
       ],
-      "lastSuccessAt": "2026-10-29T05:00:01.251Z"
+      "lastSuccessAt": "2026-10-29T05:10:00.636Z"
     },
     {
       "id": "cedar-bluffs",
@@ -2159,7 +2159,7 @@
         "Data provided by StoneX. All prices delayed 10 minutes.",
         "Market data: CME Group"
       ],
-      "sourceUpdated": "10/28/26 11:48 PM",
+      "sourceUpdated": "10/28/26 11:59 PM",
       "crops": [
         {
           "name": "Corn",
@@ -2173,7 +2173,7 @@
               "deliveryEnd": "2026-10-31",
               "delivery": "10/01/26-10/31/26",
               "basisMonth": "Dec 26",
-              "futuresChange": 0.0125,
+              "futuresChange": 0.01,
               "basis": -0.47,
               "cash": 4.06
             },
@@ -2183,7 +2183,7 @@
               "deliveryEnd": "2026-11-30",
               "delivery": "11/01/26-11/30/26",
               "basisMonth": "Dec 26",
-              "futuresChange": 0.0125,
+              "futuresChange": 0.01,
               "basis": -0.47,
               "cash": 4.06
             },
@@ -2193,7 +2193,7 @@
               "deliveryEnd": "2026-12-31",
               "delivery": "12/01/26-12/31/26",
               "basisMonth": "Dec 26",
-              "futuresChange": 0.0125,
+              "futuresChange": 0.01,
               "basis": -0.38,
               "cash": 4.15
             },
@@ -2203,7 +2203,7 @@
               "deliveryEnd": "2027-01-31",
               "delivery": "01/01/27-01/31/27",
               "basisMonth": "Mar 27",
-              "futuresChange": 0.01,
+              "futuresChange": 0.005,
               "basis": -0.47,
               "cash": 4.19
             },
@@ -2213,7 +2213,7 @@
               "deliveryEnd": "2027-02-28",
               "delivery": "02/01/27-02/28/27",
               "basisMonth": "Mar 27",
-              "futuresChange": 0.01,
+              "futuresChange": 0.005,
               "basis": -0.43,
               "cash": 4.23
             },
@@ -2223,7 +2223,7 @@
               "deliveryEnd": "2027-03-31",
               "delivery": "03/01/27-03/31/27",
               "basisMonth": "Mar 27",
-              "futuresChange": 0.01,
+              "futuresChange": 0.005,
               "basis": -0.4,
               "cash": 4.26
             },
@@ -2233,14 +2233,14 @@
               "deliveryEnd": "2027-10-31",
               "delivery": "10/01/27-10/31/27",
               "basisMonth": "Dec 27",
-              "futuresChange": 0.01,
+              "futuresChange": 0.0075,
               "basis": -0.53,
               "cash": 4.38
             }
           ],
           "cash": 4.06,
           "basis": -0.47,
-          "futuresChange": 0.0125,
+          "futuresChange": 0.01,
           "basisMonth": "Dec 26",
           "deliveryStart": "2026-10-01",
           "deliveryEnd": "2026-10-31"
@@ -2330,7 +2330,7 @@
           "deliveryEnd": "2026-10-31"
         }
       ],
-      "lastSuccessAt": "2026-10-29T05:00:01.251Z"
+      "lastSuccessAt": "2026-10-29T05:10:00.636Z"
     },
     {
       "id": "ceresco",
@@ -2345,7 +2345,7 @@
         "Data provided by StoneX. All prices delayed 10 minutes.",
         "Market data: CME Group"
       ],
-      "sourceUpdated": "10/28/26 11:48 PM",
+      "sourceUpdated": "10/28/26 11:59 PM",
       "crops": [
         {
           "name": "Corn",
@@ -2359,7 +2359,7 @@
               "deliveryEnd": "2026-10-31",
               "delivery": "10/01/26-10/31/26",
               "basisMonth": "Dec 26",
-              "futuresChange": 0.0125,
+              "futuresChange": 0.01,
               "basis": -0.48,
               "cash": 4.05
             },
@@ -2369,7 +2369,7 @@
               "deliveryEnd": "2026-11-30",
               "delivery": "11/01/26-11/30/26",
               "basisMonth": "Dec 26",
-              "futuresChange": 0.0125,
+              "futuresChange": 0.01,
               "basis": -0.48,
               "cash": 4.05
             },
@@ -2379,7 +2379,7 @@
               "deliveryEnd": "2026-12-31",
               "delivery": "12/01/26-12/31/26",
               "basisMonth": "Dec 26",
-              "futuresChange": 0.0125,
+              "futuresChange": 0.01,
               "basis": -0.39,
               "cash": 4.14
             },
@@ -2389,7 +2389,7 @@
               "deliveryEnd": "2027-01-31",
               "delivery": "01/01/27-01/31/27",
               "basisMonth": "Mar 27",
-              "futuresChange": 0.01,
+              "futuresChange": 0.005,
               "basis": -0.47,
               "cash": 4.19
             },
@@ -2399,7 +2399,7 @@
               "deliveryEnd": "2027-02-28",
               "delivery": "02/01/27-02/28/27",
               "basisMonth": "Mar 27",
-              "futuresChange": 0.01,
+              "futuresChange": 0.005,
               "basis": -0.43,
               "cash": 4.23
             },
@@ -2409,7 +2409,7 @@
               "deliveryEnd": "2027-03-31",
               "delivery": "03/01/27-03/31/27",
               "basisMonth": "Mar 27",
-              "futuresChange": 0.01,
+              "futuresChange": 0.005,
               "basis": -0.4,
               "cash": 4.26
             },
@@ -2419,14 +2419,14 @@
               "deliveryEnd": "2027-10-31",
               "delivery": "10/01/27-10/31/27",
               "basisMonth": "Dec 27",
-              "futuresChange": 0.01,
+              "futuresChange": 0.0075,
               "basis": -0.53,
               "cash": 4.38
             }
           ],
           "cash": 4.05,
           "basis": -0.48,
-          "futuresChange": 0.0125,
+          "futuresChange": 0.01,
           "basisMonth": "Dec 26",
           "deliveryStart": "2026-10-01",
           "deliveryEnd": "2026-10-31"
@@ -2516,7 +2516,7 @@
           "deliveryEnd": "2026-10-31"
         }
       ],
-      "lastSuccessAt": "2026-10-29T05:00:01.251Z"
+      "lastSuccessAt": "2026-10-29T05:10:00.636Z"
     },
     {
       "id": "columbus",
@@ -2531,7 +2531,7 @@
         "Data provided by StoneX. All prices delayed 10 minutes.",
         "Market data: CME Group"
       ],
-      "sourceUpdated": "10/28/26 11:48 PM",
+      "sourceUpdated": "10/28/26 11:59 PM",
       "crops": [
         {
           "name": "Corn",
@@ -2545,7 +2545,7 @@
               "deliveryEnd": "2026-10-31",
               "delivery": "10/01/26-10/31/26",
               "basisMonth": "Dec 26",
-              "futuresChange": 0.0125,
+              "futuresChange": 0.01,
               "basis": -0.38,
               "cash": 4.15
             },
@@ -2555,7 +2555,7 @@
               "deliveryEnd": "2026-11-30",
               "delivery": "11/01/26-11/30/26",
               "basisMonth": "Dec 26",
-              "futuresChange": 0.0125,
+              "futuresChange": 0.01,
               "basis": -0.38,
               "cash": 4.15
             },
@@ -2565,7 +2565,7 @@
               "deliveryEnd": "2026-12-31",
               "delivery": "12/01/26-12/31/26",
               "basisMonth": "Dec 26",
-              "futuresChange": 0.0125,
+              "futuresChange": 0.01,
               "basis": -0.26,
               "cash": 4.27
             },
@@ -2575,7 +2575,7 @@
               "deliveryEnd": "2027-01-31",
               "delivery": "01/01/27-01/31/27",
               "basisMonth": "Mar 27",
-              "futuresChange": 0.01,
+              "futuresChange": 0.005,
               "basis": -0.35,
               "cash": 4.31
             },
@@ -2585,7 +2585,7 @@
               "deliveryEnd": "2027-02-28",
               "delivery": "02/01/27-02/28/27",
               "basisMonth": "Mar 27",
-              "futuresChange": 0.01,
+              "futuresChange": 0.005,
               "basis": -0.31,
               "cash": 4.35
             },
@@ -2595,7 +2595,7 @@
               "deliveryEnd": "2027-03-31",
               "delivery": "03/01/27-03/31/27",
               "basisMonth": "Mar 27",
-              "futuresChange": 0.01,
+              "futuresChange": 0.005,
               "basis": -0.28,
               "cash": 4.38
             },
@@ -2605,14 +2605,14 @@
               "deliveryEnd": "2027-10-31",
               "delivery": "10/01/27-10/31/27",
               "basisMonth": "Dec 27",
-              "futuresChange": 0.01,
+              "futuresChange": 0.0075,
               "basis": -0.41,
               "cash": 4.5
             }
           ],
           "cash": 4.15,
           "basis": -0.38,
-          "futuresChange": 0.0125,
+          "futuresChange": 0.01,
           "basisMonth": "Dec 26",
           "deliveryStart": "2026-10-01",
           "deliveryEnd": "2026-10-31"
@@ -2702,7 +2702,7 @@
           "deliveryEnd": "2026-10-31"
         }
       ],
-      "lastSuccessAt": "2026-10-29T05:00:01.251Z"
+      "lastSuccessAt": "2026-10-29T05:10:00.636Z"
     },
     {
       "id": "cook",
@@ -2717,7 +2717,7 @@
         "Data provided by StoneX. All prices delayed 10 minutes.",
         "Market data: CME Group"
       ],
-      "sourceUpdated": "10/28/26 11:48 PM",
+      "sourceUpdated": "10/28/26 11:59 PM",
       "crops": [
         {
           "name": "Corn",
@@ -2731,7 +2731,7 @@
               "deliveryEnd": "2026-10-31",
               "delivery": "10/01/26-10/31/26",
               "basisMonth": "Dec 26",
-              "futuresChange": 0.0125,
+              "futuresChange": 0.01,
               "basis": -0.56,
               "cash": 3.97
             },
@@ -2741,7 +2741,7 @@
               "deliveryEnd": "2026-11-30",
               "delivery": "11/01/26-11/30/26",
               "basisMonth": "Dec 26",
-              "futuresChange": 0.0125,
+              "futuresChange": 0.01,
               "basis": -0.56,
               "cash": 3.97
             },
@@ -2751,7 +2751,7 @@
               "deliveryEnd": "2026-12-31",
               "delivery": "12/01/26-12/31/26",
               "basisMonth": "Dec 26",
-              "futuresChange": 0.0125,
+              "futuresChange": 0.01,
               "basis": -0.49,
               "cash": 4.04
             },
@@ -2761,7 +2761,7 @@
               "deliveryEnd": "2027-01-31",
               "delivery": "01/01/27-01/31/27",
               "basisMonth": "Mar 27",
-              "futuresChange": 0.01,
+              "futuresChange": 0.005,
               "basis": -0.57,
               "cash": 4.09
             },
@@ -2771,7 +2771,7 @@
               "deliveryEnd": "2027-02-28",
               "delivery": "02/01/27-02/28/27",
               "basisMonth": "Mar 27",
-              "futuresChange": 0.01,
+              "futuresChange": 0.005,
               "basis": -0.53,
               "cash": 4.13
             },
@@ -2781,7 +2781,7 @@
               "deliveryEnd": "2027-03-31",
               "delivery": "03/01/27-03/31/27",
               "basisMonth": "Mar 27",
-              "futuresChange": 0.01,
+              "futuresChange": 0.005,
               "basis": -0.5,
               "cash": 4.16
             },
@@ -2791,14 +2791,14 @@
               "deliveryEnd": "2027-10-31",
               "delivery": "10/01/27-10/31/27",
               "basisMonth": "Dec 27",
-              "futuresChange": 0.01,
+              "futuresChange": 0.0075,
               "basis": -0.63,
               "cash": 4.28
             }
           ],
           "cash": 3.97,
           "basis": -0.56,
-          "futuresChange": 0.0125,
+          "futuresChange": 0.01,
           "basisMonth": "Dec 26",
           "deliveryStart": "2026-10-01",
           "deliveryEnd": "2026-10-31"
@@ -2888,7 +2888,7 @@
           "deliveryEnd": "2026-10-31"
         }
       ],
-      "lastSuccessAt": "2026-10-29T05:00:01.251Z"
+      "lastSuccessAt": "2026-10-29T05:10:00.636Z"
     },
     {
       "id": "duncan",
@@ -2903,7 +2903,7 @@
         "Data provided by StoneX. All prices delayed 10 minutes.",
         "Market data: CME Group"
       ],
-      "sourceUpdated": "10/28/26 11:48 PM",
+      "sourceUpdated": "10/28/26 11:59 PM",
       "crops": [
         {
           "name": "Corn",
@@ -2917,7 +2917,7 @@
               "deliveryEnd": "2026-10-31",
               "delivery": "10/01/26-10/31/26",
               "basisMonth": "Dec 26",
-              "futuresChange": 0.0125,
+              "futuresChange": 0.01,
               "basis": -0.51,
               "cash": 4.02
             },
@@ -2927,7 +2927,7 @@
               "deliveryEnd": "2026-11-30",
               "delivery": "11/01/26-11/30/26",
               "basisMonth": "Dec 26",
-              "futuresChange": 0.0125,
+              "futuresChange": 0.01,
               "basis": -0.51,
               "cash": 4.02
             },
@@ -2937,7 +2937,7 @@
               "deliveryEnd": "2026-12-31",
               "delivery": "12/01/26-12/31/26",
               "basisMonth": "Dec 26",
-              "futuresChange": 0.0125,
+              "futuresChange": 0.01,
               "basis": -0.42,
               "cash": 4.11
             },
@@ -2947,7 +2947,7 @@
               "deliveryEnd": "2027-01-31",
               "delivery": "01/01/27-01/31/27",
               "basisMonth": "Mar 27",
-              "futuresChange": 0.01,
+              "futuresChange": 0.005,
               "basis": -0.51,
               "cash": 4.15
             },
@@ -2957,7 +2957,7 @@
               "deliveryEnd": "2027-02-28",
               "delivery": "02/01/27-02/28/27",
               "basisMonth": "Mar 27",
-              "futuresChange": 0.01,
+              "futuresChange": 0.005,
               "basis": -0.47,
               "cash": 4.19
             },
@@ -2967,7 +2967,7 @@
               "deliveryEnd": "2027-03-31",
               "delivery": "03/01/27-03/31/27",
               "basisMonth": "Mar 27",
-              "futuresChange": 0.01,
+              "futuresChange": 0.005,
               "basis": -0.44,
               "cash": 4.22
             },
@@ -2977,14 +2977,14 @@
               "deliveryEnd": "2027-10-31",
               "delivery": "10/01/27-10/31/27",
               "basisMonth": "Dec 27",
-              "futuresChange": 0.01,
+              "futuresChange": 0.0075,
               "basis": -0.57,
               "cash": 4.34
             }
           ],
           "cash": 4.02,
           "basis": -0.51,
-          "futuresChange": 0.0125,
+          "futuresChange": 0.01,
           "basisMonth": "Dec 26",
           "deliveryStart": "2026-10-01",
           "deliveryEnd": "2026-10-31"
@@ -3074,7 +3074,7 @@
           "deliveryEnd": "2026-10-31"
         }
       ],
-      "lastSuccessAt": "2026-10-29T05:00:01.251Z"
+      "lastSuccessAt": "2026-10-29T05:10:00.636Z"
     },
     {
       "id": "dwight",
@@ -3089,7 +3089,7 @@
         "Data provided by StoneX. All prices delayed 10 minutes.",
         "Market data: CME Group"
       ],
-      "sourceUpdated": "10/28/26 11:48 PM",
+      "sourceUpdated": "10/28/26 11:59 PM",
       "crops": [
         {
           "name": "Corn",
@@ -3103,7 +3103,7 @@
               "deliveryEnd": "2026-10-31",
               "delivery": "10/01/26-10/31/26",
               "basisMonth": "Dec 26",
-              "futuresChange": 0.0125,
+              "futuresChange": 0.01,
               "basis": -0.51,
               "cash": 4.02
             },
@@ -3113,7 +3113,7 @@
               "deliveryEnd": "2026-11-30",
               "delivery": "11/01/26-11/30/26",
               "basisMonth": "Dec 26",
-              "futuresChange": 0.0125,
+              "futuresChange": 0.01,
               "basis": -0.51,
               "cash": 4.02
             },
@@ -3123,7 +3123,7 @@
               "deliveryEnd": "2026-12-31",
               "delivery": "12/01/26-12/31/26",
               "basisMonth": "Dec 26",
-              "futuresChange": 0.0125,
+              "futuresChange": 0.01,
               "basis": -0.44,
               "cash": 4.09
             },
@@ -3133,7 +3133,7 @@
               "deliveryEnd": "2027-01-31",
               "delivery": "01/01/27-01/31/27",
               "basisMonth": "Mar 27",
-              "futuresChange": 0.01,
+              "futuresChange": 0.005,
               "basis": -0.53,
               "cash": 4.13
             },
@@ -3143,7 +3143,7 @@
               "deliveryEnd": "2027-02-28",
               "delivery": "02/01/27-02/28/27",
               "basisMonth": "Mar 27",
-              "futuresChange": 0.01,
+              "futuresChange": 0.005,
               "basis": -0.49,
               "cash": 4.17
             },
@@ -3153,7 +3153,7 @@
               "deliveryEnd": "2027-03-31",
               "delivery": "03/01/27-03/31/27",
               "basisMonth": "Mar 27",
-              "futuresChange": 0.01,
+              "futuresChange": 0.005,
               "basis": -0.46,
               "cash": 4.2
             },
@@ -3163,14 +3163,14 @@
               "deliveryEnd": "2027-10-31",
               "delivery": "10/01/27-10/31/27",
               "basisMonth": "Dec 27",
-              "futuresChange": 0.01,
+              "futuresChange": 0.0075,
               "basis": -0.59,
               "cash": 4.32
             }
           ],
           "cash": 4.02,
           "basis": -0.51,
-          "futuresChange": 0.0125,
+          "futuresChange": 0.01,
           "basisMonth": "Dec 26",
           "deliveryStart": "2026-10-01",
           "deliveryEnd": "2026-10-31"
@@ -3260,7 +3260,7 @@
           "deliveryEnd": "2026-10-31"
         }
       ],
-      "lastSuccessAt": "2026-10-29T05:00:01.251Z"
+      "lastSuccessAt": "2026-10-29T05:10:00.636Z"
     },
     {
       "id": "e-energy-adams",
@@ -3275,7 +3275,7 @@
         "Data provided by StoneX. All prices delayed 10 minutes.",
         "Market data: CME Group"
       ],
-      "sourceUpdated": "10/28/26 11:48 PM",
+      "sourceUpdated": "10/28/26 11:59 PM",
       "crops": [
         {
           "name": "Corn",
@@ -3289,7 +3289,7 @@
               "deliveryEnd": "2026-10-31",
               "delivery": "10/01/26-10/31/26",
               "basisMonth": "Dec 26",
-              "futuresChange": 0.0125,
+              "futuresChange": 0.01,
               "basis": -0.32,
               "cash": 4.21
             },
@@ -3299,7 +3299,7 @@
               "deliveryEnd": "2026-11-30",
               "delivery": "11/01/26-11/30/26",
               "basisMonth": "Dec 26",
-              "futuresChange": 0.0125,
+              "futuresChange": 0.01,
               "basis": -0.32,
               "cash": 4.21
             },
@@ -3309,7 +3309,7 @@
               "deliveryEnd": "2026-12-31",
               "delivery": "12/01/26-12/31/26",
               "basisMonth": "Dec 26",
-              "futuresChange": 0.0125,
+              "futuresChange": 0.01,
               "basis": -0.17,
               "cash": 4.36
             },
@@ -3319,7 +3319,7 @@
               "deliveryEnd": "2027-01-31",
               "delivery": "01/01/27-01/31/27",
               "basisMonth": "Mar 27",
-              "futuresChange": 0.01,
+              "futuresChange": 0.005,
               "basis": -0.27,
               "cash": 4.39
             },
@@ -3329,7 +3329,7 @@
               "deliveryEnd": "2027-02-28",
               "delivery": "02/01/27-02/28/27",
               "basisMonth": "Mar 27",
-              "futuresChange": 0.01,
+              "futuresChange": 0.005,
               "basis": -0.25,
               "cash": 4.41
             },
@@ -3339,7 +3339,7 @@
               "deliveryEnd": "2027-03-31",
               "delivery": "03/01/27-03/31/27",
               "basisMonth": "Mar 27",
-              "futuresChange": 0.01,
+              "futuresChange": 0.005,
               "basis": -0.22,
               "cash": 4.44
             },
@@ -3349,20 +3349,20 @@
               "deliveryEnd": "2027-10-31",
               "delivery": "10/01/27-10/31/27",
               "basisMonth": "Dec 27",
-              "futuresChange": 0.01,
+              "futuresChange": 0.0075,
               "basis": -0.4,
               "cash": 4.51
             }
           ],
           "cash": 4.21,
           "basis": -0.32,
-          "futuresChange": 0.0125,
+          "futuresChange": 0.01,
           "basisMonth": "Dec 26",
           "deliveryStart": "2026-10-01",
           "deliveryEnd": "2026-10-31"
         }
       ],
-      "lastSuccessAt": "2026-10-29T05:00:01.251Z"
+      "lastSuccessAt": "2026-10-29T05:10:00.636Z"
     },
     {
       "id": "eagle",
@@ -3377,7 +3377,7 @@
         "Data provided by StoneX. All prices delayed 10 minutes.",
         "Market data: CME Group"
       ],
-      "sourceUpdated": "10/28/26 11:48 PM",
+      "sourceUpdated": "10/28/26 11:59 PM",
       "crops": [
         {
           "name": "Corn",
@@ -3391,7 +3391,7 @@
               "deliveryEnd": "2026-10-31",
               "delivery": "10/01/26-10/31/26",
               "basisMonth": "Dec 26",
-              "futuresChange": 0.0125,
+              "futuresChange": 0.01,
               "basis": -0.56,
               "cash": 3.97
             },
@@ -3401,7 +3401,7 @@
               "deliveryEnd": "2026-11-30",
               "delivery": "11/01/26-11/30/26",
               "basisMonth": "Dec 26",
-              "futuresChange": 0.0125,
+              "futuresChange": 0.01,
               "basis": -0.56,
               "cash": 3.97
             },
@@ -3411,7 +3411,7 @@
               "deliveryEnd": "2026-12-31",
               "delivery": "12/01/26-12/31/26",
               "basisMonth": "Dec 26",
-              "futuresChange": 0.0125,
+              "futuresChange": 0.01,
               "basis": -0.47,
               "cash": 4.06
             },
@@ -3421,7 +3421,7 @@
               "deliveryEnd": "2027-01-31",
               "delivery": "01/01/27-01/31/27",
               "basisMonth": "Mar 27",
-              "futuresChange": 0.01,
+              "futuresChange": 0.005,
               "basis": -0.55,
               "cash": 4.11
             },
@@ -3431,7 +3431,7 @@
               "deliveryEnd": "2027-02-28",
               "delivery": "02/01/27-02/28/27",
               "basisMonth": "Mar 27",
-              "futuresChange": 0.01,
+              "futuresChange": 0.005,
               "basis": -0.51,
               "cash": 4.15
             },
@@ -3441,7 +3441,7 @@
               "deliveryEnd": "2027-03-31",
               "delivery": "03/01/27-03/31/27",
               "basisMonth": "Mar 27",
-              "futuresChange": 0.01,
+              "futuresChange": 0.005,
               "basis": -0.48,
               "cash": 4.18
             },
@@ -3451,14 +3451,14 @@
               "deliveryEnd": "2027-10-31",
               "delivery": "10/01/27-10/31/27",
               "basisMonth": "Dec 27",
-              "futuresChange": 0.01,
+              "futuresChange": 0.0075,
               "basis": -0.61,
               "cash": 4.3
             }
           ],
           "cash": 3.97,
           "basis": -0.56,
-          "futuresChange": 0.0125,
+          "futuresChange": 0.01,
           "basisMonth": "Dec 26",
           "deliveryStart": "2026-10-01",
           "deliveryEnd": "2026-10-31"
@@ -3548,7 +3548,7 @@
           "deliveryEnd": "2026-10-31"
         }
       ],
-      "lastSuccessAt": "2026-10-29T05:00:01.251Z"
+      "lastSuccessAt": "2026-10-29T05:10:00.636Z"
     },
     {
       "id": "elk-creek",
@@ -3563,7 +3563,7 @@
         "Data provided by StoneX. All prices delayed 10 minutes.",
         "Market data: CME Group"
       ],
-      "sourceUpdated": "10/28/26 11:48 PM",
+      "sourceUpdated": "10/28/26 11:59 PM",
       "crops": [
         {
           "name": "Corn",
@@ -3577,7 +3577,7 @@
               "deliveryEnd": "2026-10-31",
               "delivery": "10/01/26-10/31/26",
               "basisMonth": "Dec 26",
-              "futuresChange": 0.0125,
+              "futuresChange": 0.01,
               "basis": -0.56,
               "cash": 3.97
             },
@@ -3587,7 +3587,7 @@
               "deliveryEnd": "2026-11-30",
               "delivery": "11/01/26-11/30/26",
               "basisMonth": "Dec 26",
-              "futuresChange": 0.0125,
+              "futuresChange": 0.01,
               "basis": -0.56,
               "cash": 3.97
             },
@@ -3597,7 +3597,7 @@
               "deliveryEnd": "2026-12-31",
               "delivery": "12/01/26-12/31/26",
               "basisMonth": "Dec 26",
-              "futuresChange": 0.0125,
+              "futuresChange": 0.01,
               "basis": -0.49,
               "cash": 4.04
             },
@@ -3607,7 +3607,7 @@
               "deliveryEnd": "2027-01-31",
               "delivery": "01/01/27-01/31/27",
               "basisMonth": "Mar 27",
-              "futuresChange": 0.01,
+              "futuresChange": 0.005,
               "basis": -0.57,
               "cash": 4.09
             },
@@ -3617,7 +3617,7 @@
               "deliveryEnd": "2027-02-28",
               "delivery": "02/01/27-02/28/27",
               "basisMonth": "Mar 27",
-              "futuresChange": 0.01,
+              "futuresChange": 0.005,
               "basis": -0.53,
               "cash": 4.13
             },
@@ -3627,7 +3627,7 @@
               "deliveryEnd": "2027-03-31",
               "delivery": "03/01/27-03/31/27",
               "basisMonth": "Mar 27",
-              "futuresChange": 0.01,
+              "futuresChange": 0.005,
               "basis": -0.5,
               "cash": 4.16
             },
@@ -3637,14 +3637,14 @@
               "deliveryEnd": "2027-10-31",
               "delivery": "10/01/27-10/31/27",
               "basisMonth": "Dec 27",
-              "futuresChange": 0.01,
+              "futuresChange": 0.0075,
               "basis": -0.63,
               "cash": 4.28
             }
           ],
           "cash": 3.97,
           "basis": -0.56,
-          "futuresChange": 0.0125,
+          "futuresChange": 0.01,
           "basisMonth": "Dec 26",
           "deliveryStart": "2026-10-01",
           "deliveryEnd": "2026-10-31"
@@ -3745,7 +3745,7 @@
               "deliveryEnd": "2026-10-31",
               "delivery": "10/01/26-10/31/26",
               "basisMonth": "Dec 26",
-              "futuresChange": -0.0075,
+              "futuresChange": -0.01,
               "basis": -0.75,
               "cash": 5.67
             },
@@ -3755,7 +3755,7 @@
               "deliveryEnd": "2026-11-30",
               "delivery": "11/01/26-11/30/26",
               "basisMonth": "Dec 26",
-              "futuresChange": -0.0075,
+              "futuresChange": -0.01,
               "basis": -0.75,
               "cash": 5.67
             },
@@ -3772,13 +3772,13 @@
           ],
           "cash": 5.67,
           "basis": -0.75,
-          "futuresChange": -0.0075,
+          "futuresChange": -0.01,
           "basisMonth": "Dec 26",
           "deliveryStart": "2026-10-01",
           "deliveryEnd": "2026-10-31"
         }
       ],
-      "lastSuccessAt": "2026-10-29T05:00:01.251Z"
+      "lastSuccessAt": "2026-10-29T05:10:00.636Z"
     },
     {
       "id": "elmwood",
@@ -3793,7 +3793,7 @@
         "Data provided by StoneX. All prices delayed 10 minutes.",
         "Market data: CME Group"
       ],
-      "sourceUpdated": "10/28/26 11:48 PM",
+      "sourceUpdated": "10/28/26 11:59 PM",
       "crops": [
         {
           "name": "Corn",
@@ -3807,7 +3807,7 @@
               "deliveryEnd": "2026-10-31",
               "delivery": "10/01/26-10/31/26",
               "basisMonth": "Dec 26",
-              "futuresChange": 0.0125,
+              "futuresChange": 0.01,
               "basis": -0.56,
               "cash": 3.97
             },
@@ -3817,7 +3817,7 @@
               "deliveryEnd": "2026-11-30",
               "delivery": "11/01/26-11/30/26",
               "basisMonth": "Dec 26",
-              "futuresChange": 0.0125,
+              "futuresChange": 0.01,
               "basis": -0.56,
               "cash": 3.97
             },
@@ -3827,7 +3827,7 @@
               "deliveryEnd": "2026-12-31",
               "delivery": "12/01/26-12/31/26",
               "basisMonth": "Dec 26",
-              "futuresChange": 0.0125,
+              "futuresChange": 0.01,
               "basis": -0.47,
               "cash": 4.06
             },
@@ -3837,7 +3837,7 @@
               "deliveryEnd": "2027-01-31",
               "delivery": "01/01/27-01/31/27",
               "basisMonth": "Mar 27",
-              "futuresChange": 0.01,
+              "futuresChange": 0.005,
               "basis": -0.55,
               "cash": 4.11
             },
@@ -3847,7 +3847,7 @@
               "deliveryEnd": "2027-02-28",
               "delivery": "02/01/27-02/28/27",
               "basisMonth": "Mar 27",
-              "futuresChange": 0.01,
+              "futuresChange": 0.005,
               "basis": -0.51,
               "cash": 4.15
             },
@@ -3857,7 +3857,7 @@
               "deliveryEnd": "2027-03-31",
               "delivery": "03/01/27-03/31/27",
               "basisMonth": "Mar 27",
-              "futuresChange": 0.01,
+              "futuresChange": 0.005,
               "basis": -0.48,
               "cash": 4.18
             },
@@ -3867,14 +3867,14 @@
               "deliveryEnd": "2027-10-31",
               "delivery": "10/01/27-10/31/27",
               "basisMonth": "Dec 27",
-              "futuresChange": 0.01,
+              "futuresChange": 0.0075,
               "basis": -0.61,
               "cash": 4.3
             }
           ],
           "cash": 3.97,
           "basis": -0.56,
-          "futuresChange": 0.0125,
+          "futuresChange": 0.01,
           "basisMonth": "Dec 26",
           "deliveryStart": "2026-10-01",
           "deliveryEnd": "2026-10-31"
@@ -3964,7 +3964,7 @@
           "deliveryEnd": "2026-10-31"
         }
       ],
-      "lastSuccessAt": "2026-10-29T05:00:01.251Z"
+      "lastSuccessAt": "2026-10-29T05:10:00.636Z"
     },
     {
       "id": "garrison",
@@ -3979,7 +3979,7 @@
         "Data provided by StoneX. All prices delayed 10 minutes.",
         "Market data: CME Group"
       ],
-      "sourceUpdated": "10/28/26 11:48 PM",
+      "sourceUpdated": "10/28/26 11:59 PM",
       "crops": [
         {
           "name": "Corn",
@@ -3993,7 +3993,7 @@
               "deliveryEnd": "2026-10-31",
               "delivery": "10/01/26-10/31/26",
               "basisMonth": "Dec 26",
-              "futuresChange": 0.0125,
+              "futuresChange": 0.01,
               "basis": -0.45,
               "cash": 4.08
             },
@@ -4003,7 +4003,7 @@
               "deliveryEnd": "2026-11-30",
               "delivery": "11/01/26-11/30/26",
               "basisMonth": "Dec 26",
-              "futuresChange": 0.0125,
+              "futuresChange": 0.01,
               "basis": -0.45,
               "cash": 4.08
             },
@@ -4013,7 +4013,7 @@
               "deliveryEnd": "2026-12-31",
               "delivery": "12/01/26-12/31/26",
               "basisMonth": "Dec 26",
-              "futuresChange": 0.0125,
+              "futuresChange": 0.01,
               "basis": -0.37,
               "cash": 4.16
             },
@@ -4023,7 +4023,7 @@
               "deliveryEnd": "2027-01-31",
               "delivery": "01/01/27-01/31/27",
               "basisMonth": "Mar 27",
-              "futuresChange": 0.01,
+              "futuresChange": 0.005,
               "basis": -0.47,
               "cash": 4.19
             },
@@ -4033,7 +4033,7 @@
               "deliveryEnd": "2027-02-28",
               "delivery": "02/01/27-02/28/27",
               "basisMonth": "Mar 27",
-              "futuresChange": 0.01,
+              "futuresChange": 0.005,
               "basis": -0.43,
               "cash": 4.23
             },
@@ -4043,7 +4043,7 @@
               "deliveryEnd": "2027-03-31",
               "delivery": "03/01/27-03/31/27",
               "basisMonth": "Mar 27",
-              "futuresChange": 0.01,
+              "futuresChange": 0.005,
               "basis": -0.4,
               "cash": 4.26
             },
@@ -4053,14 +4053,14 @@
               "deliveryEnd": "2027-10-31",
               "delivery": "10/01/27-10/31/27",
               "basisMonth": "Dec 27",
-              "futuresChange": 0.01,
+              "futuresChange": 0.0075,
               "basis": -0.53,
               "cash": 4.38
             }
           ],
           "cash": 4.08,
           "basis": -0.45,
-          "futuresChange": 0.0125,
+          "futuresChange": 0.01,
           "basisMonth": "Dec 26",
           "deliveryStart": "2026-10-01",
           "deliveryEnd": "2026-10-31"
@@ -4150,7 +4150,7 @@
           "deliveryEnd": "2026-10-31"
         }
       ],
-      "lastSuccessAt": "2026-10-29T05:00:01.251Z"
+      "lastSuccessAt": "2026-10-29T05:10:00.636Z"
     },
     {
       "id": "green-plains-cc",
@@ -4165,7 +4165,7 @@
         "Data provided by StoneX. All prices delayed 10 minutes.",
         "Market data: CME Group"
       ],
-      "sourceUpdated": "10/28/26 11:48 PM",
+      "sourceUpdated": "10/28/26 11:59 PM",
       "crops": [
         {
           "name": "Corn",
@@ -4179,7 +4179,7 @@
               "deliveryEnd": "2026-10-31",
               "delivery": "10/01/26-10/31/26",
               "basisMonth": "Dec 26",
-              "futuresChange": 0.0125,
+              "futuresChange": 0.01,
               "basis": -0.21,
               "cash": 4.32
             },
@@ -4189,7 +4189,7 @@
               "deliveryEnd": "2026-11-30",
               "delivery": "11/01/26-11/30/26",
               "basisMonth": "Dec 26",
-              "futuresChange": 0.0125,
+              "futuresChange": 0.01,
               "basis": -0.18,
               "cash": 4.35
             },
@@ -4199,7 +4199,7 @@
               "deliveryEnd": "2026-12-31",
               "delivery": "12/01/26-12/31/26",
               "basisMonth": "Dec 26",
-              "futuresChange": 0.0125,
+              "futuresChange": 0.01,
               "basis": -0.12,
               "cash": 4.41
             },
@@ -4209,7 +4209,7 @@
               "deliveryEnd": "2027-01-31",
               "delivery": "01/01/27-01/31/27",
               "basisMonth": "Mar 27",
-              "futuresChange": 0.01,
+              "futuresChange": 0.005,
               "basis": -0.22,
               "cash": 4.44
             },
@@ -4219,7 +4219,7 @@
               "deliveryEnd": "2027-02-28",
               "delivery": "02/01/27-02/28/27",
               "basisMonth": "Mar 27",
-              "futuresChange": 0.01,
+              "futuresChange": 0.005,
               "basis": -0.18,
               "cash": 4.48
             },
@@ -4229,20 +4229,20 @@
               "deliveryEnd": "2027-10-31",
               "delivery": "10/01/27-10/31/27",
               "basisMonth": "Dec 27",
-              "futuresChange": 0.01,
+              "futuresChange": 0.0075,
               "basis": -0.3,
               "cash": 4.61
             }
           ],
           "cash": 4.32,
           "basis": -0.21,
-          "futuresChange": 0.0125,
+          "futuresChange": 0.01,
           "basisMonth": "Dec 26",
           "deliveryStart": "2026-10-01",
           "deliveryEnd": "2026-10-31"
         }
       ],
-      "lastSuccessAt": "2026-10-29T05:00:01.251Z"
+      "lastSuccessAt": "2026-10-29T05:10:00.636Z"
     },
     {
       "id": "greenwood",
@@ -4257,7 +4257,7 @@
         "Data provided by StoneX. All prices delayed 10 minutes.",
         "Market data: CME Group"
       ],
-      "sourceUpdated": "10/28/26 11:48 PM",
+      "sourceUpdated": "10/28/26 11:59 PM",
       "crops": [
         {
           "name": "Corn",
@@ -4271,7 +4271,7 @@
               "deliveryEnd": "2026-10-31",
               "delivery": "10/01/26-10/31/26",
               "basisMonth": "Dec 26",
-              "futuresChange": 0.0125,
+              "futuresChange": 0.01,
               "basis": -0.51,
               "cash": 4.02
             },
@@ -4281,7 +4281,7 @@
               "deliveryEnd": "2026-11-30",
               "delivery": "11/01/26-11/30/26",
               "basisMonth": "Dec 26",
-              "futuresChange": 0.0125,
+              "futuresChange": 0.01,
               "basis": -0.51,
               "cash": 4.02
             },
@@ -4291,7 +4291,7 @@
               "deliveryEnd": "2026-12-31",
               "delivery": "12/01/26-12/31/26",
               "basisMonth": "Dec 26",
-              "futuresChange": 0.0125,
+              "futuresChange": 0.01,
               "basis": -0.42,
               "cash": 4.11
             },
@@ -4301,7 +4301,7 @@
               "deliveryEnd": "2027-01-31",
               "delivery": "01/01/27-01/31/27",
               "basisMonth": "Mar 27",
-              "futuresChange": 0.01,
+              "futuresChange": 0.005,
               "basis": -0.5,
               "cash": 4.16
             },
@@ -4311,7 +4311,7 @@
               "deliveryEnd": "2027-02-28",
               "delivery": "02/01/27-02/28/27",
               "basisMonth": "Mar 27",
-              "futuresChange": 0.01,
+              "futuresChange": 0.005,
               "basis": -0.46,
               "cash": 4.2
             },
@@ -4321,7 +4321,7 @@
               "deliveryEnd": "2027-03-31",
               "delivery": "03/01/27-03/31/27",
               "basisMonth": "Mar 27",
-              "futuresChange": 0.01,
+              "futuresChange": 0.005,
               "basis": -0.43,
               "cash": 4.23
             },
@@ -4331,14 +4331,14 @@
               "deliveryEnd": "2027-10-31",
               "delivery": "10/01/27-10/31/27",
               "basisMonth": "Dec 27",
-              "futuresChange": 0.01,
+              "futuresChange": 0.0075,
               "basis": -0.56,
               "cash": 4.35
             }
           ],
           "cash": 4.02,
           "basis": -0.51,
-          "futuresChange": 0.0125,
+          "futuresChange": 0.01,
           "basisMonth": "Dec 26",
           "deliveryStart": "2026-10-01",
           "deliveryEnd": "2026-10-31"
@@ -4428,7 +4428,7 @@
           "deliveryEnd": "2026-10-31"
         }
       ],
-      "lastSuccessAt": "2026-10-29T05:00:01.251Z"
+      "lastSuccessAt": "2026-10-29T05:10:00.636Z"
     },
     {
       "id": "lincoln",
@@ -4443,7 +4443,7 @@
         "Data provided by StoneX. All prices delayed 10 minutes.",
         "Market data: CME Group"
       ],
-      "sourceUpdated": "10/28/26 11:48 PM",
+      "sourceUpdated": "10/28/26 11:59 PM",
       "crops": [
         {
           "name": "Corn",
@@ -4457,7 +4457,7 @@
               "deliveryEnd": "2026-10-31",
               "delivery": "10/01/26-10/31/26",
               "basisMonth": "Dec 26",
-              "futuresChange": 0.0125,
+              "futuresChange": 0.01,
               "basis": -0.4,
               "cash": 4.13
             },
@@ -4467,7 +4467,7 @@
               "deliveryEnd": "2026-11-30",
               "delivery": "11/01/26-11/30/26",
               "basisMonth": "Dec 26",
-              "futuresChange": 0.0125,
+              "futuresChange": 0.01,
               "basis": -0.4,
               "cash": 4.13
             },
@@ -4477,7 +4477,7 @@
               "deliveryEnd": "2026-12-31",
               "delivery": "12/01/26-12/31/26",
               "basisMonth": "Dec 26",
-              "futuresChange": 0.0125,
+              "futuresChange": 0.01,
               "basis": -0.34,
               "cash": 4.19
             },
@@ -4487,7 +4487,7 @@
               "deliveryEnd": "2027-01-31",
               "delivery": "01/01/27-01/31/27",
               "basisMonth": "Mar 27",
-              "futuresChange": 0.01,
+              "futuresChange": 0.005,
               "basis": -0.42,
               "cash": 4.24
             },
@@ -4497,7 +4497,7 @@
               "deliveryEnd": "2027-02-28",
               "delivery": "02/01/27-02/28/27",
               "basisMonth": "Mar 27",
-              "futuresChange": 0.01,
+              "futuresChange": 0.005,
               "basis": -0.38,
               "cash": 4.28
             },
@@ -4507,7 +4507,7 @@
               "deliveryEnd": "2027-03-31",
               "delivery": "03/01/27-03/31/27",
               "basisMonth": "Mar 27",
-              "futuresChange": 0.01,
+              "futuresChange": 0.005,
               "basis": -0.35,
               "cash": 4.31
             },
@@ -4517,14 +4517,14 @@
               "deliveryEnd": "2027-10-31",
               "delivery": "10/01/27-10/31/27",
               "basisMonth": "Dec 27",
-              "futuresChange": 0.01,
+              "futuresChange": 0.0075,
               "basis": -0.48,
               "cash": 4.43
             }
           ],
           "cash": 4.13,
           "basis": -0.4,
-          "futuresChange": 0.0125,
+          "futuresChange": 0.01,
           "basisMonth": "Dec 26",
           "deliveryStart": "2026-10-01",
           "deliveryEnd": "2026-10-31"
@@ -4614,7 +4614,7 @@
           "deliveryEnd": "2026-10-31"
         }
       ],
-      "lastSuccessAt": "2026-10-29T05:00:01.251Z"
+      "lastSuccessAt": "2026-10-29T05:10:00.636Z"
     },
     {
       "id": "manley",
@@ -4629,7 +4629,7 @@
         "Data provided by StoneX. All prices delayed 10 minutes.",
         "Market data: CME Group"
       ],
-      "sourceUpdated": "10/28/26 11:48 PM",
+      "sourceUpdated": "10/28/26 11:59 PM",
       "crops": [
         {
           "name": "Corn",
@@ -4643,7 +4643,7 @@
               "deliveryEnd": "2026-10-31",
               "delivery": "10/01/26-10/31/26",
               "basisMonth": "Dec 26",
-              "futuresChange": 0.0125,
+              "futuresChange": 0.01,
               "basis": -0.56,
               "cash": 3.97
             },
@@ -4653,7 +4653,7 @@
               "deliveryEnd": "2026-11-30",
               "delivery": "11/01/26-11/30/26",
               "basisMonth": "Dec 26",
-              "futuresChange": 0.0125,
+              "futuresChange": 0.01,
               "basis": -0.56,
               "cash": 3.97
             },
@@ -4663,7 +4663,7 @@
               "deliveryEnd": "2026-12-31",
               "delivery": "12/01/26-12/31/26",
               "basisMonth": "Dec 26",
-              "futuresChange": 0.0125,
+              "futuresChange": 0.01,
               "basis": -0.47,
               "cash": 4.06
             },
@@ -4673,7 +4673,7 @@
               "deliveryEnd": "2027-01-31",
               "delivery": "01/01/27-01/31/27",
               "basisMonth": "Mar 27",
-              "futuresChange": 0.01,
+              "futuresChange": 0.005,
               "basis": -0.55,
               "cash": 4.11
             },
@@ -4683,7 +4683,7 @@
               "deliveryEnd": "2027-02-28",
               "delivery": "02/01/27-02/28/27",
               "basisMonth": "Mar 27",
-              "futuresChange": 0.01,
+              "futuresChange": 0.005,
               "basis": -0.51,
               "cash": 4.15
             },
@@ -4693,7 +4693,7 @@
               "deliveryEnd": "2027-03-31",
               "delivery": "03/01/27-03/31/27",
               "basisMonth": "Mar 27",
-              "futuresChange": 0.01,
+              "futuresChange": 0.005,
               "basis": -0.48,
               "cash": 4.18
             },
@@ -4703,14 +4703,14 @@
               "deliveryEnd": "2027-10-31",
               "delivery": "10/01/27-10/31/27",
               "basisMonth": "Dec 27",
-              "futuresChange": 0.01,
+              "futuresChange": 0.0075,
               "basis": -0.61,
               "cash": 4.3
             }
           ],
           "cash": 3.97,
           "basis": -0.56,
-          "futuresChange": 0.0125,
+          "futuresChange": 0.01,
           "basisMonth": "Dec 26",
           "deliveryStart": "2026-10-01",
           "deliveryEnd": "2026-10-31"
@@ -4800,7 +4800,7 @@
           "deliveryEnd": "2026-10-31"
         }
       ],
-      "lastSuccessAt": "2026-10-29T05:00:01.251Z"
+      "lastSuccessAt": "2026-10-29T05:10:00.636Z"
     },
     {
       "id": "mead",
@@ -4815,7 +4815,7 @@
         "Data provided by StoneX. All prices delayed 10 minutes.",
         "Market data: CME Group"
       ],
-      "sourceUpdated": "10/28/26 11:48 PM",
+      "sourceUpdated": "10/28/26 11:59 PM",
       "crops": [
         {
           "name": "Corn",
@@ -4829,7 +4829,7 @@
               "deliveryEnd": "2026-10-31",
               "delivery": "10/01/26-10/31/26",
               "basisMonth": "Dec 26",
-              "futuresChange": 0.0125,
+              "futuresChange": 0.01,
               "basis": -0.43,
               "cash": 4.1
             },
@@ -4839,7 +4839,7 @@
               "deliveryEnd": "2026-11-30",
               "delivery": "11/01/26-11/30/26",
               "basisMonth": "Dec 26",
-              "futuresChange": 0.0125,
+              "futuresChange": 0.01,
               "basis": -0.43,
               "cash": 4.1
             },
@@ -4849,7 +4849,7 @@
               "deliveryEnd": "2026-12-31",
               "delivery": "12/01/26-12/31/26",
               "basisMonth": "Dec 26",
-              "futuresChange": 0.0125,
+              "futuresChange": 0.01,
               "basis": -0.33,
               "cash": 4.2
             },
@@ -4859,7 +4859,7 @@
               "deliveryEnd": "2027-01-31",
               "delivery": "01/01/27-01/31/27",
               "basisMonth": "Mar 27",
-              "futuresChange": 0.01,
+              "futuresChange": 0.005,
               "basis": -0.41,
               "cash": 4.25
             },
@@ -4869,7 +4869,7 @@
               "deliveryEnd": "2027-02-28",
               "delivery": "02/01/27-02/28/27",
               "basisMonth": "Mar 27",
-              "futuresChange": 0.01,
+              "futuresChange": 0.005,
               "basis": -0.37,
               "cash": 4.29
             },
@@ -4879,7 +4879,7 @@
               "deliveryEnd": "2027-03-31",
               "delivery": "03/01/27-03/31/27",
               "basisMonth": "Mar 27",
-              "futuresChange": 0.01,
+              "futuresChange": 0.005,
               "basis": -0.34,
               "cash": 4.32
             },
@@ -4889,14 +4889,14 @@
               "deliveryEnd": "2027-10-31",
               "delivery": "10/01/27-10/31/27",
               "basisMonth": "Dec 27",
-              "futuresChange": 0.01,
+              "futuresChange": 0.0075,
               "basis": -0.47,
               "cash": 4.44
             }
           ],
           "cash": 4.1,
           "basis": -0.43,
-          "futuresChange": 0.0125,
+          "futuresChange": 0.01,
           "basisMonth": "Dec 26",
           "deliveryStart": "2026-10-01",
           "deliveryEnd": "2026-10-31"
@@ -4986,7 +4986,7 @@
           "deliveryEnd": "2026-10-31"
         }
       ],
-      "lastSuccessAt": "2026-10-29T05:00:01.251Z"
+      "lastSuccessAt": "2026-10-29T05:10:00.636Z"
     },
     {
       "id": "murdock",
@@ -5001,7 +5001,7 @@
         "Data provided by StoneX. All prices delayed 10 minutes.",
         "Market data: CME Group"
       ],
-      "sourceUpdated": "10/28/26 11:48 PM",
+      "sourceUpdated": "10/28/26 11:59 PM",
       "crops": [
         {
           "name": "Corn",
@@ -5015,7 +5015,7 @@
               "deliveryEnd": "2026-10-31",
               "delivery": "10/01/26-10/31/26",
               "basisMonth": "Dec 26",
-              "futuresChange": 0.0125,
+              "futuresChange": 0.01,
               "basis": -0.54,
               "cash": 3.99
             },
@@ -5025,7 +5025,7 @@
               "deliveryEnd": "2026-11-30",
               "delivery": "11/01/26-11/30/26",
               "basisMonth": "Dec 26",
-              "futuresChange": 0.0125,
+              "futuresChange": 0.01,
               "basis": -0.54,
               "cash": 3.99
             },
@@ -5035,7 +5035,7 @@
               "deliveryEnd": "2026-12-31",
               "delivery": "12/01/26-12/31/26",
               "basisMonth": "Dec 26",
-              "futuresChange": 0.0125,
+              "futuresChange": 0.01,
               "basis": -0.47,
               "cash": 4.06
             },
@@ -5045,7 +5045,7 @@
               "deliveryEnd": "2027-01-31",
               "delivery": "01/01/27-01/31/27",
               "basisMonth": "Mar 27",
-              "futuresChange": 0.01,
+              "futuresChange": 0.005,
               "basis": -0.55,
               "cash": 4.11
             },
@@ -5055,7 +5055,7 @@
               "deliveryEnd": "2027-02-28",
               "delivery": "02/01/27-02/28/27",
               "basisMonth": "Mar 27",
-              "futuresChange": 0.01,
+              "futuresChange": 0.005,
               "basis": -0.51,
               "cash": 4.15
             },
@@ -5065,7 +5065,7 @@
               "deliveryEnd": "2027-03-31",
               "delivery": "03/01/27-03/31/27",
               "basisMonth": "Mar 27",
-              "futuresChange": 0.01,
+              "futuresChange": 0.005,
               "basis": -0.48,
               "cash": 4.18
             },
@@ -5075,14 +5075,14 @@
               "deliveryEnd": "2027-10-31",
               "delivery": "10/01/27-10/31/27",
               "basisMonth": "Dec 27",
-              "futuresChange": 0.01,
+              "futuresChange": 0.0075,
               "basis": -0.61,
               "cash": 4.3
             }
           ],
           "cash": 3.99,
           "basis": -0.54,
-          "futuresChange": 0.0125,
+          "futuresChange": 0.01,
           "basisMonth": "Dec 26",
           "deliveryStart": "2026-10-01",
           "deliveryEnd": "2026-10-31"
@@ -5183,7 +5183,7 @@
               "deliveryEnd": "2026-10-31",
               "delivery": "10/01/26-10/31/26",
               "basisMonth": "Dec 26",
-              "futuresChange": -0.0075,
+              "futuresChange": -0.01,
               "basis": -0.73,
               "cash": 5.69
             },
@@ -5193,7 +5193,7 @@
               "deliveryEnd": "2026-11-30",
               "delivery": "11/01/26-11/30/26",
               "basisMonth": "Dec 26",
-              "futuresChange": -0.0075,
+              "futuresChange": -0.01,
               "basis": -0.73,
               "cash": 5.69
             },
@@ -5210,13 +5210,13 @@
           ],
           "cash": 5.69,
           "basis": -0.73,
-          "futuresChange": -0.0075,
+          "futuresChange": -0.01,
           "basisMonth": "Dec 26",
           "deliveryStart": "2026-10-01",
           "deliveryEnd": "2026-10-31"
         }
       ],
-      "lastSuccessAt": "2026-10-29T05:00:01.251Z"
+      "lastSuccessAt": "2026-10-29T05:10:00.636Z"
     },
     {
       "id": "mynard",
@@ -5231,7 +5231,7 @@
         "Data provided by StoneX. All prices delayed 10 minutes.",
         "Market data: CME Group"
       ],
-      "sourceUpdated": "10/28/26 11:48 PM",
+      "sourceUpdated": "10/28/26 11:59 PM",
       "crops": [
         {
           "name": "Corn",
@@ -5245,7 +5245,7 @@
               "deliveryEnd": "2026-10-31",
               "delivery": "10/01/26-10/31/26",
               "basisMonth": "Dec 26",
-              "futuresChange": 0.0125,
+              "futuresChange": 0.01,
               "basis": -0.52,
               "cash": 4.01
             },
@@ -5255,7 +5255,7 @@
               "deliveryEnd": "2026-11-30",
               "delivery": "11/01/26-11/30/26",
               "basisMonth": "Dec 26",
-              "futuresChange": 0.0125,
+              "futuresChange": 0.01,
               "basis": -0.52,
               "cash": 4.01
             },
@@ -5265,7 +5265,7 @@
               "deliveryEnd": "2026-12-31",
               "delivery": "12/01/26-12/31/26",
               "basisMonth": "Dec 26",
-              "futuresChange": 0.0125,
+              "futuresChange": 0.01,
               "basis": -0.43,
               "cash": 4.1
             },
@@ -5275,7 +5275,7 @@
               "deliveryEnd": "2027-01-31",
               "delivery": "01/01/27-01/31/27",
               "basisMonth": "Mar 27",
-              "futuresChange": 0.01,
+              "futuresChange": 0.005,
               "basis": -0.51,
               "cash": 4.15
             },
@@ -5285,7 +5285,7 @@
               "deliveryEnd": "2027-02-28",
               "delivery": "02/01/27-02/28/27",
               "basisMonth": "Mar 27",
-              "futuresChange": 0.01,
+              "futuresChange": 0.005,
               "basis": -0.47,
               "cash": 4.19
             },
@@ -5295,7 +5295,7 @@
               "deliveryEnd": "2027-03-31",
               "delivery": "03/01/27-03/31/27",
               "basisMonth": "Mar 27",
-              "futuresChange": 0.01,
+              "futuresChange": 0.005,
               "basis": -0.44,
               "cash": 4.22
             },
@@ -5305,14 +5305,14 @@
               "deliveryEnd": "2027-10-31",
               "delivery": "10/01/27-10/31/27",
               "basisMonth": "Dec 27",
-              "futuresChange": 0.01,
+              "futuresChange": 0.0075,
               "basis": -0.57,
               "cash": 4.34
             }
           ],
           "cash": 4.01,
           "basis": -0.52,
-          "futuresChange": 0.0125,
+          "futuresChange": 0.01,
           "basisMonth": "Dec 26",
           "deliveryStart": "2026-10-01",
           "deliveryEnd": "2026-10-31"
@@ -5402,7 +5402,7 @@
           "deliveryEnd": "2026-10-31"
         }
       ],
-      "lastSuccessAt": "2026-10-29T05:00:01.251Z"
+      "lastSuccessAt": "2026-10-29T05:10:00.636Z"
     },
     {
       "id": "nebraska-city",
@@ -5417,7 +5417,7 @@
         "Data provided by StoneX. All prices delayed 10 minutes.",
         "Market data: CME Group"
       ],
-      "sourceUpdated": "10/28/26 11:48 PM",
+      "sourceUpdated": "10/28/26 11:59 PM",
       "crops": [
         {
           "name": "Corn",
@@ -5431,7 +5431,7 @@
               "deliveryEnd": "2026-10-31",
               "delivery": "10/01/26-10/31/26",
               "basisMonth": "Dec 26",
-              "futuresChange": 0.0125,
+              "futuresChange": 0.01,
               "basis": -0.51,
               "cash": 4.02
             },
@@ -5441,7 +5441,7 @@
               "deliveryEnd": "2026-11-30",
               "delivery": "11/01/26-11/30/26",
               "basisMonth": "Dec 26",
-              "futuresChange": 0.0125,
+              "futuresChange": 0.01,
               "basis": -0.51,
               "cash": 4.02
             },
@@ -5451,7 +5451,7 @@
               "deliveryEnd": "2026-12-31",
               "delivery": "12/01/26-12/31/26",
               "basisMonth": "Dec 26",
-              "futuresChange": 0.0125,
+              "futuresChange": 0.01,
               "basis": -0.39,
               "cash": 4.14
             },
@@ -5461,7 +5461,7 @@
               "deliveryEnd": "2027-01-31",
               "delivery": "01/01/27-01/31/27",
               "basisMonth": "Mar 27",
-              "futuresChange": 0.01,
+              "futuresChange": 0.005,
               "basis": -0.47,
               "cash": 4.19
             },
@@ -5471,7 +5471,7 @@
               "deliveryEnd": "2027-02-28",
               "delivery": "02/01/27-02/28/27",
               "basisMonth": "Mar 27",
-              "futuresChange": 0.01,
+              "futuresChange": 0.005,
               "basis": -0.43,
               "cash": 4.23
             },
@@ -5481,7 +5481,7 @@
               "deliveryEnd": "2027-03-31",
               "delivery": "03/01/27-03/31/27",
               "basisMonth": "Mar 27",
-              "futuresChange": 0.01,
+              "futuresChange": 0.005,
               "basis": -0.4,
               "cash": 4.26
             },
@@ -5491,14 +5491,14 @@
               "deliveryEnd": "2027-10-31",
               "delivery": "10/01/27-10/31/27",
               "basisMonth": "Dec 27",
-              "futuresChange": 0.01,
+              "futuresChange": 0.0075,
               "basis": -0.53,
               "cash": 4.38
             }
           ],
           "cash": 4.02,
           "basis": -0.51,
-          "futuresChange": 0.0125,
+          "futuresChange": 0.01,
           "basisMonth": "Dec 26",
           "deliveryStart": "2026-10-01",
           "deliveryEnd": "2026-10-31"
@@ -5588,7 +5588,7 @@
           "deliveryEnd": "2026-10-31"
         }
       ],
-      "lastSuccessAt": "2026-10-29T05:00:01.251Z"
+      "lastSuccessAt": "2026-10-29T05:10:00.636Z"
     },
     {
       "id": "norfolk-crush",
@@ -5603,7 +5603,7 @@
         "Data provided by StoneX. All prices delayed 10 minutes.",
         "Market data: CME Group"
       ],
-      "sourceUpdated": "10/28/26 11:48 PM",
+      "sourceUpdated": "10/28/26 11:59 PM",
       "crops": [
         {
           "name": "Soybeans",
@@ -5690,7 +5690,7 @@
           "deliveryEnd": "2026-10-31"
         }
       ],
-      "lastSuccessAt": "2026-10-29T05:00:01.251Z"
+      "lastSuccessAt": "2026-10-29T05:10:00.636Z"
     },
     {
       "id": "north-bend",
@@ -5705,7 +5705,7 @@
         "Data provided by StoneX. All prices delayed 10 minutes.",
         "Market data: CME Group"
       ],
-      "sourceUpdated": "10/28/26 11:48 PM",
+      "sourceUpdated": "10/28/26 11:59 PM",
       "crops": [
         {
           "name": "Corn",
@@ -5719,7 +5719,7 @@
               "deliveryEnd": "2026-10-31",
               "delivery": "10/01/26-10/31/26",
               "basisMonth": "Dec 26",
-              "futuresChange": 0.0125,
+              "futuresChange": 0.01,
               "basis": -0.4,
               "cash": 4.13
             },
@@ -5729,7 +5729,7 @@
               "deliveryEnd": "2026-11-30",
               "delivery": "11/01/26-11/30/26",
               "basisMonth": "Dec 26",
-              "futuresChange": 0.0125,
+              "futuresChange": 0.01,
               "basis": -0.4,
               "cash": 4.13
             },
@@ -5739,7 +5739,7 @@
               "deliveryEnd": "2026-12-31",
               "delivery": "12/01/26-12/31/26",
               "basisMonth": "Dec 26",
-              "futuresChange": 0.0125,
+              "futuresChange": 0.01,
               "basis": -0.31,
               "cash": 4.22
             },
@@ -5749,7 +5749,7 @@
               "deliveryEnd": "2027-01-31",
               "delivery": "01/01/27-01/31/27",
               "basisMonth": "Mar 27",
-              "futuresChange": 0.01,
+              "futuresChange": 0.005,
               "basis": -0.42,
               "cash": 4.24
             },
@@ -5759,7 +5759,7 @@
               "deliveryEnd": "2027-02-28",
               "delivery": "02/01/27-02/28/27",
               "basisMonth": "Mar 27",
-              "futuresChange": 0.01,
+              "futuresChange": 0.005,
               "basis": -0.38,
               "cash": 4.28
             },
@@ -5769,7 +5769,7 @@
               "deliveryEnd": "2027-03-31",
               "delivery": "03/01/27-03/31/27",
               "basisMonth": "Mar 27",
-              "futuresChange": 0.01,
+              "futuresChange": 0.005,
               "basis": -0.35,
               "cash": 4.31
             },
@@ -5779,20 +5779,20 @@
               "deliveryEnd": "2027-10-31",
               "delivery": "10/01/27-10/31/27",
               "basisMonth": "Dec 27",
-              "futuresChange": 0.01,
+              "futuresChange": 0.0075,
               "basis": -0.48,
               "cash": 4.43
             }
           ],
           "cash": 4.13,
           "basis": -0.4,
-          "futuresChange": 0.0125,
+          "futuresChange": 0.01,
           "basisMonth": "Dec 26",
           "deliveryStart": "2026-10-01",
           "deliveryEnd": "2026-10-31"
         }
       ],
-      "lastSuccessAt": "2026-10-29T05:00:01.251Z"
+      "lastSuccessAt": "2026-10-29T05:10:00.636Z"
     },
     {
       "id": "osceola",
@@ -5807,7 +5807,7 @@
         "Data provided by StoneX. All prices delayed 10 minutes.",
         "Market data: CME Group"
       ],
-      "sourceUpdated": "10/28/26 11:48 PM",
+      "sourceUpdated": "10/28/26 11:59 PM",
       "crops": [
         {
           "name": "Corn",
@@ -5821,7 +5821,7 @@
               "deliveryEnd": "2026-10-31",
               "delivery": "10/01/26-10/31/26",
               "basisMonth": "Dec 26",
-              "futuresChange": 0.0125,
+              "futuresChange": 0.01,
               "basis": -0.45,
               "cash": 4.08
             },
@@ -5831,7 +5831,7 @@
               "deliveryEnd": "2026-11-30",
               "delivery": "11/01/26-11/30/26",
               "basisMonth": "Dec 26",
-              "futuresChange": 0.0125,
+              "futuresChange": 0.01,
               "basis": -0.45,
               "cash": 4.08
             },
@@ -5841,7 +5841,7 @@
               "deliveryEnd": "2026-12-31",
               "delivery": "12/01/26-12/31/26",
               "basisMonth": "Dec 26",
-              "futuresChange": 0.0125,
+              "futuresChange": 0.01,
               "basis": -0.37,
               "cash": 4.16
             },
@@ -5851,7 +5851,7 @@
               "deliveryEnd": "2027-01-31",
               "delivery": "01/01/27-01/31/27",
               "basisMonth": "Mar 27",
-              "futuresChange": 0.01,
+              "futuresChange": 0.005,
               "basis": -0.47,
               "cash": 4.19
             },
@@ -5861,7 +5861,7 @@
               "deliveryEnd": "2027-02-28",
               "delivery": "02/01/27-02/28/27",
               "basisMonth": "Mar 27",
-              "futuresChange": 0.01,
+              "futuresChange": 0.005,
               "basis": -0.43,
               "cash": 4.23
             },
@@ -5871,7 +5871,7 @@
               "deliveryEnd": "2027-03-31",
               "delivery": "03/01/27-03/31/27",
               "basisMonth": "Mar 27",
-              "futuresChange": 0.01,
+              "futuresChange": 0.005,
               "basis": -0.4,
               "cash": 4.26
             },
@@ -5881,14 +5881,14 @@
               "deliveryEnd": "2027-10-31",
               "delivery": "10/01/27-10/31/27",
               "basisMonth": "Dec 27",
-              "futuresChange": 0.01,
+              "futuresChange": 0.0075,
               "basis": -0.53,
               "cash": 4.38
             }
           ],
           "cash": 4.08,
           "basis": -0.45,
-          "futuresChange": 0.0125,
+          "futuresChange": 0.01,
           "basisMonth": "Dec 26",
           "deliveryStart": "2026-10-01",
           "deliveryEnd": "2026-10-31"
@@ -5978,7 +5978,7 @@
           "deliveryEnd": "2026-10-31"
         }
       ],
-      "lastSuccessAt": "2026-10-29T05:00:01.251Z"
+      "lastSuccessAt": "2026-10-29T05:10:00.636Z"
     },
     {
       "id": "otoe",
@@ -5993,7 +5993,7 @@
         "Data provided by StoneX. All prices delayed 10 minutes.",
         "Market data: CME Group"
       ],
-      "sourceUpdated": "10/28/26 11:48 PM",
+      "sourceUpdated": "10/28/26 11:59 PM",
       "crops": [
         {
           "name": "Corn",
@@ -6007,7 +6007,7 @@
               "deliveryEnd": "2026-10-31",
               "delivery": "10/01/26-10/31/26",
               "basisMonth": "Dec 26",
-              "futuresChange": 0.0125,
+              "futuresChange": 0.01,
               "basis": -0.61,
               "cash": 3.92
             },
@@ -6017,7 +6017,7 @@
               "deliveryEnd": "2026-11-30",
               "delivery": "11/01/26-11/30/26",
               "basisMonth": "Dec 26",
-              "futuresChange": 0.0125,
+              "futuresChange": 0.01,
               "basis": -0.61,
               "cash": 3.92
             },
@@ -6027,7 +6027,7 @@
               "deliveryEnd": "2026-12-31",
               "delivery": "12/01/26-12/31/26",
               "basisMonth": "Dec 26",
-              "futuresChange": 0.0125,
+              "futuresChange": 0.01,
               "basis": -0.52,
               "cash": 4.01
             },
@@ -6037,7 +6037,7 @@
               "deliveryEnd": "2027-01-31",
               "delivery": "01/01/27-01/31/27",
               "basisMonth": "Mar 27",
-              "futuresChange": 0.01,
+              "futuresChange": 0.005,
               "basis": -0.6,
               "cash": 4.06
             },
@@ -6047,7 +6047,7 @@
               "deliveryEnd": "2027-02-28",
               "delivery": "02/01/27-02/28/27",
               "basisMonth": "Mar 27",
-              "futuresChange": 0.01,
+              "futuresChange": 0.005,
               "basis": -0.56,
               "cash": 4.1
             },
@@ -6057,7 +6057,7 @@
               "deliveryEnd": "2027-03-31",
               "delivery": "03/01/27-03/31/27",
               "basisMonth": "Mar 27",
-              "futuresChange": 0.01,
+              "futuresChange": 0.005,
               "basis": -0.53,
               "cash": 4.13
             },
@@ -6067,14 +6067,14 @@
               "deliveryEnd": "2027-10-31",
               "delivery": "10/01/27-10/31/27",
               "basisMonth": "Dec 27",
-              "futuresChange": 0.01,
+              "futuresChange": 0.0075,
               "basis": -0.68,
               "cash": 4.23
             }
           ],
           "cash": 3.92,
           "basis": -0.61,
-          "futuresChange": 0.0125,
+          "futuresChange": 0.01,
           "basisMonth": "Dec 26",
           "deliveryStart": "2026-10-01",
           "deliveryEnd": "2026-10-31"
@@ -6164,7 +6164,7 @@
           "deliveryEnd": "2026-10-31"
         }
       ],
-      "lastSuccessAt": "2026-10-29T05:00:01.251Z"
+      "lastSuccessAt": "2026-10-29T05:10:00.636Z"
     },
     {
       "id": "palmyra",
@@ -6179,7 +6179,7 @@
         "Data provided by StoneX. All prices delayed 10 minutes.",
         "Market data: CME Group"
       ],
-      "sourceUpdated": "10/28/26 11:48 PM",
+      "sourceUpdated": "10/28/26 11:59 PM",
       "crops": [
         {
           "name": "Corn",
@@ -6193,7 +6193,7 @@
               "deliveryEnd": "2026-10-31",
               "delivery": "10/01/26-10/31/26",
               "basisMonth": "Dec 26",
-              "futuresChange": 0.0125,
+              "futuresChange": 0.01,
               "basis": -0.56,
               "cash": 3.97
             },
@@ -6203,7 +6203,7 @@
               "deliveryEnd": "2026-11-30",
               "delivery": "11/01/26-11/30/26",
               "basisMonth": "Dec 26",
-              "futuresChange": 0.0125,
+              "futuresChange": 0.01,
               "basis": -0.56,
               "cash": 3.97
             },
@@ -6213,7 +6213,7 @@
               "deliveryEnd": "2026-12-31",
               "delivery": "12/01/26-12/31/26",
               "basisMonth": "Dec 26",
-              "futuresChange": 0.0125,
+              "futuresChange": 0.01,
               "basis": -0.47,
               "cash": 4.06
             },
@@ -6223,7 +6223,7 @@
               "deliveryEnd": "2027-01-31",
               "delivery": "01/01/27-01/31/27",
               "basisMonth": "Mar 27",
-              "futuresChange": 0.01,
+              "futuresChange": 0.005,
               "basis": -0.55,
               "cash": 4.11
             },
@@ -6233,7 +6233,7 @@
               "deliveryEnd": "2027-02-28",
               "delivery": "02/01/27-02/28/27",
               "basisMonth": "Mar 27",
-              "futuresChange": 0.01,
+              "futuresChange": 0.005,
               "basis": -0.51,
               "cash": 4.15
             },
@@ -6243,7 +6243,7 @@
               "deliveryEnd": "2027-03-31",
               "delivery": "03/01/27-03/31/27",
               "basisMonth": "Mar 27",
-              "futuresChange": 0.01,
+              "futuresChange": 0.005,
               "basis": -0.48,
               "cash": 4.18
             },
@@ -6253,14 +6253,14 @@
               "deliveryEnd": "2027-10-31",
               "delivery": "10/01/27-10/31/27",
               "basisMonth": "Dec 27",
-              "futuresChange": 0.01,
+              "futuresChange": 0.0075,
               "basis": -0.61,
               "cash": 4.3
             }
           ],
           "cash": 3.97,
           "basis": -0.56,
-          "futuresChange": 0.0125,
+          "futuresChange": 0.01,
           "basisMonth": "Dec 26",
           "deliveryStart": "2026-10-01",
           "deliveryEnd": "2026-10-31"
@@ -6350,7 +6350,7 @@
           "deliveryEnd": "2026-10-31"
         }
       ],
-      "lastSuccessAt": "2026-10-29T05:00:01.251Z"
+      "lastSuccessAt": "2026-10-29T05:10:00.636Z"
     },
     {
       "id": "prague",
@@ -6365,7 +6365,7 @@
         "Data provided by StoneX. All prices delayed 10 minutes.",
         "Market data: CME Group"
       ],
-      "sourceUpdated": "10/28/26 11:48 PM",
+      "sourceUpdated": "10/28/26 11:59 PM",
       "crops": [
         {
           "name": "Corn",
@@ -6379,7 +6379,7 @@
               "deliveryEnd": "2026-10-31",
               "delivery": "10/01/26-10/31/26",
               "basisMonth": "Dec 26",
-              "futuresChange": 0.0125,
+              "futuresChange": 0.01,
               "basis": -0.47,
               "cash": 4.06
             },
@@ -6389,7 +6389,7 @@
               "deliveryEnd": "2026-11-30",
               "delivery": "11/01/26-11/30/26",
               "basisMonth": "Dec 26",
-              "futuresChange": 0.0125,
+              "futuresChange": 0.01,
               "basis": -0.47,
               "cash": 4.06
             },
@@ -6399,7 +6399,7 @@
               "deliveryEnd": "2026-12-31",
               "delivery": "12/01/26-12/31/26",
               "basisMonth": "Dec 26",
-              "futuresChange": 0.0125,
+              "futuresChange": 0.01,
               "basis": -0.38,
               "cash": 4.15
             },
@@ -6409,7 +6409,7 @@
               "deliveryEnd": "2027-01-31",
               "delivery": "01/01/27-01/31/27",
               "basisMonth": "Mar 27",
-              "futuresChange": 0.01,
+              "futuresChange": 0.005,
               "basis": -0.47,
               "cash": 4.19
             },
@@ -6419,7 +6419,7 @@
               "deliveryEnd": "2027-02-28",
               "delivery": "02/01/27-02/28/27",
               "basisMonth": "Mar 27",
-              "futuresChange": 0.01,
+              "futuresChange": 0.005,
               "basis": -0.43,
               "cash": 4.23
             },
@@ -6429,7 +6429,7 @@
               "deliveryEnd": "2027-03-31",
               "delivery": "03/01/27-03/31/27",
               "basisMonth": "Mar 27",
-              "futuresChange": 0.01,
+              "futuresChange": 0.005,
               "basis": -0.4,
               "cash": 4.26
             },
@@ -6439,14 +6439,14 @@
               "deliveryEnd": "2027-10-31",
               "delivery": "10/01/27-10/31/27",
               "basisMonth": "Dec 27",
-              "futuresChange": 0.01,
+              "futuresChange": 0.0075,
               "basis": -0.53,
               "cash": 4.38
             }
           ],
           "cash": 4.06,
           "basis": -0.47,
-          "futuresChange": 0.0125,
+          "futuresChange": 0.01,
           "basisMonth": "Dec 26",
           "deliveryStart": "2026-10-01",
           "deliveryEnd": "2026-10-31"
@@ -6536,7 +6536,7 @@
           "deliveryEnd": "2026-10-31"
         }
       ],
-      "lastSuccessAt": "2026-10-29T05:00:01.251Z"
+      "lastSuccessAt": "2026-10-29T05:10:00.636Z"
     },
     {
       "id": "schuyler",
@@ -6551,7 +6551,7 @@
         "Data provided by StoneX. All prices delayed 10 minutes.",
         "Market data: CME Group"
       ],
-      "sourceUpdated": "10/28/26 11:48 PM",
+      "sourceUpdated": "10/28/26 11:59 PM",
       "crops": [
         {
           "name": "Corn",
@@ -6565,7 +6565,7 @@
               "deliveryEnd": "2026-10-31",
               "delivery": "10/01/26-10/31/26",
               "basisMonth": "Dec 26",
-              "futuresChange": 0.0125,
+              "futuresChange": 0.01,
               "basis": -0.39,
               "cash": 4.14
             },
@@ -6575,7 +6575,7 @@
               "deliveryEnd": "2026-11-30",
               "delivery": "11/01/26-11/30/26",
               "basisMonth": "Dec 26",
-              "futuresChange": 0.0125,
+              "futuresChange": 0.01,
               "basis": -0.39,
               "cash": 4.14
             },
@@ -6585,7 +6585,7 @@
               "deliveryEnd": "2026-12-31",
               "delivery": "12/01/26-12/31/26",
               "basisMonth": "Dec 26",
-              "futuresChange": 0.0125,
+              "futuresChange": 0.01,
               "basis": -0.32,
               "cash": 4.21
             },
@@ -6595,7 +6595,7 @@
               "deliveryEnd": "2027-01-31",
               "delivery": "01/01/27-01/31/27",
               "basisMonth": "Mar 27",
-              "futuresChange": 0.01,
+              "futuresChange": 0.005,
               "basis": -0.42,
               "cash": 4.24
             },
@@ -6605,7 +6605,7 @@
               "deliveryEnd": "2027-02-28",
               "delivery": "02/01/27-02/28/27",
               "basisMonth": "Mar 27",
-              "futuresChange": 0.01,
+              "futuresChange": 0.005,
               "basis": -0.38,
               "cash": 4.28
             },
@@ -6615,7 +6615,7 @@
               "deliveryEnd": "2027-03-31",
               "delivery": "03/01/27-03/31/27",
               "basisMonth": "Mar 27",
-              "futuresChange": 0.01,
+              "futuresChange": 0.005,
               "basis": -0.35,
               "cash": 4.31
             },
@@ -6625,14 +6625,14 @@
               "deliveryEnd": "2027-10-31",
               "delivery": "10/01/27-10/31/27",
               "basisMonth": "Dec 27",
-              "futuresChange": 0.01,
+              "futuresChange": 0.0075,
               "basis": -0.48,
               "cash": 4.43
             }
           ],
           "cash": 4.14,
           "basis": -0.39,
-          "futuresChange": 0.0125,
+          "futuresChange": 0.01,
           "basisMonth": "Dec 26",
           "deliveryStart": "2026-10-01",
           "deliveryEnd": "2026-10-31"
@@ -6733,7 +6733,7 @@
               "deliveryEnd": "2026-10-31",
               "delivery": "10/01/26-10/31/26",
               "basisMonth": "Dec 26",
-              "futuresChange": -0.0075,
+              "futuresChange": -0.01,
               "basis": -0.73,
               "cash": 5.69
             },
@@ -6743,7 +6743,7 @@
               "deliveryEnd": "2026-11-30",
               "delivery": "11/01/26-11/30/26",
               "basisMonth": "Dec 26",
-              "futuresChange": -0.0075,
+              "futuresChange": -0.01,
               "basis": -0.73,
               "cash": 5.69
             },
@@ -6760,13 +6760,13 @@
           ],
           "cash": 5.69,
           "basis": -0.73,
-          "futuresChange": -0.0075,
+          "futuresChange": -0.01,
           "basisMonth": "Dec 26",
           "deliveryStart": "2026-10-01",
           "deliveryEnd": "2026-10-31"
         }
       ],
-      "lastSuccessAt": "2026-10-29T05:00:01.251Z"
+      "lastSuccessAt": "2026-10-29T05:10:00.636Z"
     },
     {
       "id": "silver-creek",
@@ -6781,7 +6781,7 @@
         "Data provided by StoneX. All prices delayed 10 minutes.",
         "Market data: CME Group"
       ],
-      "sourceUpdated": "10/28/26 11:48 PM",
+      "sourceUpdated": "10/28/26 11:59 PM",
       "crops": [
         {
           "name": "Corn",
@@ -6795,7 +6795,7 @@
               "deliveryEnd": "2026-10-31",
               "delivery": "10/01/26-10/31/26",
               "basisMonth": "Dec 26",
-              "futuresChange": 0.0125,
+              "futuresChange": 0.01,
               "basis": -0.4,
               "cash": 4.13
             },
@@ -6805,7 +6805,7 @@
               "deliveryEnd": "2026-11-30",
               "delivery": "11/01/26-11/30/26",
               "basisMonth": "Dec 26",
-              "futuresChange": 0.0125,
+              "futuresChange": 0.01,
               "basis": -0.4,
               "cash": 4.13
             },
@@ -6815,7 +6815,7 @@
               "deliveryEnd": "2026-12-31",
               "delivery": "12/01/26-12/31/26",
               "basisMonth": "Dec 26",
-              "futuresChange": 0.0125,
+              "futuresChange": 0.01,
               "basis": -0.31,
               "cash": 4.22
             },
@@ -6825,7 +6825,7 @@
               "deliveryEnd": "2027-01-31",
               "delivery": "01/01/27-01/31/27",
               "basisMonth": "Mar 27",
-              "futuresChange": 0.01,
+              "futuresChange": 0.005,
               "basis": -0.42,
               "cash": 4.24
             },
@@ -6835,7 +6835,7 @@
               "deliveryEnd": "2027-02-28",
               "delivery": "02/01/27-02/28/27",
               "basisMonth": "Mar 27",
-              "futuresChange": 0.01,
+              "futuresChange": 0.005,
               "basis": -0.38,
               "cash": 4.28
             },
@@ -6845,7 +6845,7 @@
               "deliveryEnd": "2027-03-31",
               "delivery": "03/01/27-03/31/27",
               "basisMonth": "Mar 27",
-              "futuresChange": 0.01,
+              "futuresChange": 0.005,
               "basis": -0.35,
               "cash": 4.31
             },
@@ -6855,14 +6855,14 @@
               "deliveryEnd": "2027-10-31",
               "delivery": "10/01/27-10/31/27",
               "basisMonth": "Dec 27",
-              "futuresChange": 0.01,
+              "futuresChange": 0.0075,
               "basis": -0.48,
               "cash": 4.43
             }
           ],
           "cash": 4.13,
           "basis": -0.4,
-          "futuresChange": 0.0125,
+          "futuresChange": 0.01,
           "basisMonth": "Dec 26",
           "deliveryStart": "2026-10-01",
           "deliveryEnd": "2026-10-31"
@@ -6952,7 +6952,7 @@
           "deliveryEnd": "2026-10-31"
         }
       ],
-      "lastSuccessAt": "2026-10-29T05:00:01.251Z"
+      "lastSuccessAt": "2026-10-29T05:10:00.636Z"
     },
     {
       "id": "sire-cb",
@@ -6967,7 +6967,7 @@
         "Data provided by StoneX. All prices delayed 10 minutes.",
         "Market data: CME Group"
       ],
-      "sourceUpdated": "10/28/26 11:48 PM",
+      "sourceUpdated": "10/28/26 11:59 PM",
       "crops": [
         {
           "name": "Corn",
@@ -6981,7 +6981,7 @@
               "deliveryEnd": "2026-10-31",
               "delivery": "10/01/26-10/31/26",
               "basisMonth": "Dec 26",
-              "futuresChange": 0.0125,
+              "futuresChange": 0.01,
               "basis": -0.25,
               "cash": 4.28
             },
@@ -6991,7 +6991,7 @@
               "deliveryEnd": "2026-11-30",
               "delivery": "11/01/26-11/30/26",
               "basisMonth": "Dec 26",
-              "futuresChange": 0.0125,
+              "futuresChange": 0.01,
               "basis": -0.25,
               "cash": 4.28
             },
@@ -7001,7 +7001,7 @@
               "deliveryEnd": "2026-12-31",
               "delivery": "12/01/26-12/31/26",
               "basisMonth": "Dec 26",
-              "futuresChange": 0.0125,
+              "futuresChange": 0.01,
               "basis": -0.1,
               "cash": 4.43
             },
@@ -7011,7 +7011,7 @@
               "deliveryEnd": "2027-01-31",
               "delivery": "01/01/27-01/31/27",
               "basisMonth": "Mar 27",
-              "futuresChange": 0.01,
+              "futuresChange": 0.005,
               "basis": -0.2,
               "cash": 4.46
             },
@@ -7021,7 +7021,7 @@
               "deliveryEnd": "2027-02-28",
               "delivery": "02/01/27-02/28/27",
               "basisMonth": "Mar 27",
-              "futuresChange": 0.01,
+              "futuresChange": 0.005,
               "basis": -0.17,
               "cash": 4.49
             },
@@ -7031,7 +7031,7 @@
               "deliveryEnd": "2027-03-31",
               "delivery": "03/01/27-03/31/27",
               "basisMonth": "Mar 27",
-              "futuresChange": 0.01,
+              "futuresChange": 0.005,
               "basis": -0.14,
               "cash": 4.52
             },
@@ -7041,20 +7041,20 @@
               "deliveryEnd": "2027-10-31",
               "delivery": "10/01/27-10/31/27",
               "basisMonth": "Dec 27",
-              "futuresChange": 0.01,
+              "futuresChange": 0.0075,
               "basis": -0.4,
               "cash": 4.51
             }
           ],
           "cash": 4.28,
           "basis": -0.25,
-          "futuresChange": 0.0125,
+          "futuresChange": 0.01,
           "basisMonth": "Dec 26",
           "deliveryStart": "2026-10-01",
           "deliveryEnd": "2026-10-31"
         }
       ],
-      "lastSuccessAt": "2026-10-29T05:00:01.251Z"
+      "lastSuccessAt": "2026-10-29T05:10:00.636Z"
     },
     {
       "id": "st-mary",
@@ -7069,7 +7069,7 @@
         "Data provided by StoneX. All prices delayed 10 minutes.",
         "Market data: CME Group"
       ],
-      "sourceUpdated": "10/28/26 11:48 PM",
+      "sourceUpdated": "10/28/26 11:59 PM",
       "crops": [
         {
           "name": "Corn",
@@ -7083,7 +7083,7 @@
               "deliveryEnd": "2026-10-31",
               "delivery": "10/01/26-10/31/26",
               "basisMonth": "Dec 26",
-              "futuresChange": 0.0125,
+              "futuresChange": 0.01,
               "basis": -0.56,
               "cash": 3.97
             },
@@ -7093,7 +7093,7 @@
               "deliveryEnd": "2026-11-30",
               "delivery": "11/01/26-11/30/26",
               "basisMonth": "Dec 26",
-              "futuresChange": 0.0125,
+              "futuresChange": 0.01,
               "basis": -0.56,
               "cash": 3.97
             },
@@ -7103,7 +7103,7 @@
               "deliveryEnd": "2026-12-31",
               "delivery": "12/01/26-12/31/26",
               "basisMonth": "Dec 26",
-              "futuresChange": 0.0125,
+              "futuresChange": 0.01,
               "basis": -0.49,
               "cash": 4.04
             },
@@ -7113,7 +7113,7 @@
               "deliveryEnd": "2027-01-31",
               "delivery": "01/01/27-01/31/27",
               "basisMonth": "Mar 27",
-              "futuresChange": 0.01,
+              "futuresChange": 0.005,
               "basis": -0.57,
               "cash": 4.09
             },
@@ -7123,7 +7123,7 @@
               "deliveryEnd": "2027-02-28",
               "delivery": "02/01/27-02/28/27",
               "basisMonth": "Mar 27",
-              "futuresChange": 0.01,
+              "futuresChange": 0.005,
               "basis": -0.53,
               "cash": 4.13
             },
@@ -7133,7 +7133,7 @@
               "deliveryEnd": "2027-03-31",
               "delivery": "03/01/27-03/31/27",
               "basisMonth": "Mar 27",
-              "futuresChange": 0.01,
+              "futuresChange": 0.005,
               "basis": -0.5,
               "cash": 4.16
             },
@@ -7143,14 +7143,14 @@
               "deliveryEnd": "2027-10-31",
               "delivery": "10/01/27-10/31/27",
               "basisMonth": "Dec 27",
-              "futuresChange": 0.01,
+              "futuresChange": 0.0075,
               "basis": -0.63,
               "cash": 4.28
             }
           ],
           "cash": 3.97,
           "basis": -0.56,
-          "futuresChange": 0.0125,
+          "futuresChange": 0.01,
           "basisMonth": "Dec 26",
           "deliveryStart": "2026-10-01",
           "deliveryEnd": "2026-10-31"
@@ -7240,7 +7240,7 @@
           "deliveryEnd": "2026-10-31"
         }
       ],
-      "lastSuccessAt": "2026-10-29T05:00:01.251Z"
+      "lastSuccessAt": "2026-10-29T05:10:00.636Z"
     },
     {
       "id": "syracuse",
@@ -7255,7 +7255,7 @@
         "Data provided by StoneX. All prices delayed 10 minutes.",
         "Market data: CME Group"
       ],
-      "sourceUpdated": "10/28/26 11:48 PM",
+      "sourceUpdated": "10/28/26 11:59 PM",
       "crops": [
         {
           "name": "Corn",
@@ -7269,7 +7269,7 @@
               "deliveryEnd": "2026-10-31",
               "delivery": "10/01/26-10/31/26",
               "basisMonth": "Dec 26",
-              "futuresChange": 0.0125,
+              "futuresChange": 0.01,
               "basis": -0.48,
               "cash": 4.05
             },
@@ -7279,7 +7279,7 @@
               "deliveryEnd": "2026-11-30",
               "delivery": "11/01/26-11/30/26",
               "basisMonth": "Dec 26",
-              "futuresChange": 0.0125,
+              "futuresChange": 0.01,
               "basis": -0.48,
               "cash": 4.05
             },
@@ -7289,7 +7289,7 @@
               "deliveryEnd": "2026-12-31",
               "delivery": "12/01/26-12/31/26",
               "basisMonth": "Dec 26",
-              "futuresChange": 0.0125,
+              "futuresChange": 0.01,
               "basis": -0.38,
               "cash": 4.15
             },
@@ -7299,7 +7299,7 @@
               "deliveryEnd": "2027-01-31",
               "delivery": "01/01/27-01/31/27",
               "basisMonth": "Mar 27",
-              "futuresChange": 0.01,
+              "futuresChange": 0.005,
               "basis": -0.46,
               "cash": 4.2
             },
@@ -7309,7 +7309,7 @@
               "deliveryEnd": "2027-02-28",
               "delivery": "02/01/27-02/28/27",
               "basisMonth": "Mar 27",
-              "futuresChange": 0.01,
+              "futuresChange": 0.005,
               "basis": -0.42,
               "cash": 4.24
             },
@@ -7319,7 +7319,7 @@
               "deliveryEnd": "2027-03-31",
               "delivery": "03/01/27-03/31/27",
               "basisMonth": "Mar 27",
-              "futuresChange": 0.01,
+              "futuresChange": 0.005,
               "basis": -0.39,
               "cash": 4.27
             },
@@ -7329,20 +7329,20 @@
               "deliveryEnd": "2027-10-31",
               "delivery": "10/01/27-10/31/27",
               "basisMonth": "Dec 27",
-              "futuresChange": 0.01,
+              "futuresChange": 0.0075,
               "basis": -0.52,
               "cash": 4.39
             }
           ],
           "cash": 4.05,
           "basis": -0.48,
-          "futuresChange": 0.0125,
+          "futuresChange": 0.01,
           "basisMonth": "Dec 26",
           "deliveryStart": "2026-10-01",
           "deliveryEnd": "2026-10-31"
         }
       ],
-      "lastSuccessAt": "2026-10-29T05:00:01.251Z"
+      "lastSuccessAt": "2026-10-29T05:10:00.636Z"
     },
     {
       "id": "tarnov",
@@ -7357,7 +7357,7 @@
         "Data provided by StoneX. All prices delayed 10 minutes.",
         "Market data: CME Group"
       ],
-      "sourceUpdated": "10/28/26 11:48 PM",
+      "sourceUpdated": "10/28/26 11:59 PM",
       "crops": [
         {
           "name": "Corn",
@@ -7371,7 +7371,7 @@
               "deliveryEnd": "2026-10-31",
               "delivery": "10/01/26-10/31/26",
               "basisMonth": "Dec 26",
-              "futuresChange": 0.0125,
+              "futuresChange": 0.01,
               "basis": -0.45,
               "cash": 4.08
             },
@@ -7381,7 +7381,7 @@
               "deliveryEnd": "2026-11-30",
               "delivery": "11/01/26-11/30/26",
               "basisMonth": "Dec 26",
-              "futuresChange": 0.0125,
+              "futuresChange": 0.01,
               "basis": -0.45,
               "cash": 4.08
             },
@@ -7391,7 +7391,7 @@
               "deliveryEnd": "2026-12-31",
               "delivery": "12/01/26-12/31/26",
               "basisMonth": "Dec 26",
-              "futuresChange": 0.0125,
+              "futuresChange": 0.01,
               "basis": -0.38,
               "cash": 4.15
             },
@@ -7401,7 +7401,7 @@
               "deliveryEnd": "2027-01-31",
               "delivery": "01/01/27-01/31/27",
               "basisMonth": "Mar 27",
-              "futuresChange": 0.01,
+              "futuresChange": 0.005,
               "basis": -0.47,
               "cash": 4.19
             },
@@ -7411,7 +7411,7 @@
               "deliveryEnd": "2027-02-28",
               "delivery": "02/01/27-02/28/27",
               "basisMonth": "Mar 27",
-              "futuresChange": 0.01,
+              "futuresChange": 0.005,
               "basis": -0.43,
               "cash": 4.23
             },
@@ -7421,7 +7421,7 @@
               "deliveryEnd": "2027-03-31",
               "delivery": "03/01/27-03/31/27",
               "basisMonth": "Mar 27",
-              "futuresChange": 0.01,
+              "futuresChange": 0.005,
               "basis": -0.4,
               "cash": 4.26
             },
@@ -7431,14 +7431,14 @@
               "deliveryEnd": "2027-10-31",
               "delivery": "10/01/27-10/31/27",
               "basisMonth": "Dec 27",
-              "futuresChange": 0.01,
+              "futuresChange": 0.0075,
               "basis": -0.53,
               "cash": 4.38
             }
           ],
           "cash": 4.08,
           "basis": -0.45,
-          "futuresChange": 0.0125,
+          "futuresChange": 0.01,
           "basisMonth": "Dec 26",
           "deliveryStart": "2026-10-01",
           "deliveryEnd": "2026-10-31"
@@ -7528,7 +7528,7 @@
           "deliveryEnd": "2026-10-31"
         }
       ],
-      "lastSuccessAt": "2026-10-29T05:00:01.251Z"
+      "lastSuccessAt": "2026-10-29T05:10:00.636Z"
     },
     {
       "id": "tecumsech",
@@ -7543,7 +7543,7 @@
         "Data provided by StoneX. All prices delayed 10 minutes.",
         "Market data: CME Group"
       ],
-      "sourceUpdated": "10/28/26 11:48 PM",
+      "sourceUpdated": "10/28/26 11:59 PM",
       "crops": [
         {
           "name": "Corn",
@@ -7557,7 +7557,7 @@
               "deliveryEnd": "2026-10-31",
               "delivery": "10/01/26-10/31/26",
               "basisMonth": "Dec 26",
-              "futuresChange": 0.0125,
+              "futuresChange": 0.01,
               "basis": -0.56,
               "cash": 3.97
             },
@@ -7567,7 +7567,7 @@
               "deliveryEnd": "2026-11-30",
               "delivery": "11/01/26-11/30/26",
               "basisMonth": "Dec 26",
-              "futuresChange": 0.0125,
+              "futuresChange": 0.01,
               "basis": -0.56,
               "cash": 3.97
             },
@@ -7577,7 +7577,7 @@
               "deliveryEnd": "2026-12-31",
               "delivery": "12/01/26-12/31/26",
               "basisMonth": "Dec 26",
-              "futuresChange": 0.0125,
+              "futuresChange": 0.01,
               "basis": -0.49,
               "cash": 4.04
             },
@@ -7587,7 +7587,7 @@
               "deliveryEnd": "2027-01-31",
               "delivery": "01/01/27-01/31/27",
               "basisMonth": "Mar 27",
-              "futuresChange": 0.01,
+              "futuresChange": 0.005,
               "basis": -0.57,
               "cash": 4.09
             },
@@ -7597,7 +7597,7 @@
               "deliveryEnd": "2027-02-28",
               "delivery": "02/01/27-02/28/27",
               "basisMonth": "Mar 27",
-              "futuresChange": 0.01,
+              "futuresChange": 0.005,
               "basis": -0.53,
               "cash": 4.13
             },
@@ -7607,7 +7607,7 @@
               "deliveryEnd": "2027-03-31",
               "delivery": "03/01/27-03/31/27",
               "basisMonth": "Mar 27",
-              "futuresChange": 0.01,
+              "futuresChange": 0.005,
               "basis": -0.5,
               "cash": 4.16
             },
@@ -7617,14 +7617,14 @@
               "deliveryEnd": "2027-10-31",
               "delivery": "10/01/27-10/31/27",
               "basisMonth": "Dec 27",
-              "futuresChange": 0.01,
+              "futuresChange": 0.0075,
               "basis": -0.63,
               "cash": 4.28
             }
           ],
           "cash": 3.97,
           "basis": -0.56,
-          "futuresChange": 0.0125,
+          "futuresChange": 0.01,
           "basisMonth": "Dec 26",
           "deliveryStart": "2026-10-01",
           "deliveryEnd": "2026-10-31"
@@ -7725,7 +7725,7 @@
               "deliveryEnd": "2026-10-31",
               "delivery": "10/01/26-10/31/26",
               "basisMonth": "Dec 26",
-              "futuresChange": -0.0075,
+              "futuresChange": -0.01,
               "basis": -0.75,
               "cash": 5.67
             },
@@ -7735,7 +7735,7 @@
               "deliveryEnd": "2026-11-30",
               "delivery": "11/01/26-11/30/26",
               "basisMonth": "Dec 26",
-              "futuresChange": -0.0075,
+              "futuresChange": -0.01,
               "basis": -0.75,
               "cash": 5.67
             },
@@ -7752,13 +7752,13 @@
           ],
           "cash": 5.67,
           "basis": -0.75,
-          "futuresChange": -0.0075,
+          "futuresChange": -0.01,
           "basisMonth": "Dec 26",
           "deliveryStart": "2026-10-01",
           "deliveryEnd": "2026-10-31"
         }
       ],
-      "lastSuccessAt": "2026-10-29T05:00:01.251Z"
+      "lastSuccessAt": "2026-10-29T05:10:00.636Z"
     },
     {
       "id": "tecumseh-north",
@@ -7773,7 +7773,7 @@
         "Data provided by StoneX. All prices delayed 10 minutes.",
         "Market data: CME Group"
       ],
-      "sourceUpdated": "10/28/26 11:48 PM",
+      "sourceUpdated": "10/28/26 11:59 PM",
       "crops": [
         {
           "name": "Corn",
@@ -7787,7 +7787,7 @@
               "deliveryEnd": "2026-10-31",
               "delivery": "10/01/26-10/31/26",
               "basisMonth": "Dec 26",
-              "futuresChange": 0.0125,
+              "futuresChange": 0.01,
               "basis": -0.53,
               "cash": 4
             },
@@ -7797,7 +7797,7 @@
               "deliveryEnd": "2026-11-30",
               "delivery": "11/01/26-11/30/26",
               "basisMonth": "Dec 26",
-              "futuresChange": 0.0125,
+              "futuresChange": 0.01,
               "basis": -0.53,
               "cash": 4
             },
@@ -7807,7 +7807,7 @@
               "deliveryEnd": "2026-12-31",
               "delivery": "12/01/26-12/31/26",
               "basisMonth": "Dec 26",
-              "futuresChange": 0.0125,
+              "futuresChange": 0.01,
               "basis": -0.44,
               "cash": 4.09
             },
@@ -7817,7 +7817,7 @@
               "deliveryEnd": "2027-01-31",
               "delivery": "01/01/27-01/31/27",
               "basisMonth": "Mar 27",
-              "futuresChange": 0.01,
+              "futuresChange": 0.005,
               "basis": -0.52,
               "cash": 4.14
             },
@@ -7827,7 +7827,7 @@
               "deliveryEnd": "2027-02-28",
               "delivery": "02/01/27-02/28/27",
               "basisMonth": "Mar 27",
-              "futuresChange": 0.01,
+              "futuresChange": 0.005,
               "basis": -0.48,
               "cash": 4.18
             },
@@ -7837,7 +7837,7 @@
               "deliveryEnd": "2027-03-31",
               "delivery": "03/01/27-03/31/27",
               "basisMonth": "Mar 27",
-              "futuresChange": 0.01,
+              "futuresChange": 0.005,
               "basis": -0.45,
               "cash": 4.21
             },
@@ -7847,20 +7847,20 @@
               "deliveryEnd": "2027-10-31",
               "delivery": "10/01/27-10/31/27",
               "basisMonth": "Dec 27",
-              "futuresChange": 0.01,
+              "futuresChange": 0.0075,
               "basis": -0.58,
               "cash": 4.33
             }
           ],
           "cash": 4,
           "basis": -0.53,
-          "futuresChange": 0.0125,
+          "futuresChange": 0.01,
           "basisMonth": "Dec 26",
           "deliveryStart": "2026-10-01",
           "deliveryEnd": "2026-10-31"
         }
       ],
-      "lastSuccessAt": "2026-10-29T05:00:01.251Z"
+      "lastSuccessAt": "2026-10-29T05:10:00.636Z"
     },
     {
       "id": "wahoo",
@@ -7875,7 +7875,7 @@
         "Data provided by StoneX. All prices delayed 10 minutes.",
         "Market data: CME Group"
       ],
-      "sourceUpdated": "10/28/26 11:48 PM",
+      "sourceUpdated": "10/28/26 11:59 PM",
       "crops": [
         {
           "name": "Corn",
@@ -7889,7 +7889,7 @@
               "deliveryEnd": "2026-10-31",
               "delivery": "10/01/26-10/31/26",
               "basisMonth": "Dec 26",
-              "futuresChange": 0.0125,
+              "futuresChange": 0.01,
               "basis": -0.48,
               "cash": 4.05
             },
@@ -7899,7 +7899,7 @@
               "deliveryEnd": "2026-11-30",
               "delivery": "11/01/26-11/30/26",
               "basisMonth": "Dec 26",
-              "futuresChange": 0.0125,
+              "futuresChange": 0.01,
               "basis": -0.48,
               "cash": 4.05
             },
@@ -7909,7 +7909,7 @@
               "deliveryEnd": "2026-12-31",
               "delivery": "12/01/26-12/31/26",
               "basisMonth": "Dec 26",
-              "futuresChange": 0.0125,
+              "futuresChange": 0.01,
               "basis": -0.39,
               "cash": 4.14
             },
@@ -7919,7 +7919,7 @@
               "deliveryEnd": "2027-01-31",
               "delivery": "01/01/27-01/31/27",
               "basisMonth": "Mar 27",
-              "futuresChange": 0.01,
+              "futuresChange": 0.005,
               "basis": -0.48,
               "cash": 4.18
             },
@@ -7929,7 +7929,7 @@
               "deliveryEnd": "2027-02-28",
               "delivery": "02/01/27-02/28/27",
               "basisMonth": "Mar 27",
-              "futuresChange": 0.01,
+              "futuresChange": 0.005,
               "basis": -0.44,
               "cash": 4.22
             },
@@ -7939,7 +7939,7 @@
               "deliveryEnd": "2027-03-31",
               "delivery": "03/01/27-03/31/27",
               "basisMonth": "Mar 27",
-              "futuresChange": 0.01,
+              "futuresChange": 0.005,
               "basis": -0.41,
               "cash": 4.25
             },
@@ -7949,14 +7949,14 @@
               "deliveryEnd": "2027-10-31",
               "delivery": "10/01/27-10/31/27",
               "basisMonth": "Dec 27",
-              "futuresChange": 0.01,
+              "futuresChange": 0.0075,
               "basis": -0.54,
               "cash": 4.37
             }
           ],
           "cash": 4.05,
           "basis": -0.48,
-          "futuresChange": 0.0125,
+          "futuresChange": 0.01,
           "basisMonth": "Dec 26",
           "deliveryStart": "2026-10-01",
           "deliveryEnd": "2026-10-31"
@@ -8046,7 +8046,7 @@
           "deliveryEnd": "2026-10-31"
         }
       ],
-      "lastSuccessAt": "2026-10-29T05:00:01.251Z"
+      "lastSuccessAt": "2026-10-29T05:10:00.636Z"
     },
     {
       "id": "walton",
@@ -8061,7 +8061,7 @@
         "Data provided by StoneX. All prices delayed 10 minutes.",
         "Market data: CME Group"
       ],
-      "sourceUpdated": "10/28/26 11:48 PM",
+      "sourceUpdated": "10/28/26 11:59 PM",
       "crops": [
         {
           "name": "Corn",
@@ -8075,7 +8075,7 @@
               "deliveryEnd": "2026-10-31",
               "delivery": "10/01/26-10/31/26",
               "basisMonth": "Dec 26",
-              "futuresChange": 0.0125,
+              "futuresChange": 0.01,
               "basis": -0.52,
               "cash": 4.01
             },
@@ -8085,7 +8085,7 @@
               "deliveryEnd": "2026-11-30",
               "delivery": "11/01/26-11/30/26",
               "basisMonth": "Dec 26",
-              "futuresChange": 0.0125,
+              "futuresChange": 0.01,
               "basis": -0.52,
               "cash": 4.01
             },
@@ -8095,7 +8095,7 @@
               "deliveryEnd": "2026-12-31",
               "delivery": "12/01/26-12/31/26",
               "basisMonth": "Dec 26",
-              "futuresChange": 0.0125,
+              "futuresChange": 0.01,
               "basis": -0.47,
               "cash": 4.06
             },
@@ -8105,7 +8105,7 @@
               "deliveryEnd": "2027-01-31",
               "delivery": "01/01/27-01/31/27",
               "basisMonth": "Mar 27",
-              "futuresChange": 0.01,
+              "futuresChange": 0.005,
               "basis": -0.55,
               "cash": 4.11
             },
@@ -8115,7 +8115,7 @@
               "deliveryEnd": "2027-02-28",
               "delivery": "02/01/27-02/28/27",
               "basisMonth": "Mar 27",
-              "futuresChange": 0.01,
+              "futuresChange": 0.005,
               "basis": -0.51,
               "cash": 4.15
             },
@@ -8125,7 +8125,7 @@
               "deliveryEnd": "2027-03-31",
               "delivery": "03/01/27-03/31/27",
               "basisMonth": "Mar 27",
-              "futuresChange": 0.01,
+              "futuresChange": 0.005,
               "basis": -0.48,
               "cash": 4.18
             },
@@ -8135,14 +8135,14 @@
               "deliveryEnd": "2027-10-31",
               "delivery": "10/01/27-10/31/27",
               "basisMonth": "Dec 27",
-              "futuresChange": 0.01,
+              "futuresChange": 0.0075,
               "basis": -0.61,
               "cash": 4.3
             }
           ],
           "cash": 4.01,
           "basis": -0.52,
-          "futuresChange": 0.0125,
+          "futuresChange": 0.01,
           "basisMonth": "Dec 26",
           "deliveryStart": "2026-10-01",
           "deliveryEnd": "2026-10-31"
@@ -8232,7 +8232,7 @@
           "deliveryEnd": "2026-10-31"
         }
       ],
-      "lastSuccessAt": "2026-10-29T05:00:01.251Z"
+      "lastSuccessAt": "2026-10-29T05:10:00.636Z"
     },
     {
       "id": "waverly",
@@ -8247,7 +8247,7 @@
         "Data provided by StoneX. All prices delayed 10 minutes.",
         "Market data: CME Group"
       ],
-      "sourceUpdated": "10/28/26 11:48 PM",
+      "sourceUpdated": "10/28/26 11:59 PM",
       "crops": [
         {
           "name": "Corn",
@@ -8261,7 +8261,7 @@
               "deliveryEnd": "2026-10-31",
               "delivery": "10/01/26-10/31/26",
               "basisMonth": "Dec 26",
-              "futuresChange": 0.0125,
+              "futuresChange": 0.01,
               "basis": -0.48,
               "cash": 4.05
             },
@@ -8271,7 +8271,7 @@
               "deliveryEnd": "2026-11-30",
               "delivery": "11/01/26-11/30/26",
               "basisMonth": "Dec 26",
-              "futuresChange": 0.0125,
+              "futuresChange": 0.01,
               "basis": -0.48,
               "cash": 4.05
             },
@@ -8281,7 +8281,7 @@
               "deliveryEnd": "2026-12-31",
               "delivery": "12/01/26-12/31/26",
               "basisMonth": "Dec 26",
-              "futuresChange": 0.0125,
+              "futuresChange": 0.01,
               "basis": -0.39,
               "cash": 4.14
             },
@@ -8291,7 +8291,7 @@
               "deliveryEnd": "2027-01-31",
               "delivery": "01/01/27-01/31/27",
               "basisMonth": "Mar 27",
-              "futuresChange": 0.01,
+              "futuresChange": 0.005,
               "basis": -0.47,
               "cash": 4.19
             },
@@ -8301,7 +8301,7 @@
               "deliveryEnd": "2027-02-28",
               "delivery": "02/01/27-02/28/27",
               "basisMonth": "Mar 27",
-              "futuresChange": 0.01,
+              "futuresChange": 0.005,
               "basis": -0.43,
               "cash": 4.23
             },
@@ -8311,7 +8311,7 @@
               "deliveryEnd": "2027-03-31",
               "delivery": "03/01/27-03/31/27",
               "basisMonth": "Mar 27",
-              "futuresChange": 0.01,
+              "futuresChange": 0.005,
               "basis": -0.4,
               "cash": 4.26
             },
@@ -8321,14 +8321,14 @@
               "deliveryEnd": "2027-10-31",
               "delivery": "10/01/27-10/31/27",
               "basisMonth": "Dec 27",
-              "futuresChange": 0.01,
+              "futuresChange": 0.0075,
               "basis": -0.53,
               "cash": 4.38
             }
           ],
           "cash": 4.05,
           "basis": -0.48,
-          "futuresChange": 0.0125,
+          "futuresChange": 0.01,
           "basisMonth": "Dec 26",
           "deliveryStart": "2026-10-01",
           "deliveryEnd": "2026-10-31"
@@ -8418,7 +8418,7 @@
           "deliveryEnd": "2026-10-31"
         }
       ],
-      "lastSuccessAt": "2026-10-29T05:00:01.251Z"
+      "lastSuccessAt": "2026-10-29T05:10:00.636Z"
     },
     {
       "id": "weston",
@@ -8433,7 +8433,7 @@
         "Data provided by StoneX. All prices delayed 10 minutes.",
         "Market data: CME Group"
       ],
-      "sourceUpdated": "10/28/26 11:48 PM",
+      "sourceUpdated": "10/28/26 11:59 PM",
       "crops": [
         {
           "name": "Corn",
@@ -8447,7 +8447,7 @@
               "deliveryEnd": "2026-10-31",
               "delivery": "10/01/26-10/31/26",
               "basisMonth": "Dec 26",
-              "futuresChange": 0.0125,
+              "futuresChange": 0.01,
               "basis": -0.5,
               "cash": 4.03
             },
@@ -8457,7 +8457,7 @@
               "deliveryEnd": "2026-11-30",
               "delivery": "11/01/26-11/30/26",
               "basisMonth": "Dec 26",
-              "futuresChange": 0.0125,
+              "futuresChange": 0.01,
               "basis": -0.5,
               "cash": 4.03
             },
@@ -8467,7 +8467,7 @@
               "deliveryEnd": "2026-12-31",
               "delivery": "12/01/26-12/31/26",
               "basisMonth": "Dec 26",
-              "futuresChange": 0.0125,
+              "futuresChange": 0.01,
               "basis": -0.41,
               "cash": 4.12
             },
@@ -8477,7 +8477,7 @@
               "deliveryEnd": "2027-01-31",
               "delivery": "01/01/27-01/31/27",
               "basisMonth": "Mar 27",
-              "futuresChange": 0.01,
+              "futuresChange": 0.005,
               "basis": -0.5,
               "cash": 4.16
             },
@@ -8487,7 +8487,7 @@
               "deliveryEnd": "2027-02-28",
               "delivery": "02/01/27-02/28/27",
               "basisMonth": "Mar 27",
-              "futuresChange": 0.01,
+              "futuresChange": 0.005,
               "basis": -0.46,
               "cash": 4.2
             },
@@ -8497,7 +8497,7 @@
               "deliveryEnd": "2027-03-31",
               "delivery": "03/01/27-03/31/27",
               "basisMonth": "Mar 27",
-              "futuresChange": 0.01,
+              "futuresChange": 0.005,
               "basis": -0.43,
               "cash": 4.23
             },
@@ -8507,14 +8507,14 @@
               "deliveryEnd": "2027-10-31",
               "delivery": "10/01/27-10/31/27",
               "basisMonth": "Dec 27",
-              "futuresChange": 0.01,
+              "futuresChange": 0.0075,
               "basis": -0.56,
               "cash": 4.35
             }
           ],
           "cash": 4.03,
           "basis": -0.5,
-          "futuresChange": 0.0125,
+          "futuresChange": 0.01,
           "basisMonth": "Dec 26",
           "deliveryStart": "2026-10-01",
           "deliveryEnd": "2026-10-31"
@@ -8604,7 +8604,7 @@
           "deliveryEnd": "2026-10-31"
         }
       ],
-      "lastSuccessAt": "2026-10-29T05:00:01.251Z"
+      "lastSuccessAt": "2026-10-29T05:10:00.636Z"
     },
     {
       "id": "yanka-david-city",
@@ -8620,7 +8620,7 @@
         "Data provided by StoneX. All prices delayed 10 minutes.",
         "Market data: CME Group"
       ],
-      "sourceUpdated": "10/28/26 11:48 PM",
+      "sourceUpdated": "10/28/26 11:59 PM",
       "crops": [
         {
           "name": "Corn",
@@ -8634,7 +8634,7 @@
               "deliveryEnd": "2026-10-31",
               "delivery": "10/01/26-10/31/26",
               "basisMonth": "Dec 26",
-              "futuresChange": 0.0125,
+              "futuresChange": 0.01,
               "basis": -0.43,
               "cash": 4.1
             },
@@ -8644,7 +8644,7 @@
               "deliveryEnd": "2026-11-30",
               "delivery": "11/01/26-11/30/26",
               "basisMonth": "Dec 26",
-              "futuresChange": 0.0125,
+              "futuresChange": 0.01,
               "basis": -0.43,
               "cash": 4.1
             },
@@ -8654,7 +8654,7 @@
               "deliveryEnd": "2026-12-31",
               "delivery": "12/01/26-12/31/26",
               "basisMonth": "Dec 26",
-              "futuresChange": 0.0125,
+              "futuresChange": 0.01,
               "basis": -0.35,
               "cash": 4.18
             },
@@ -8664,7 +8664,7 @@
               "deliveryEnd": "2027-01-31",
               "delivery": "01/01/27-01/31/27",
               "basisMonth": "Mar 27",
-              "futuresChange": 0.01,
+              "futuresChange": 0.005,
               "basis": -0.45,
               "cash": 4.21
             },
@@ -8674,7 +8674,7 @@
               "deliveryEnd": "2027-02-28",
               "delivery": "02/01/27-02/28/27",
               "basisMonth": "Mar 27",
-              "futuresChange": 0.01,
+              "futuresChange": 0.005,
               "basis": -0.41,
               "cash": 4.25
             },
@@ -8684,7 +8684,7 @@
               "deliveryEnd": "2027-03-31",
               "delivery": "03/01/27-03/31/27",
               "basisMonth": "Mar 27",
-              "futuresChange": 0.01,
+              "futuresChange": 0.005,
               "basis": -0.38,
               "cash": 4.28
             },
@@ -8694,14 +8694,14 @@
               "deliveryEnd": "2027-10-31",
               "delivery": "10/01/27-10/31/27",
               "basisMonth": "Dec 27",
-              "futuresChange": 0.01,
+              "futuresChange": 0.0075,
               "basis": -0.51,
               "cash": 4.4
             }
           ],
           "cash": 4.1,
           "basis": -0.43,
-          "futuresChange": 0.0125,
+          "futuresChange": 0.01,
           "basisMonth": "Dec 26",
           "deliveryStart": "2026-10-01",
           "deliveryEnd": "2026-10-31",
@@ -8793,7 +8793,7 @@
           "location": "David City - Elevator"
         }
       ],
-      "lastSuccessAt": "2026-10-29T05:00:01.251Z"
+      "lastSuccessAt": "2026-10-29T05:10:00.636Z"
     }
   ]
 }
