@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-02T19:50:00.583Z",
+  "generatedAt": "2026-11-02T20:00:00.583Z",
   "sourceUpdated": "11/02/26 01:15 PM",
   "locations": [
     {
@@ -82,6 +82,16 @@
               "futuresChange": 0.0175,
               "basis": -0.45,
               "cash": 4.26
+            },
+            {
+              "crop": "Corn",
+              "deliveryStart": "2027-05-01",
+              "deliveryEnd": "2027-05-31",
+              "delivery": "05/01/27-05/31/27",
+              "basisMonth": "May 27",
+              "futuresChange": 0.0175,
+              "basis": -0.42,
+              "cash": 4.29
             },
             {
               "crop": "Corn",
@@ -220,7 +230,7 @@
           "deliveryEnd": "2026-11-30"
         }
       ],
-      "lastSuccessAt": "2026-11-02T19:50:00.583Z"
+      "lastSuccessAt": "2026-11-02T20:00:00.583Z"
     },
     {
       "id": "adm-columbus",
@@ -240,7 +250,7 @@
         {
           "name": "Corn",
           "color": "corn",
-          "price": "$4.23",
+          "price": "$4.28",
           "source": "Frontier",
           "bids": [
             {
@@ -250,8 +260,8 @@
               "delivery": "11/01/26-11/30/26",
               "basisMonth": "Dec 26",
               "futuresChange": 0.005,
-              "basis": -0.25,
-              "cash": 4.23
+              "basis": -0.2,
+              "cash": 4.28
             },
             {
               "crop": "Corn",
@@ -305,6 +315,16 @@
             },
             {
               "crop": "Corn",
+              "deliveryStart": "2027-05-01",
+              "deliveryEnd": "2027-05-31",
+              "delivery": "05/01/27-05/31/27",
+              "basisMonth": "May 27",
+              "futuresChange": 0.0175,
+              "basis": -0.14,
+              "cash": 4.57
+            },
+            {
+              "crop": "Corn",
               "deliveryStart": "2027-10-01",
               "deliveryEnd": "2027-10-31",
               "delivery": "10/01/27-10/31/27",
@@ -314,15 +334,15 @@
               "cash": 4.69
             }
           ],
-          "cash": 4.23,
-          "basis": -0.25,
+          "cash": 4.28,
+          "basis": -0.2,
           "futuresChange": 0.005,
           "basisMonth": "Dec 26",
           "deliveryStart": "2026-11-01",
           "deliveryEnd": "2026-11-30"
         }
       ],
-      "lastSuccessAt": "2026-11-02T19:50:00.583Z"
+      "lastSuccessAt": "2026-11-02T20:00:00.583Z"
     },
     {
       "id": "adm-fremont",
@@ -414,7 +434,7 @@
           "deliveryEnd": "2026-11-30"
         }
       ],
-      "lastSuccessAt": "2026-11-02T19:50:00.583Z"
+      "lastSuccessAt": "2026-11-02T20:00:00.583Z"
     },
     {
       "id": "adm-lincoln",
@@ -506,7 +526,7 @@
           "deliveryEnd": "2026-11-30"
         }
       ],
-      "lastSuccessAt": "2026-11-02T19:50:00.583Z"
+      "lastSuccessAt": "2026-11-02T20:00:00.583Z"
     },
     {
       "id": "agp-david-city",
@@ -598,7 +618,7 @@
           "deliveryEnd": "2026-11-30"
         }
       ],
-      "lastSuccessAt": "2026-11-02T19:50:00.583Z"
+      "lastSuccessAt": "2026-11-02T20:00:00.583Z"
     },
     {
       "id": "avoca",
@@ -680,6 +700,16 @@
               "futuresChange": 0.0175,
               "basis": -0.52,
               "cash": 4.19
+            },
+            {
+              "crop": "Corn",
+              "deliveryStart": "2027-05-01",
+              "deliveryEnd": "2027-05-31",
+              "delivery": "05/01/27-05/31/27",
+              "basisMonth": "May 27",
+              "futuresChange": 0.0175,
+              "basis": -0.49,
+              "cash": 4.22
             },
             {
               "crop": "Corn",
@@ -774,7 +804,7 @@
           "deliveryEnd": "2026-11-30"
         }
       ],
-      "lastSuccessAt": "2026-11-02T19:50:00.583Z"
+      "lastSuccessAt": "2026-11-02T20:00:00.583Z"
     },
     {
       "id": "belgrade",
@@ -856,6 +886,16 @@
               "futuresChange": 0.0175,
               "basis": -0.44,
               "cash": 4.27
+            },
+            {
+              "crop": "Corn",
+              "deliveryStart": "2027-05-01",
+              "deliveryEnd": "2027-05-31",
+              "delivery": "05/01/27-05/31/27",
+              "basisMonth": "May 27",
+              "futuresChange": 0.0175,
+              "basis": -0.41,
+              "cash": 4.3
             },
             {
               "crop": "Corn",
@@ -950,7 +990,7 @@
           "deliveryEnd": "2026-11-30"
         }
       ],
-      "lastSuccessAt": "2026-11-02T19:50:00.583Z"
+      "lastSuccessAt": "2026-11-02T20:00:00.583Z"
     },
     {
       "id": "bellwood",
@@ -1032,6 +1072,16 @@
               "futuresChange": 0.0175,
               "basis": -0.4,
               "cash": 4.31
+            },
+            {
+              "crop": "Corn",
+              "deliveryStart": "2027-05-01",
+              "deliveryEnd": "2027-05-31",
+              "delivery": "05/01/27-05/31/27",
+              "basisMonth": "May 27",
+              "futuresChange": 0.0175,
+              "basis": -0.37,
+              "cash": 4.34
             },
             {
               "crop": "Corn",
@@ -1126,7 +1176,7 @@
           "deliveryEnd": "2026-11-30"
         }
       ],
-      "lastSuccessAt": "2026-11-02T19:50:00.583Z"
+      "lastSuccessAt": "2026-11-02T20:00:00.583Z"
     },
     {
       "id": "bennet",
@@ -1208,6 +1258,16 @@
               "futuresChange": 0.0175,
               "basis": -0.52,
               "cash": 4.19
+            },
+            {
+              "crop": "Corn",
+              "deliveryStart": "2027-05-01",
+              "deliveryEnd": "2027-05-31",
+              "delivery": "05/01/27-05/31/27",
+              "basisMonth": "May 27",
+              "futuresChange": 0.0175,
+              "basis": -0.49,
+              "cash": 4.22
             },
             {
               "crop": "Corn",
@@ -1302,7 +1362,7 @@
           "deliveryEnd": "2026-11-30"
         }
       ],
-      "lastSuccessAt": "2026-11-02T19:50:00.583Z"
+      "lastSuccessAt": "2026-11-02T20:00:00.583Z"
     },
     {
       "id": "brainard",
@@ -1384,6 +1444,16 @@
               "futuresChange": 0.0175,
               "basis": -0.4,
               "cash": 4.31
+            },
+            {
+              "crop": "Corn",
+              "deliveryStart": "2027-05-01",
+              "deliveryEnd": "2027-05-31",
+              "delivery": "05/01/27-05/31/27",
+              "basisMonth": "May 27",
+              "futuresChange": 0.0175,
+              "basis": -0.37,
+              "cash": 4.34
             },
             {
               "crop": "Corn",
@@ -1478,7 +1548,7 @@
           "deliveryEnd": "2026-11-30"
         }
       ],
-      "lastSuccessAt": "2026-11-02T19:50:00.583Z"
+      "lastSuccessAt": "2026-11-02T20:00:00.583Z"
     },
     {
       "id": "bruno",
@@ -1560,6 +1630,16 @@
               "futuresChange": 0.0175,
               "basis": -0.51,
               "cash": 4.2
+            },
+            {
+              "crop": "Corn",
+              "deliveryStart": "2027-05-01",
+              "deliveryEnd": "2027-05-31",
+              "delivery": "05/01/27-05/31/27",
+              "basisMonth": "May 27",
+              "futuresChange": 0.0175,
+              "basis": -0.48,
+              "cash": 4.23
             },
             {
               "crop": "Corn",
@@ -1654,7 +1734,7 @@
           "deliveryEnd": "2026-11-30"
         }
       ],
-      "lastSuccessAt": "2026-11-02T19:50:00.583Z"
+      "lastSuccessAt": "2026-11-02T20:00:00.583Z"
     },
     {
       "id": "bunge-cb",
@@ -1746,7 +1826,7 @@
           "deliveryEnd": "2026-11-30"
         }
       ],
-      "lastSuccessAt": "2026-11-02T19:50:00.583Z"
+      "lastSuccessAt": "2026-11-02T20:00:00.583Z"
     },
     {
       "id": "burr",
@@ -1828,6 +1908,16 @@
               "futuresChange": 0.0175,
               "basis": -0.54,
               "cash": 4.17
+            },
+            {
+              "crop": "Corn",
+              "deliveryStart": "2027-05-01",
+              "deliveryEnd": "2027-05-31",
+              "delivery": "05/01/27-05/31/27",
+              "basisMonth": "May 27",
+              "futuresChange": 0.0175,
+              "basis": -0.51,
+              "cash": 4.2
             },
             {
               "crop": "Corn",
@@ -1922,7 +2012,7 @@
           "deliveryEnd": "2026-11-30"
         }
       ],
-      "lastSuccessAt": "2026-11-02T19:50:00.583Z"
+      "lastSuccessAt": "2026-11-02T20:00:00.583Z"
     },
     {
       "id": "cargill-blair",
@@ -1992,8 +2082,8 @@
               "delivery": "03/01/27-03/31/27",
               "basisMonth": "Mar 27",
               "futuresChange": 0.01,
-              "basis": -0.1,
-              "cash": 4.52
+              "basis": -0.11,
+              "cash": 4.51
             },
             {
               "crop": "Corn",
@@ -2004,6 +2094,16 @@
               "futuresChange": 0.0175,
               "basis": -0.16,
               "cash": 4.55
+            },
+            {
+              "crop": "Corn",
+              "deliveryStart": "2027-05-01",
+              "deliveryEnd": "2027-05-31",
+              "delivery": "05/01/27-05/31/27",
+              "basisMonth": "May 27",
+              "futuresChange": 0.0175,
+              "basis": -0.13,
+              "cash": 4.58
             },
             {
               "crop": "Corn",
@@ -2024,7 +2124,7 @@
           "deliveryEnd": "2026-11-30"
         }
       ],
-      "lastSuccessAt": "2026-11-02T19:50:00.583Z"
+      "lastSuccessAt": "2026-11-02T20:00:00.583Z"
     },
     {
       "id": "cedar-bluffs",
@@ -2106,6 +2206,16 @@
               "futuresChange": 0.0175,
               "basis": -0.44,
               "cash": 4.27
+            },
+            {
+              "crop": "Corn",
+              "deliveryStart": "2027-05-01",
+              "deliveryEnd": "2027-05-31",
+              "delivery": "05/01/27-05/31/27",
+              "basisMonth": "May 27",
+              "futuresChange": 0.0175,
+              "basis": -0.41,
+              "cash": 4.3
             },
             {
               "crop": "Corn",
@@ -2200,7 +2310,7 @@
           "deliveryEnd": "2026-11-30"
         }
       ],
-      "lastSuccessAt": "2026-11-02T19:50:00.583Z"
+      "lastSuccessAt": "2026-11-02T20:00:00.583Z"
     },
     {
       "id": "ceresco",
@@ -2282,6 +2392,16 @@
               "futuresChange": 0.0175,
               "basis": -0.44,
               "cash": 4.27
+            },
+            {
+              "crop": "Corn",
+              "deliveryStart": "2027-05-01",
+              "deliveryEnd": "2027-05-31",
+              "delivery": "05/01/27-05/31/27",
+              "basisMonth": "May 27",
+              "futuresChange": 0.0175,
+              "basis": -0.41,
+              "cash": 4.3
             },
             {
               "crop": "Corn",
@@ -2376,7 +2496,7 @@
           "deliveryEnd": "2026-11-30"
         }
       ],
-      "lastSuccessAt": "2026-11-02T19:50:00.583Z"
+      "lastSuccessAt": "2026-11-02T20:00:00.583Z"
     },
     {
       "id": "columbus",
@@ -2458,6 +2578,16 @@
               "futuresChange": 0.0175,
               "basis": -0.32,
               "cash": 4.39
+            },
+            {
+              "crop": "Corn",
+              "deliveryStart": "2027-05-01",
+              "deliveryEnd": "2027-05-31",
+              "delivery": "05/01/27-05/31/27",
+              "basisMonth": "May 27",
+              "futuresChange": 0.0175,
+              "basis": -0.29,
+              "cash": 4.42
             },
             {
               "crop": "Corn",
@@ -2552,7 +2682,7 @@
           "deliveryEnd": "2026-11-30"
         }
       ],
-      "lastSuccessAt": "2026-11-02T19:50:00.583Z"
+      "lastSuccessAt": "2026-11-02T20:00:00.583Z"
     },
     {
       "id": "cook",
@@ -2634,6 +2764,16 @@
               "futuresChange": 0.0175,
               "basis": -0.54,
               "cash": 4.17
+            },
+            {
+              "crop": "Corn",
+              "deliveryStart": "2027-05-01",
+              "deliveryEnd": "2027-05-31",
+              "delivery": "05/01/27-05/31/27",
+              "basisMonth": "May 27",
+              "futuresChange": 0.0175,
+              "basis": -0.51,
+              "cash": 4.2
             },
             {
               "crop": "Corn",
@@ -2728,7 +2868,7 @@
           "deliveryEnd": "2026-11-30"
         }
       ],
-      "lastSuccessAt": "2026-11-02T19:50:00.583Z"
+      "lastSuccessAt": "2026-11-02T20:00:00.583Z"
     },
     {
       "id": "duncan",
@@ -2810,6 +2950,16 @@
               "futuresChange": 0.0175,
               "basis": -0.48,
               "cash": 4.23
+            },
+            {
+              "crop": "Corn",
+              "deliveryStart": "2027-05-01",
+              "deliveryEnd": "2027-05-31",
+              "delivery": "05/01/27-05/31/27",
+              "basisMonth": "May 27",
+              "futuresChange": 0.0175,
+              "basis": -0.45,
+              "cash": 4.26
             },
             {
               "crop": "Corn",
@@ -2904,7 +3054,7 @@
           "deliveryEnd": "2026-11-30"
         }
       ],
-      "lastSuccessAt": "2026-11-02T19:50:00.583Z"
+      "lastSuccessAt": "2026-11-02T20:00:00.583Z"
     },
     {
       "id": "dwight",
@@ -2986,6 +3136,16 @@
               "futuresChange": 0.0175,
               "basis": -0.5,
               "cash": 4.21
+            },
+            {
+              "crop": "Corn",
+              "deliveryStart": "2027-05-01",
+              "deliveryEnd": "2027-05-31",
+              "delivery": "05/01/27-05/31/27",
+              "basisMonth": "May 27",
+              "futuresChange": 0.0175,
+              "basis": -0.47,
+              "cash": 4.24
             },
             {
               "crop": "Corn",
@@ -3080,7 +3240,7 @@
           "deliveryEnd": "2026-11-30"
         }
       ],
-      "lastSuccessAt": "2026-11-02T19:50:00.583Z"
+      "lastSuccessAt": "2026-11-02T20:00:00.583Z"
     },
     {
       "id": "e-energy-adams",
@@ -3165,6 +3325,16 @@
             },
             {
               "crop": "Corn",
+              "deliveryStart": "2027-05-01",
+              "deliveryEnd": "2027-05-31",
+              "delivery": "05/01/27-05/31/27",
+              "basisMonth": "May 27",
+              "futuresChange": 0.0175,
+              "basis": -0.22,
+              "cash": 4.49
+            },
+            {
+              "crop": "Corn",
               "deliveryStart": "2027-10-01",
               "deliveryEnd": "2027-10-31",
               "delivery": "10/01/27-10/31/27",
@@ -3182,7 +3352,7 @@
           "deliveryEnd": "2026-11-30"
         }
       ],
-      "lastSuccessAt": "2026-11-02T19:50:00.583Z"
+      "lastSuccessAt": "2026-11-02T20:00:00.583Z"
     },
     {
       "id": "eagle",
@@ -3264,6 +3434,16 @@
               "futuresChange": 0.0175,
               "basis": -0.52,
               "cash": 4.19
+            },
+            {
+              "crop": "Corn",
+              "deliveryStart": "2027-05-01",
+              "deliveryEnd": "2027-05-31",
+              "delivery": "05/01/27-05/31/27",
+              "basisMonth": "May 27",
+              "futuresChange": 0.0175,
+              "basis": -0.49,
+              "cash": 4.22
             },
             {
               "crop": "Corn",
@@ -3358,7 +3538,7 @@
           "deliveryEnd": "2026-11-30"
         }
       ],
-      "lastSuccessAt": "2026-11-02T19:50:00.583Z"
+      "lastSuccessAt": "2026-11-02T20:00:00.583Z"
     },
     {
       "id": "elk-creek",
@@ -3440,6 +3620,16 @@
               "futuresChange": 0.0175,
               "basis": -0.54,
               "cash": 4.17
+            },
+            {
+              "crop": "Corn",
+              "deliveryStart": "2027-05-01",
+              "deliveryEnd": "2027-05-31",
+              "delivery": "05/01/27-05/31/27",
+              "basisMonth": "May 27",
+              "futuresChange": 0.0175,
+              "basis": -0.51,
+              "cash": 4.2
             },
             {
               "crop": "Corn",
@@ -3578,7 +3768,7 @@
           "deliveryEnd": "2026-11-30"
         }
       ],
-      "lastSuccessAt": "2026-11-02T19:50:00.583Z"
+      "lastSuccessAt": "2026-11-02T20:00:00.583Z"
     },
     {
       "id": "elmwood",
@@ -3660,6 +3850,16 @@
               "futuresChange": 0.0175,
               "basis": -0.52,
               "cash": 4.19
+            },
+            {
+              "crop": "Corn",
+              "deliveryStart": "2027-05-01",
+              "deliveryEnd": "2027-05-31",
+              "delivery": "05/01/27-05/31/27",
+              "basisMonth": "May 27",
+              "futuresChange": 0.0175,
+              "basis": -0.49,
+              "cash": 4.22
             },
             {
               "crop": "Corn",
@@ -3754,7 +3954,7 @@
           "deliveryEnd": "2026-11-30"
         }
       ],
-      "lastSuccessAt": "2026-11-02T19:50:00.583Z"
+      "lastSuccessAt": "2026-11-02T20:00:00.583Z"
     },
     {
       "id": "garrison",
@@ -3836,6 +4036,16 @@
               "futuresChange": 0.0175,
               "basis": -0.44,
               "cash": 4.27
+            },
+            {
+              "crop": "Corn",
+              "deliveryStart": "2027-05-01",
+              "deliveryEnd": "2027-05-31",
+              "delivery": "05/01/27-05/31/27",
+              "basisMonth": "May 27",
+              "futuresChange": 0.0175,
+              "basis": -0.41,
+              "cash": 4.3
             },
             {
               "crop": "Corn",
@@ -3930,7 +4140,7 @@
           "deliveryEnd": "2026-11-30"
         }
       ],
-      "lastSuccessAt": "2026-11-02T19:50:00.583Z"
+      "lastSuccessAt": "2026-11-02T20:00:00.583Z"
     },
     {
       "id": "green-plains-cc",
@@ -4012,7 +4222,7 @@
           "deliveryEnd": "2026-11-30"
         }
       ],
-      "lastSuccessAt": "2026-11-02T19:50:00.583Z"
+      "lastSuccessAt": "2026-11-02T20:00:00.583Z"
     },
     {
       "id": "greenwood",
@@ -4094,6 +4304,16 @@
               "futuresChange": 0.0175,
               "basis": -0.47,
               "cash": 4.24
+            },
+            {
+              "crop": "Corn",
+              "deliveryStart": "2027-05-01",
+              "deliveryEnd": "2027-05-31",
+              "delivery": "05/01/27-05/31/27",
+              "basisMonth": "May 27",
+              "futuresChange": 0.0175,
+              "basis": -0.44,
+              "cash": 4.27
             },
             {
               "crop": "Corn",
@@ -4188,7 +4408,7 @@
           "deliveryEnd": "2026-11-30"
         }
       ],
-      "lastSuccessAt": "2026-11-02T19:50:00.583Z"
+      "lastSuccessAt": "2026-11-02T20:00:00.583Z"
     },
     {
       "id": "lincoln",
@@ -4270,6 +4490,16 @@
               "futuresChange": 0.0175,
               "basis": -0.39,
               "cash": 4.32
+            },
+            {
+              "crop": "Corn",
+              "deliveryStart": "2027-05-01",
+              "deliveryEnd": "2027-05-31",
+              "delivery": "05/01/27-05/31/27",
+              "basisMonth": "May 27",
+              "futuresChange": 0.0175,
+              "basis": -0.36,
+              "cash": 4.35
             },
             {
               "crop": "Corn",
@@ -4364,7 +4594,7 @@
           "deliveryEnd": "2026-11-30"
         }
       ],
-      "lastSuccessAt": "2026-11-02T19:50:00.583Z"
+      "lastSuccessAt": "2026-11-02T20:00:00.583Z"
     },
     {
       "id": "manley",
@@ -4446,6 +4676,16 @@
               "futuresChange": 0.0175,
               "basis": -0.52,
               "cash": 4.19
+            },
+            {
+              "crop": "Corn",
+              "deliveryStart": "2027-05-01",
+              "deliveryEnd": "2027-05-31",
+              "delivery": "05/01/27-05/31/27",
+              "basisMonth": "May 27",
+              "futuresChange": 0.0175,
+              "basis": -0.49,
+              "cash": 4.22
             },
             {
               "crop": "Corn",
@@ -4540,7 +4780,7 @@
           "deliveryEnd": "2026-11-30"
         }
       ],
-      "lastSuccessAt": "2026-11-02T19:50:00.583Z"
+      "lastSuccessAt": "2026-11-02T20:00:00.583Z"
     },
     {
       "id": "mead",
@@ -4622,6 +4862,16 @@
               "futuresChange": 0.0175,
               "basis": -0.38,
               "cash": 4.33
+            },
+            {
+              "crop": "Corn",
+              "deliveryStart": "2027-05-01",
+              "deliveryEnd": "2027-05-31",
+              "delivery": "05/01/27-05/31/27",
+              "basisMonth": "May 27",
+              "futuresChange": 0.0175,
+              "basis": -0.35,
+              "cash": 4.36
             },
             {
               "crop": "Corn",
@@ -4716,7 +4966,7 @@
           "deliveryEnd": "2026-11-30"
         }
       ],
-      "lastSuccessAt": "2026-11-02T19:50:00.583Z"
+      "lastSuccessAt": "2026-11-02T20:00:00.583Z"
     },
     {
       "id": "murdock",
@@ -4798,6 +5048,16 @@
               "futuresChange": 0.0175,
               "basis": -0.52,
               "cash": 4.19
+            },
+            {
+              "crop": "Corn",
+              "deliveryStart": "2027-05-01",
+              "deliveryEnd": "2027-05-31",
+              "delivery": "05/01/27-05/31/27",
+              "basisMonth": "May 27",
+              "futuresChange": 0.0175,
+              "basis": -0.49,
+              "cash": 4.22
             },
             {
               "crop": "Corn",
@@ -4936,7 +5196,7 @@
           "deliveryEnd": "2026-11-30"
         }
       ],
-      "lastSuccessAt": "2026-11-02T19:50:00.583Z"
+      "lastSuccessAt": "2026-11-02T20:00:00.583Z"
     },
     {
       "id": "mynard",
@@ -5018,6 +5278,16 @@
               "futuresChange": 0.0175,
               "basis": -0.48,
               "cash": 4.23
+            },
+            {
+              "crop": "Corn",
+              "deliveryStart": "2027-05-01",
+              "deliveryEnd": "2027-05-31",
+              "delivery": "05/01/27-05/31/27",
+              "basisMonth": "May 27",
+              "futuresChange": 0.0175,
+              "basis": -0.45,
+              "cash": 4.26
             },
             {
               "crop": "Corn",
@@ -5112,7 +5382,7 @@
           "deliveryEnd": "2026-11-30"
         }
       ],
-      "lastSuccessAt": "2026-11-02T19:50:00.583Z"
+      "lastSuccessAt": "2026-11-02T20:00:00.583Z"
     },
     {
       "id": "nebraska-city",
@@ -5194,6 +5464,16 @@
               "futuresChange": 0.0175,
               "basis": -0.44,
               "cash": 4.27
+            },
+            {
+              "crop": "Corn",
+              "deliveryStart": "2027-05-01",
+              "deliveryEnd": "2027-05-31",
+              "delivery": "05/01/27-05/31/27",
+              "basisMonth": "May 27",
+              "futuresChange": 0.0175,
+              "basis": -0.41,
+              "cash": 4.3
             },
             {
               "crop": "Corn",
@@ -5288,7 +5568,7 @@
           "deliveryEnd": "2026-11-30"
         }
       ],
-      "lastSuccessAt": "2026-11-02T19:50:00.583Z"
+      "lastSuccessAt": "2026-11-02T20:00:00.583Z"
     },
     {
       "id": "norfolk-crush",
@@ -5380,7 +5660,7 @@
           "deliveryEnd": "2026-11-30"
         }
       ],
-      "lastSuccessAt": "2026-11-02T19:50:00.583Z"
+      "lastSuccessAt": "2026-11-02T20:00:00.583Z"
     },
     {
       "id": "north-bend",
@@ -5465,6 +5745,16 @@
             },
             {
               "crop": "Corn",
+              "deliveryStart": "2027-05-01",
+              "deliveryEnd": "2027-05-31",
+              "delivery": "05/01/27-05/31/27",
+              "basisMonth": "May 27",
+              "futuresChange": 0.0175,
+              "basis": -0.36,
+              "cash": 4.35
+            },
+            {
+              "crop": "Corn",
               "deliveryStart": "2027-10-01",
               "deliveryEnd": "2027-10-31",
               "delivery": "10/01/27-10/31/27",
@@ -5482,7 +5772,7 @@
           "deliveryEnd": "2026-11-30"
         }
       ],
-      "lastSuccessAt": "2026-11-02T19:50:00.583Z"
+      "lastSuccessAt": "2026-11-02T20:00:00.583Z"
     },
     {
       "id": "osceola",
@@ -5564,6 +5854,16 @@
               "futuresChange": 0.0175,
               "basis": -0.44,
               "cash": 4.27
+            },
+            {
+              "crop": "Corn",
+              "deliveryStart": "2027-05-01",
+              "deliveryEnd": "2027-05-31",
+              "delivery": "05/01/27-05/31/27",
+              "basisMonth": "May 27",
+              "futuresChange": 0.0175,
+              "basis": -0.41,
+              "cash": 4.3
             },
             {
               "crop": "Corn",
@@ -5658,7 +5958,7 @@
           "deliveryEnd": "2026-11-30"
         }
       ],
-      "lastSuccessAt": "2026-11-02T19:50:00.583Z"
+      "lastSuccessAt": "2026-11-02T20:00:00.583Z"
     },
     {
       "id": "otoe",
@@ -5740,6 +6040,16 @@
               "futuresChange": 0.0175,
               "basis": -0.57,
               "cash": 4.14
+            },
+            {
+              "crop": "Corn",
+              "deliveryStart": "2027-05-01",
+              "deliveryEnd": "2027-05-31",
+              "delivery": "05/01/27-05/31/27",
+              "basisMonth": "May 27",
+              "futuresChange": 0.0175,
+              "basis": -0.54,
+              "cash": 4.17
             },
             {
               "crop": "Corn",
@@ -5834,7 +6144,7 @@
           "deliveryEnd": "2026-11-30"
         }
       ],
-      "lastSuccessAt": "2026-11-02T19:50:00.583Z"
+      "lastSuccessAt": "2026-11-02T20:00:00.583Z"
     },
     {
       "id": "palmyra",
@@ -5916,6 +6226,16 @@
               "futuresChange": 0.0175,
               "basis": -0.52,
               "cash": 4.19
+            },
+            {
+              "crop": "Corn",
+              "deliveryStart": "2027-05-01",
+              "deliveryEnd": "2027-05-31",
+              "delivery": "05/01/27-05/31/27",
+              "basisMonth": "May 27",
+              "futuresChange": 0.0175,
+              "basis": -0.49,
+              "cash": 4.22
             },
             {
               "crop": "Corn",
@@ -6010,7 +6330,7 @@
           "deliveryEnd": "2026-11-30"
         }
       ],
-      "lastSuccessAt": "2026-11-02T19:50:00.583Z"
+      "lastSuccessAt": "2026-11-02T20:00:00.583Z"
     },
     {
       "id": "prague",
@@ -6092,6 +6412,16 @@
               "futuresChange": 0.0175,
               "basis": -0.44,
               "cash": 4.27
+            },
+            {
+              "crop": "Corn",
+              "deliveryStart": "2027-05-01",
+              "deliveryEnd": "2027-05-31",
+              "delivery": "05/01/27-05/31/27",
+              "basisMonth": "May 27",
+              "futuresChange": 0.0175,
+              "basis": -0.41,
+              "cash": 4.3
             },
             {
               "crop": "Corn",
@@ -6186,7 +6516,7 @@
           "deliveryEnd": "2026-11-30"
         }
       ],
-      "lastSuccessAt": "2026-11-02T19:50:00.583Z"
+      "lastSuccessAt": "2026-11-02T20:00:00.583Z"
     },
     {
       "id": "schuyler",
@@ -6268,6 +6598,16 @@
               "futuresChange": 0.0175,
               "basis": -0.39,
               "cash": 4.32
+            },
+            {
+              "crop": "Corn",
+              "deliveryStart": "2027-05-01",
+              "deliveryEnd": "2027-05-31",
+              "delivery": "05/01/27-05/31/27",
+              "basisMonth": "May 27",
+              "futuresChange": 0.0175,
+              "basis": -0.36,
+              "cash": 4.35
             },
             {
               "crop": "Corn",
@@ -6406,7 +6746,7 @@
           "deliveryEnd": "2026-11-30"
         }
       ],
-      "lastSuccessAt": "2026-11-02T19:50:00.583Z"
+      "lastSuccessAt": "2026-11-02T20:00:00.583Z"
     },
     {
       "id": "silver-creek",
@@ -6488,6 +6828,16 @@
               "futuresChange": 0.0175,
               "basis": -0.39,
               "cash": 4.32
+            },
+            {
+              "crop": "Corn",
+              "deliveryStart": "2027-05-01",
+              "deliveryEnd": "2027-05-31",
+              "delivery": "05/01/27-05/31/27",
+              "basisMonth": "May 27",
+              "futuresChange": 0.0175,
+              "basis": -0.36,
+              "cash": 4.35
             },
             {
               "crop": "Corn",
@@ -6582,7 +6932,7 @@
           "deliveryEnd": "2026-11-30"
         }
       ],
-      "lastSuccessAt": "2026-11-02T19:50:00.583Z"
+      "lastSuccessAt": "2026-11-02T20:00:00.583Z"
     },
     {
       "id": "sire-cb",
@@ -6667,6 +7017,16 @@
             },
             {
               "crop": "Corn",
+              "deliveryStart": "2027-05-01",
+              "deliveryEnd": "2027-05-31",
+              "delivery": "05/01/27-05/31/27",
+              "basisMonth": "May 27",
+              "futuresChange": 0.0175,
+              "basis": -0.12,
+              "cash": 4.59
+            },
+            {
+              "crop": "Corn",
               "deliveryStart": "2027-10-01",
               "deliveryEnd": "2027-10-31",
               "delivery": "10/01/27-10/31/27",
@@ -6684,7 +7044,7 @@
           "deliveryEnd": "2026-11-30"
         }
       ],
-      "lastSuccessAt": "2026-11-02T19:50:00.583Z"
+      "lastSuccessAt": "2026-11-02T20:00:00.583Z"
     },
     {
       "id": "st-mary",
@@ -6766,6 +7126,16 @@
               "futuresChange": 0.0175,
               "basis": -0.54,
               "cash": 4.17
+            },
+            {
+              "crop": "Corn",
+              "deliveryStart": "2027-05-01",
+              "deliveryEnd": "2027-05-31",
+              "delivery": "05/01/27-05/31/27",
+              "basisMonth": "May 27",
+              "futuresChange": 0.0175,
+              "basis": -0.51,
+              "cash": 4.2
             },
             {
               "crop": "Corn",
@@ -6860,7 +7230,7 @@
           "deliveryEnd": "2026-11-30"
         }
       ],
-      "lastSuccessAt": "2026-11-02T19:50:00.583Z"
+      "lastSuccessAt": "2026-11-02T20:00:00.583Z"
     },
     {
       "id": "syracuse",
@@ -6945,6 +7315,16 @@
             },
             {
               "crop": "Corn",
+              "deliveryStart": "2027-05-01",
+              "deliveryEnd": "2027-05-31",
+              "delivery": "05/01/27-05/31/27",
+              "basisMonth": "May 27",
+              "futuresChange": 0.0175,
+              "basis": -0.4,
+              "cash": 4.31
+            },
+            {
+              "crop": "Corn",
               "deliveryStart": "2027-10-01",
               "deliveryEnd": "2027-10-31",
               "delivery": "10/01/27-10/31/27",
@@ -6962,7 +7342,7 @@
           "deliveryEnd": "2026-11-30"
         }
       ],
-      "lastSuccessAt": "2026-11-02T19:50:00.583Z"
+      "lastSuccessAt": "2026-11-02T20:00:00.583Z"
     },
     {
       "id": "tarnov",
@@ -7044,6 +7424,16 @@
               "futuresChange": 0.0175,
               "basis": -0.44,
               "cash": 4.27
+            },
+            {
+              "crop": "Corn",
+              "deliveryStart": "2027-05-01",
+              "deliveryEnd": "2027-05-31",
+              "delivery": "05/01/27-05/31/27",
+              "basisMonth": "May 27",
+              "futuresChange": 0.0175,
+              "basis": -0.41,
+              "cash": 4.3
             },
             {
               "crop": "Corn",
@@ -7138,7 +7528,7 @@
           "deliveryEnd": "2026-11-30"
         }
       ],
-      "lastSuccessAt": "2026-11-02T19:50:00.583Z"
+      "lastSuccessAt": "2026-11-02T20:00:00.583Z"
     },
     {
       "id": "tecumsech",
@@ -7220,6 +7610,16 @@
               "futuresChange": 0.0175,
               "basis": -0.54,
               "cash": 4.17
+            },
+            {
+              "crop": "Corn",
+              "deliveryStart": "2027-05-01",
+              "deliveryEnd": "2027-05-31",
+              "delivery": "05/01/27-05/31/27",
+              "basisMonth": "May 27",
+              "futuresChange": 0.0175,
+              "basis": -0.51,
+              "cash": 4.2
             },
             {
               "crop": "Corn",
@@ -7358,7 +7758,7 @@
           "deliveryEnd": "2026-11-30"
         }
       ],
-      "lastSuccessAt": "2026-11-02T19:50:00.583Z"
+      "lastSuccessAt": "2026-11-02T20:00:00.583Z"
     },
     {
       "id": "tecumseh-north",
@@ -7443,6 +7843,16 @@
             },
             {
               "crop": "Corn",
+              "deliveryStart": "2027-05-01",
+              "deliveryEnd": "2027-05-31",
+              "delivery": "05/01/27-05/31/27",
+              "basisMonth": "May 27",
+              "futuresChange": 0.0175,
+              "basis": -0.46,
+              "cash": 4.25
+            },
+            {
+              "crop": "Corn",
               "deliveryStart": "2027-10-01",
               "deliveryEnd": "2027-10-31",
               "delivery": "10/01/27-10/31/27",
@@ -7460,7 +7870,7 @@
           "deliveryEnd": "2026-11-30"
         }
       ],
-      "lastSuccessAt": "2026-11-02T19:50:00.583Z"
+      "lastSuccessAt": "2026-11-02T20:00:00.583Z"
     },
     {
       "id": "wahoo",
@@ -7542,6 +7952,16 @@
               "futuresChange": 0.0175,
               "basis": -0.45,
               "cash": 4.26
+            },
+            {
+              "crop": "Corn",
+              "deliveryStart": "2027-05-01",
+              "deliveryEnd": "2027-05-31",
+              "delivery": "05/01/27-05/31/27",
+              "basisMonth": "May 27",
+              "futuresChange": 0.0175,
+              "basis": -0.42,
+              "cash": 4.29
             },
             {
               "crop": "Corn",
@@ -7636,7 +8056,7 @@
           "deliveryEnd": "2026-11-30"
         }
       ],
-      "lastSuccessAt": "2026-11-02T19:50:00.583Z"
+      "lastSuccessAt": "2026-11-02T20:00:00.583Z"
     },
     {
       "id": "walton",
@@ -7718,6 +8138,16 @@
               "futuresChange": 0.0175,
               "basis": -0.52,
               "cash": 4.19
+            },
+            {
+              "crop": "Corn",
+              "deliveryStart": "2027-05-01",
+              "deliveryEnd": "2027-05-31",
+              "delivery": "05/01/27-05/31/27",
+              "basisMonth": "May 27",
+              "futuresChange": 0.0175,
+              "basis": -0.49,
+              "cash": 4.22
             },
             {
               "crop": "Corn",
@@ -7812,7 +8242,7 @@
           "deliveryEnd": "2026-11-30"
         }
       ],
-      "lastSuccessAt": "2026-11-02T19:50:00.583Z"
+      "lastSuccessAt": "2026-11-02T20:00:00.583Z"
     },
     {
       "id": "waverly",
@@ -7894,6 +8324,16 @@
               "futuresChange": 0.0175,
               "basis": -0.44,
               "cash": 4.27
+            },
+            {
+              "crop": "Corn",
+              "deliveryStart": "2027-05-01",
+              "deliveryEnd": "2027-05-31",
+              "delivery": "05/01/27-05/31/27",
+              "basisMonth": "May 27",
+              "futuresChange": 0.0175,
+              "basis": -0.41,
+              "cash": 4.3
             },
             {
               "crop": "Corn",
@@ -7988,7 +8428,7 @@
           "deliveryEnd": "2026-11-30"
         }
       ],
-      "lastSuccessAt": "2026-11-02T19:50:00.583Z"
+      "lastSuccessAt": "2026-11-02T20:00:00.583Z"
     },
     {
       "id": "weston",
@@ -8070,6 +8510,16 @@
               "futuresChange": 0.0175,
               "basis": -0.47,
               "cash": 4.24
+            },
+            {
+              "crop": "Corn",
+              "deliveryStart": "2027-05-01",
+              "deliveryEnd": "2027-05-31",
+              "delivery": "05/01/27-05/31/27",
+              "basisMonth": "May 27",
+              "futuresChange": 0.0175,
+              "basis": -0.44,
+              "cash": 4.27
             },
             {
               "crop": "Corn",
@@ -8164,7 +8614,7 @@
           "deliveryEnd": "2026-11-30"
         }
       ],
-      "lastSuccessAt": "2026-11-02T19:50:00.583Z"
+      "lastSuccessAt": "2026-11-02T20:00:00.583Z"
     },
     {
       "id": "yanka-david-city",
@@ -8247,6 +8697,16 @@
               "futuresChange": 0.0175,
               "basis": -0.42,
               "cash": 4.29
+            },
+            {
+              "crop": "Corn",
+              "deliveryStart": "2027-05-01",
+              "deliveryEnd": "2027-05-31",
+              "delivery": "05/01/27-05/31/27",
+              "basisMonth": "May 27",
+              "futuresChange": 0.0175,
+              "basis": -0.39,
+              "cash": 4.32
             },
             {
               "crop": "Corn",
@@ -8343,7 +8803,7 @@
           "location": "David City - Elevator"
         }
       ],
-      "lastSuccessAt": "2026-11-02T19:50:00.583Z"
+      "lastSuccessAt": "2026-11-02T20:00:00.583Z"
     }
   ]
 }
