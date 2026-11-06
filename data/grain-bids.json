@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-11-06T04:30:01.416Z",
-  "sourceUpdated": "11/05/26 10:19 PM",
+  "generatedAt": "2026-11-06T04:40:00.726Z",
+  "sourceUpdated": "11/05/26 10:29 PM",
   "locations": [
     {
       "id": "adams",
@@ -15,7 +15,7 @@
         "Data provided by StoneX. All prices delayed 10 minutes.",
         "Market data: CME Group"
       ],
-      "sourceUpdated": "11/05/26 10:19 PM",
+      "sourceUpdated": "11/05/26 10:29 PM",
       "crops": [
         {
           "name": "Corn",
@@ -49,9 +49,9 @@
               "deliveryEnd": "2027-01-31",
               "delivery": "01/01/27-01/31/27",
               "basisMonth": "Mar 27",
-              "futuresChange": 0,
+              "futuresChange": -0.0025,
               "basis": -0.48,
-              "cash": 4.07
+              "cash": 4.06
             },
             {
               "crop": "Corn",
@@ -59,9 +59,9 @@
               "deliveryEnd": "2027-02-28",
               "delivery": "02/01/27-02/28/27",
               "basisMonth": "Mar 27",
-              "futuresChange": 0,
+              "futuresChange": -0.0025,
               "basis": -0.44,
-              "cash": 4.11
+              "cash": 4.1
             },
             {
               "crop": "Corn",
@@ -69,9 +69,9 @@
               "deliveryEnd": "2027-03-31",
               "delivery": "03/01/27-03/31/27",
               "basisMonth": "Mar 27",
-              "futuresChange": 0,
+              "futuresChange": -0.0025,
               "basis": -0.41,
-              "cash": 4.14
+              "cash": 4.13
             },
             {
               "crop": "Corn",
@@ -217,7 +217,7 @@
               "deliveryEnd": "2026-10-31",
               "delivery": "10/01/26-10/31/26",
               "basisMonth": "Dec 26",
-              "futuresChange": -0.045,
+              "futuresChange": -0.05,
               "basis": -0.75,
               "cash": 5.56
             },
@@ -227,7 +227,7 @@
               "deliveryEnd": "2026-11-30",
               "delivery": "11/01/26-11/30/26",
               "basisMonth": "Dec 26",
-              "futuresChange": -0.045,
+              "futuresChange": -0.05,
               "basis": -0.75,
               "cash": 5.56
             },
@@ -237,20 +237,20 @@
               "deliveryEnd": "2027-07-31",
               "delivery": "07/01/27-07/31/27",
               "basisMonth": "Jul 27",
-              "futuresChange": -0.0425,
+              "futuresChange": -0.045,
               "basis": -0.8,
               "cash": 5.64
             }
           ],
           "cash": 5.56,
           "basis": -0.75,
-          "futuresChange": -0.045,
+          "futuresChange": -0.05,
           "basisMonth": "Dec 26",
           "deliveryStart": "2026-11-01",
           "deliveryEnd": "2026-11-30"
         }
       ],
-      "lastSuccessAt": "2026-11-06T04:30:01.416Z"
+      "lastSuccessAt": "2026-11-06T04:40:00.726Z"
     },
     {
       "id": "adm-columbus",
@@ -265,7 +265,7 @@
         "Data provided by StoneX. All prices delayed 10 minutes.",
         "Market data: CME Group"
       ],
-      "sourceUpdated": "11/05/26 10:19 PM",
+      "sourceUpdated": "11/05/26 10:29 PM",
       "crops": [
         {
           "name": "Corn",
@@ -299,9 +299,9 @@
               "deliveryEnd": "2027-01-31",
               "delivery": "01/01/27-01/31/27",
               "basisMonth": "Mar 27",
-              "futuresChange": 0,
+              "futuresChange": -0.0025,
               "basis": -0.17,
-              "cash": 4.38
+              "cash": 4.37
             },
             {
               "crop": "Corn",
@@ -309,9 +309,9 @@
               "deliveryEnd": "2027-02-28",
               "delivery": "02/01/27-02/28/27",
               "basisMonth": "Mar 27",
-              "futuresChange": 0,
+              "futuresChange": -0.0025,
               "basis": -0.15,
-              "cash": 4.4
+              "cash": 4.39
             },
             {
               "crop": "Corn",
@@ -319,9 +319,9 @@
               "deliveryEnd": "2027-03-31",
               "delivery": "03/01/27-03/31/27",
               "basisMonth": "Mar 27",
-              "futuresChange": 0,
+              "futuresChange": -0.0025,
               "basis": -0.13,
-              "cash": 4.42
+              "cash": 4.41
             },
             {
               "crop": "Corn",
@@ -362,7 +362,7 @@
           "deliveryEnd": "2026-11-30"
         }
       ],
-      "lastSuccessAt": "2026-11-06T04:30:01.416Z"
+      "lastSuccessAt": "2026-11-06T04:40:00.726Z"
     },
     {
       "id": "adm-fremont",
@@ -377,7 +377,7 @@
         "Data provided by StoneX. All prices delayed 10 minutes.",
         "Market data: CME Group"
       ],
-      "sourceUpdated": "11/05/26 10:19 PM",
+      "sourceUpdated": "11/05/26 10:29 PM",
       "crops": [
         {
           "name": "Soybeans",
@@ -474,7 +474,7 @@
           "deliveryEnd": "2026-11-30"
         }
       ],
-      "lastSuccessAt": "2026-11-06T04:30:01.416Z"
+      "lastSuccessAt": "2026-11-06T04:40:00.726Z"
     },
     {
       "id": "adm-lincoln",
@@ -489,7 +489,7 @@
         "Data provided by StoneX. All prices delayed 10 minutes.",
         "Market data: CME Group"
       ],
-      "sourceUpdated": "11/05/26 10:19 PM",
+      "sourceUpdated": "11/05/26 10:29 PM",
       "crops": [
         {
           "name": "Soybeans",
@@ -586,7 +586,7 @@
           "deliveryEnd": "2026-11-30"
         }
       ],
-      "lastSuccessAt": "2026-11-06T04:30:01.416Z"
+      "lastSuccessAt": "2026-11-06T04:40:00.726Z"
     },
     {
       "id": "agp-david-city",
@@ -601,7 +601,7 @@
         "Data provided by StoneX. All prices delayed 10 minutes.",
         "Market data: CME Group"
       ],
-      "sourceUpdated": "11/05/26 10:19 PM",
+      "sourceUpdated": "11/05/26 10:29 PM",
       "crops": [
         {
           "name": "Soybeans",
@@ -698,7 +698,7 @@
           "deliveryEnd": "2026-11-30"
         }
       ],
-      "lastSuccessAt": "2026-11-06T04:30:01.416Z"
+      "lastSuccessAt": "2026-11-06T04:40:00.726Z"
     },
     {
       "id": "avoca",
@@ -713,7 +713,7 @@
         "Data provided by StoneX. All prices delayed 10 minutes.",
         "Market data: CME Group"
       ],
-      "sourceUpdated": "11/05/26 10:19 PM",
+      "sourceUpdated": "11/05/26 10:29 PM",
       "crops": [
         {
           "name": "Corn",
@@ -747,9 +747,9 @@
               "deliveryEnd": "2027-01-31",
               "delivery": "01/01/27-01/31/27",
               "basisMonth": "Mar 27",
-              "futuresChange": 0,
+              "futuresChange": -0.0025,
               "basis": -0.55,
-              "cash": 4
+              "cash": 3.99
             },
             {
               "crop": "Corn",
@@ -757,9 +757,9 @@
               "deliveryEnd": "2027-02-28",
               "delivery": "02/01/27-02/28/27",
               "basisMonth": "Mar 27",
-              "futuresChange": 0,
+              "futuresChange": -0.0025,
               "basis": -0.51,
-              "cash": 4.04
+              "cash": 4.03
             },
             {
               "crop": "Corn",
@@ -767,9 +767,9 @@
               "deliveryEnd": "2027-03-31",
               "delivery": "03/01/27-03/31/27",
               "basisMonth": "Mar 27",
-              "futuresChange": 0,
+              "futuresChange": -0.0025,
               "basis": -0.48,
-              "cash": 4.07
+              "cash": 4.06
             },
             {
               "crop": "Corn",
@@ -904,7 +904,7 @@
           "deliveryEnd": "2026-11-30"
         }
       ],
-      "lastSuccessAt": "2026-11-06T04:30:01.416Z"
+      "lastSuccessAt": "2026-11-06T04:40:00.726Z"
     },
     {
       "id": "belgrade",
@@ -919,7 +919,7 @@
         "Data provided by StoneX. All prices delayed 10 minutes.",
         "Market data: CME Group"
       ],
-      "sourceUpdated": "11/05/26 10:19 PM",
+      "sourceUpdated": "11/05/26 10:29 PM",
       "crops": [
         {
           "name": "Corn",
@@ -953,9 +953,9 @@
               "deliveryEnd": "2027-01-31",
               "delivery": "01/01/27-01/31/27",
               "basisMonth": "Mar 27",
-              "futuresChange": 0,
+              "futuresChange": -0.0025,
               "basis": -0.45,
-              "cash": 4.1
+              "cash": 4.09
             },
             {
               "crop": "Corn",
@@ -963,9 +963,9 @@
               "deliveryEnd": "2027-02-28",
               "delivery": "02/01/27-02/28/27",
               "basisMonth": "Mar 27",
-              "futuresChange": 0,
+              "futuresChange": -0.0025,
               "basis": -0.43,
-              "cash": 4.12
+              "cash": 4.11
             },
             {
               "crop": "Corn",
@@ -973,9 +973,9 @@
               "deliveryEnd": "2027-03-31",
               "delivery": "03/01/27-03/31/27",
               "basisMonth": "Mar 27",
-              "futuresChange": 0,
+              "futuresChange": -0.0025,
               "basis": -0.4,
-              "cash": 4.15
+              "cash": 4.14
             },
             {
               "crop": "Corn",
@@ -1110,7 +1110,7 @@
           "deliveryEnd": "2026-11-30"
         }
       ],
-      "lastSuccessAt": "2026-11-06T04:30:01.416Z"
+      "lastSuccessAt": "2026-11-06T04:40:00.726Z"
     },
     {
       "id": "bellwood",
@@ -1125,7 +1125,7 @@
         "Data provided by StoneX. All prices delayed 10 minutes.",
         "Market data: CME Group"
       ],
-      "sourceUpdated": "11/05/26 10:19 PM",
+      "sourceUpdated": "11/05/26 10:29 PM",
       "crops": [
         {
           "name": "Corn",
@@ -1159,9 +1159,9 @@
               "deliveryEnd": "2027-01-31",
               "delivery": "01/01/27-01/31/27",
               "basisMonth": "Mar 27",
-              "futuresChange": 0,
+              "futuresChange": -0.0025,
               "basis": -0.43,
-              "cash": 4.12
+              "cash": 4.11
             },
             {
               "crop": "Corn",
@@ -1169,9 +1169,9 @@
               "deliveryEnd": "2027-02-28",
               "delivery": "02/01/27-02/28/27",
               "basisMonth": "Mar 27",
-              "futuresChange": 0,
+              "futuresChange": -0.0025,
               "basis": -0.39,
-              "cash": 4.16
+              "cash": 4.15
             },
             {
               "crop": "Corn",
@@ -1179,9 +1179,9 @@
               "deliveryEnd": "2027-03-31",
               "delivery": "03/01/27-03/31/27",
               "basisMonth": "Mar 27",
-              "futuresChange": 0,
+              "futuresChange": -0.0025,
               "basis": -0.36,
-              "cash": 4.19
+              "cash": 4.18
             },
             {
               "crop": "Corn",
@@ -1316,7 +1316,7 @@
           "deliveryEnd": "2026-11-30"
         }
       ],
-      "lastSuccessAt": "2026-11-06T04:30:01.416Z"
+      "lastSuccessAt": "2026-11-06T04:40:00.726Z"
     },
     {
       "id": "bennet",
@@ -1331,7 +1331,7 @@
         "Data provided by StoneX. All prices delayed 10 minutes.",
         "Market data: CME Group"
       ],
-      "sourceUpdated": "11/05/26 10:19 PM",
+      "sourceUpdated": "11/05/26 10:29 PM",
       "crops": [
         {
           "name": "Corn",
@@ -1365,9 +1365,9 @@
               "deliveryEnd": "2027-01-31",
               "delivery": "01/01/27-01/31/27",
               "basisMonth": "Mar 27",
-              "futuresChange": 0,
+              "futuresChange": -0.0025,
               "basis": -0.55,
-              "cash": 4
+              "cash": 3.99
             },
             {
               "crop": "Corn",
@@ -1375,9 +1375,9 @@
               "deliveryEnd": "2027-02-28",
               "delivery": "02/01/27-02/28/27",
               "basisMonth": "Mar 27",
-              "futuresChange": 0,
+              "futuresChange": -0.0025,
               "basis": -0.51,
-              "cash": 4.04
+              "cash": 4.03
             },
             {
               "crop": "Corn",
@@ -1385,9 +1385,9 @@
               "deliveryEnd": "2027-03-31",
               "delivery": "03/01/27-03/31/27",
               "basisMonth": "Mar 27",
-              "futuresChange": 0,
+              "futuresChange": -0.0025,
               "basis": -0.48,
-              "cash": 4.07
+              "cash": 4.06
             },
             {
               "crop": "Corn",
@@ -1522,7 +1522,7 @@
           "deliveryEnd": "2026-11-30"
         }
       ],
-      "lastSuccessAt": "2026-11-06T04:30:01.416Z"
+      "lastSuccessAt": "2026-11-06T04:40:00.726Z"
     },
     {
       "id": "brainard",
@@ -1537,7 +1537,7 @@
         "Data provided by StoneX. All prices delayed 10 minutes.",
         "Market data: CME Group"
       ],
-      "sourceUpdated": "11/05/26 10:19 PM",
+      "sourceUpdated": "11/05/26 10:29 PM",
       "crops": [
         {
           "name": "Corn",
@@ -1571,9 +1571,9 @@
               "deliveryEnd": "2027-01-31",
               "delivery": "01/01/27-01/31/27",
               "basisMonth": "Mar 27",
-              "futuresChange": 0,
+              "futuresChange": -0.0025,
               "basis": -0.43,
-              "cash": 4.12
+              "cash": 4.11
             },
             {
               "crop": "Corn",
@@ -1581,9 +1581,9 @@
               "deliveryEnd": "2027-02-28",
               "delivery": "02/01/27-02/28/27",
               "basisMonth": "Mar 27",
-              "futuresChange": 0,
+              "futuresChange": -0.0025,
               "basis": -0.39,
-              "cash": 4.16
+              "cash": 4.15
             },
             {
               "crop": "Corn",
@@ -1591,9 +1591,9 @@
               "deliveryEnd": "2027-03-31",
               "delivery": "03/01/27-03/31/27",
               "basisMonth": "Mar 27",
-              "futuresChange": 0,
+              "futuresChange": -0.0025,
               "basis": -0.36,
-              "cash": 4.19
+              "cash": 4.18
             },
             {
               "crop": "Corn",
@@ -1728,7 +1728,7 @@
           "deliveryEnd": "2026-11-30"
         }
       ],
-      "lastSuccessAt": "2026-11-06T04:30:01.416Z"
+      "lastSuccessAt": "2026-11-06T04:40:00.726Z"
     },
     {
       "id": "bruno",
@@ -1743,7 +1743,7 @@
         "Data provided by StoneX. All prices delayed 10 minutes.",
         "Market data: CME Group"
       ],
-      "sourceUpdated": "11/05/26 10:19 PM",
+      "sourceUpdated": "11/05/26 10:29 PM",
       "crops": [
         {
           "name": "Corn",
@@ -1777,9 +1777,9 @@
               "deliveryEnd": "2027-01-31",
               "delivery": "01/01/27-01/31/27",
               "basisMonth": "Mar 27",
-              "futuresChange": 0,
+              "futuresChange": -0.0025,
               "basis": -0.54,
-              "cash": 4.01
+              "cash": 4
             },
             {
               "crop": "Corn",
@@ -1787,9 +1787,9 @@
               "deliveryEnd": "2027-02-28",
               "delivery": "02/01/27-02/28/27",
               "basisMonth": "Mar 27",
-              "futuresChange": 0,
+              "futuresChange": -0.0025,
               "basis": -0.5,
-              "cash": 4.05
+              "cash": 4.04
             },
             {
               "crop": "Corn",
@@ -1797,9 +1797,9 @@
               "deliveryEnd": "2027-03-31",
               "delivery": "03/01/27-03/31/27",
               "basisMonth": "Mar 27",
-              "futuresChange": 0,
+              "futuresChange": -0.0025,
               "basis": -0.47,
-              "cash": 4.08
+              "cash": 4.07
             },
             {
               "crop": "Corn",
@@ -1934,7 +1934,7 @@
           "deliveryEnd": "2026-11-30"
         }
       ],
-      "lastSuccessAt": "2026-11-06T04:30:01.416Z"
+      "lastSuccessAt": "2026-11-06T04:40:00.726Z"
     },
     {
       "id": "bunge-cb",
@@ -1949,7 +1949,7 @@
         "Data provided by StoneX. All prices delayed 10 minutes.",
         "Market data: CME Group"
       ],
-      "sourceUpdated": "11/05/26 10:19 PM",
+      "sourceUpdated": "11/05/26 10:29 PM",
       "crops": [
         {
           "name": "Soybeans",
@@ -2046,7 +2046,7 @@
           "deliveryEnd": "2026-11-30"
         }
       ],
-      "lastSuccessAt": "2026-11-06T04:30:01.416Z"
+      "lastSuccessAt": "2026-11-06T04:40:00.726Z"
     },
     {
       "id": "burr",
@@ -2061,7 +2061,7 @@
         "Data provided by StoneX. All prices delayed 10 minutes.",
         "Market data: CME Group"
       ],
-      "sourceUpdated": "11/05/26 10:19 PM",
+      "sourceUpdated": "11/05/26 10:29 PM",
       "crops": [
         {
           "name": "Corn",
@@ -2095,9 +2095,9 @@
               "deliveryEnd": "2027-01-31",
               "delivery": "01/01/27-01/31/27",
               "basisMonth": "Mar 27",
-              "futuresChange": 0,
+              "futuresChange": -0.0025,
               "basis": -0.57,
-              "cash": 3.98
+              "cash": 3.97
             },
             {
               "crop": "Corn",
@@ -2105,9 +2105,9 @@
               "deliveryEnd": "2027-02-28",
               "delivery": "02/01/27-02/28/27",
               "basisMonth": "Mar 27",
-              "futuresChange": 0,
+              "futuresChange": -0.0025,
               "basis": -0.53,
-              "cash": 4.02
+              "cash": 4.01
             },
             {
               "crop": "Corn",
@@ -2115,9 +2115,9 @@
               "deliveryEnd": "2027-03-31",
               "delivery": "03/01/27-03/31/27",
               "basisMonth": "Mar 27",
-              "futuresChange": 0,
+              "futuresChange": -0.0025,
               "basis": -0.5,
-              "cash": 4.05
+              "cash": 4.04
             },
             {
               "crop": "Corn",
@@ -2252,7 +2252,7 @@
           "deliveryEnd": "2026-11-30"
         }
       ],
-      "lastSuccessAt": "2026-11-06T04:30:01.416Z"
+      "lastSuccessAt": "2026-11-06T04:40:00.726Z"
     },
     {
       "id": "cargill-blair",
@@ -2267,7 +2267,7 @@
         "Data provided by StoneX. All prices delayed 10 minutes.",
         "Market data: CME Group"
       ],
-      "sourceUpdated": "11/05/26 10:19 PM",
+      "sourceUpdated": "11/05/26 10:29 PM",
       "crops": [
         {
           "name": "Corn",
@@ -2301,9 +2301,9 @@
               "deliveryEnd": "2027-01-31",
               "delivery": "01/01/27-01/31/27",
               "basisMonth": "Mar 27",
-              "futuresChange": 0,
+              "futuresChange": -0.0025,
               "basis": -0.15,
-              "cash": 4.4
+              "cash": 4.39
             },
             {
               "crop": "Corn",
@@ -2311,9 +2311,9 @@
               "deliveryEnd": "2027-02-28",
               "delivery": "02/01/27-02/28/27",
               "basisMonth": "Mar 27",
-              "futuresChange": 0,
+              "futuresChange": -0.0025,
               "basis": -0.13,
-              "cash": 4.42
+              "cash": 4.41
             },
             {
               "crop": "Corn",
@@ -2321,9 +2321,9 @@
               "deliveryEnd": "2027-03-31",
               "delivery": "03/01/27-03/31/27",
               "basisMonth": "Mar 27",
-              "futuresChange": 0,
+              "futuresChange": -0.0025,
               "basis": -0.11,
-              "cash": 4.44
+              "cash": 4.43
             },
             {
               "crop": "Corn",
@@ -2364,7 +2364,7 @@
           "deliveryEnd": "2026-11-30"
         }
       ],
-      "lastSuccessAt": "2026-11-06T04:30:01.416Z"
+      "lastSuccessAt": "2026-11-06T04:40:00.726Z"
     },
     {
       "id": "cedar-bluffs",
@@ -2379,7 +2379,7 @@
         "Data provided by StoneX. All prices delayed 10 minutes.",
         "Market data: CME Group"
       ],
-      "sourceUpdated": "11/05/26 10:19 PM",
+      "sourceUpdated": "11/05/26 10:29 PM",
       "crops": [
         {
           "name": "Corn",
@@ -2413,9 +2413,9 @@
               "deliveryEnd": "2027-01-31",
               "delivery": "01/01/27-01/31/27",
               "basisMonth": "Mar 27",
-              "futuresChange": 0,
+              "futuresChange": -0.0025,
               "basis": -0.47,
-              "cash": 4.08
+              "cash": 4.07
             },
             {
               "crop": "Corn",
@@ -2423,9 +2423,9 @@
               "deliveryEnd": "2027-02-28",
               "delivery": "02/01/27-02/28/27",
               "basisMonth": "Mar 27",
-              "futuresChange": 0,
+              "futuresChange": -0.0025,
               "basis": -0.43,
-              "cash": 4.12
+              "cash": 4.11
             },
             {
               "crop": "Corn",
@@ -2433,9 +2433,9 @@
               "deliveryEnd": "2027-03-31",
               "delivery": "03/01/27-03/31/27",
               "basisMonth": "Mar 27",
-              "futuresChange": 0,
+              "futuresChange": -0.0025,
               "basis": -0.4,
-              "cash": 4.15
+              "cash": 4.14
             },
             {
               "crop": "Corn",
@@ -2570,7 +2570,7 @@
           "deliveryEnd": "2026-11-30"
         }
       ],
-      "lastSuccessAt": "2026-11-06T04:30:01.416Z"
+      "lastSuccessAt": "2026-11-06T04:40:00.726Z"
     },
     {
       "id": "ceresco",
@@ -2585,7 +2585,7 @@
         "Data provided by StoneX. All prices delayed 10 minutes.",
         "Market data: CME Group"
       ],
-      "sourceUpdated": "11/05/26 10:19 PM",
+      "sourceUpdated": "11/05/26 10:29 PM",
       "crops": [
         {
           "name": "Corn",
@@ -2619,9 +2619,9 @@
               "deliveryEnd": "2027-01-31",
               "delivery": "01/01/27-01/31/27",
               "basisMonth": "Mar 27",
-              "futuresChange": 0,
+              "futuresChange": -0.0025,
               "basis": -0.47,
-              "cash": 4.08
+              "cash": 4.07
             },
             {
               "crop": "Corn",
@@ -2629,9 +2629,9 @@
               "deliveryEnd": "2027-02-28",
               "delivery": "02/01/27-02/28/27",
               "basisMonth": "Mar 27",
-              "futuresChange": 0,
+              "futuresChange": -0.0025,
               "basis": -0.43,
-              "cash": 4.12
+              "cash": 4.11
             },
             {
               "crop": "Corn",
@@ -2639,9 +2639,9 @@
               "deliveryEnd": "2027-03-31",
               "delivery": "03/01/27-03/31/27",
               "basisMonth": "Mar 27",
-              "futuresChange": 0,
+              "futuresChange": -0.0025,
               "basis": -0.4,
-              "cash": 4.15
+              "cash": 4.14
             },
             {
               "crop": "Corn",
@@ -2776,7 +2776,7 @@
           "deliveryEnd": "2026-11-30"
         }
       ],
-      "lastSuccessAt": "2026-11-06T04:30:01.416Z"
+      "lastSuccessAt": "2026-11-06T04:40:00.726Z"
     },
     {
       "id": "columbus",
@@ -2791,7 +2791,7 @@
         "Data provided by StoneX. All prices delayed 10 minutes.",
         "Market data: CME Group"
       ],
-      "sourceUpdated": "11/05/26 10:19 PM",
+      "sourceUpdated": "11/05/26 10:29 PM",
       "crops": [
         {
           "name": "Corn",
@@ -2825,9 +2825,9 @@
               "deliveryEnd": "2027-01-31",
               "delivery": "01/01/27-01/31/27",
               "basisMonth": "Mar 27",
-              "futuresChange": 0,
+              "futuresChange": -0.0025,
               "basis": -0.35,
-              "cash": 4.2
+              "cash": 4.19
             },
             {
               "crop": "Corn",
@@ -2835,9 +2835,9 @@
               "deliveryEnd": "2027-02-28",
               "delivery": "02/01/27-02/28/27",
               "basisMonth": "Mar 27",
-              "futuresChange": 0,
+              "futuresChange": -0.0025,
               "basis": -0.31,
-              "cash": 4.24
+              "cash": 4.23
             },
             {
               "crop": "Corn",
@@ -2845,9 +2845,9 @@
               "deliveryEnd": "2027-03-31",
               "delivery": "03/01/27-03/31/27",
               "basisMonth": "Mar 27",
-              "futuresChange": 0,
+              "futuresChange": -0.0025,
               "basis": -0.28,
-              "cash": 4.27
+              "cash": 4.26
             },
             {
               "crop": "Corn",
@@ -2982,7 +2982,7 @@
           "deliveryEnd": "2026-11-30"
         }
       ],
-      "lastSuccessAt": "2026-11-06T04:30:01.416Z"
+      "lastSuccessAt": "2026-11-06T04:40:00.726Z"
     },
     {
       "id": "cook",
@@ -2997,7 +2997,7 @@
         "Data provided by StoneX. All prices delayed 10 minutes.",
         "Market data: CME Group"
       ],
-      "sourceUpdated": "11/05/26 10:19 PM",
+      "sourceUpdated": "11/05/26 10:29 PM",
       "crops": [
         {
           "name": "Corn",
@@ -3031,9 +3031,9 @@
               "deliveryEnd": "2027-01-31",
               "delivery": "01/01/27-01/31/27",
               "basisMonth": "Mar 27",
-              "futuresChange": 0,
+              "futuresChange": -0.0025,
               "basis": -0.57,
-              "cash": 3.98
+              "cash": 3.97
             },
             {
               "crop": "Corn",
@@ -3041,9 +3041,9 @@
               "deliveryEnd": "2027-02-28",
               "delivery": "02/01/27-02/28/27",
               "basisMonth": "Mar 27",
-              "futuresChange": 0,
+              "futuresChange": -0.0025,
               "basis": -0.53,
-              "cash": 4.02
+              "cash": 4.01
             },
             {
               "crop": "Corn",
@@ -3051,9 +3051,9 @@
               "deliveryEnd": "2027-03-31",
               "delivery": "03/01/27-03/31/27",
               "basisMonth": "Mar 27",
-              "futuresChange": 0,
+              "futuresChange": -0.0025,
               "basis": -0.5,
-              "cash": 4.05
+              "cash": 4.04
             },
             {
               "crop": "Corn",
@@ -3188,7 +3188,7 @@
           "deliveryEnd": "2026-11-30"
         }
       ],
-      "lastSuccessAt": "2026-11-06T04:30:01.416Z"
+      "lastSuccessAt": "2026-11-06T04:40:00.726Z"
     },
     {
       "id": "duncan",
@@ -3203,7 +3203,7 @@
         "Data provided by StoneX. All prices delayed 10 minutes.",
         "Market data: CME Group"
       ],
-      "sourceUpdated": "11/05/26 10:19 PM",
+      "sourceUpdated": "11/05/26 10:29 PM",
       "crops": [
         {
           "name": "Corn",
@@ -3237,9 +3237,9 @@
               "deliveryEnd": "2027-01-31",
               "delivery": "01/01/27-01/31/27",
               "basisMonth": "Mar 27",
-              "futuresChange": 0,
+              "futuresChange": -0.0025,
               "basis": -0.51,
-              "cash": 4.04
+              "cash": 4.03
             },
             {
               "crop": "Corn",
@@ -3247,9 +3247,9 @@
               "deliveryEnd": "2027-02-28",
               "delivery": "02/01/27-02/28/27",
               "basisMonth": "Mar 27",
-              "futuresChange": 0,
+              "futuresChange": -0.0025,
               "basis": -0.47,
-              "cash": 4.08
+              "cash": 4.07
             },
             {
               "crop": "Corn",
@@ -3257,9 +3257,9 @@
               "deliveryEnd": "2027-03-31",
               "delivery": "03/01/27-03/31/27",
               "basisMonth": "Mar 27",
-              "futuresChange": 0,
+              "futuresChange": -0.0025,
               "basis": -0.44,
-              "cash": 4.11
+              "cash": 4.1
             },
             {
               "crop": "Corn",
@@ -3394,7 +3394,7 @@
           "deliveryEnd": "2026-11-30"
         }
       ],
-      "lastSuccessAt": "2026-11-06T04:30:01.416Z"
+      "lastSuccessAt": "2026-11-06T04:40:00.726Z"
     },
     {
       "id": "dwight",
@@ -3409,7 +3409,7 @@
         "Data provided by StoneX. All prices delayed 10 minutes.",
         "Market data: CME Group"
       ],
-      "sourceUpdated": "11/05/26 10:19 PM",
+      "sourceUpdated": "11/05/26 10:29 PM",
       "crops": [
         {
           "name": "Corn",
@@ -3443,9 +3443,9 @@
               "deliveryEnd": "2027-01-31",
               "delivery": "01/01/27-01/31/27",
               "basisMonth": "Mar 27",
-              "futuresChange": 0,
+              "futuresChange": -0.0025,
               "basis": -0.53,
-              "cash": 4.02
+              "cash": 4.01
             },
             {
               "crop": "Corn",
@@ -3453,9 +3453,9 @@
               "deliveryEnd": "2027-02-28",
               "delivery": "02/01/27-02/28/27",
               "basisMonth": "Mar 27",
-              "futuresChange": 0,
+              "futuresChange": -0.0025,
               "basis": -0.49,
-              "cash": 4.06
+              "cash": 4.05
             },
             {
               "crop": "Corn",
@@ -3463,9 +3463,9 @@
               "deliveryEnd": "2027-03-31",
               "delivery": "03/01/27-03/31/27",
               "basisMonth": "Mar 27",
-              "futuresChange": 0,
+              "futuresChange": -0.0025,
               "basis": -0.46,
-              "cash": 4.09
+              "cash": 4.08
             },
             {
               "crop": "Corn",
@@ -3600,7 +3600,7 @@
           "deliveryEnd": "2026-11-30"
         }
       ],
-      "lastSuccessAt": "2026-11-06T04:30:01.416Z"
+      "lastSuccessAt": "2026-11-06T04:40:00.726Z"
     },
     {
       "id": "e-energy-adams",
@@ -3615,7 +3615,7 @@
         "Data provided by StoneX. All prices delayed 10 minutes.",
         "Market data: CME Group"
       ],
-      "sourceUpdated": "11/05/26 10:19 PM",
+      "sourceUpdated": "11/05/26 10:29 PM",
       "crops": [
         {
           "name": "Corn",
@@ -3649,9 +3649,9 @@
               "deliveryEnd": "2027-01-31",
               "delivery": "01/01/27-01/31/27",
               "basisMonth": "Mar 27",
-              "futuresChange": 0,
+              "futuresChange": -0.0025,
               "basis": -0.27,
-              "cash": 4.28
+              "cash": 4.27
             },
             {
               "crop": "Corn",
@@ -3659,9 +3659,9 @@
               "deliveryEnd": "2027-02-28",
               "delivery": "02/01/27-02/28/27",
               "basisMonth": "Mar 27",
-              "futuresChange": 0,
+              "futuresChange": -0.0025,
               "basis": -0.25,
-              "cash": 4.3
+              "cash": 4.29
             },
             {
               "crop": "Corn",
@@ -3669,9 +3669,9 @@
               "deliveryEnd": "2027-03-31",
               "delivery": "03/01/27-03/31/27",
               "basisMonth": "Mar 27",
-              "futuresChange": 0,
+              "futuresChange": -0.0025,
               "basis": -0.22,
-              "cash": 4.33
+              "cash": 4.32
             },
             {
               "crop": "Corn",
@@ -3712,7 +3712,7 @@
           "deliveryEnd": "2026-11-30"
         }
       ],
-      "lastSuccessAt": "2026-11-06T04:30:01.416Z"
+      "lastSuccessAt": "2026-11-06T04:40:00.726Z"
     },
     {
       "id": "eagle",
@@ -3727,7 +3727,7 @@
         "Data provided by StoneX. All prices delayed 10 minutes.",
         "Market data: CME Group"
       ],
-      "sourceUpdated": "11/05/26 10:19 PM",
+      "sourceUpdated": "11/05/26 10:29 PM",
       "crops": [
         {
           "name": "Corn",
@@ -3761,9 +3761,9 @@
               "deliveryEnd": "2027-01-31",
               "delivery": "01/01/27-01/31/27",
               "basisMonth": "Mar 27",
-              "futuresChange": 0,
+              "futuresChange": -0.0025,
               "basis": -0.55,
-              "cash": 4
+              "cash": 3.99
             },
             {
               "crop": "Corn",
@@ -3771,9 +3771,9 @@
               "deliveryEnd": "2027-02-28",
               "delivery": "02/01/27-02/28/27",
               "basisMonth": "Mar 27",
-              "futuresChange": 0,
+              "futuresChange": -0.0025,
               "basis": -0.51,
-              "cash": 4.04
+              "cash": 4.03
             },
             {
               "crop": "Corn",
@@ -3781,9 +3781,9 @@
               "deliveryEnd": "2027-03-31",
               "delivery": "03/01/27-03/31/27",
               "basisMonth": "Mar 27",
-              "futuresChange": 0,
+              "futuresChange": -0.0025,
               "basis": -0.48,
-              "cash": 4.07
+              "cash": 4.06
             },
             {
               "crop": "Corn",
@@ -3918,7 +3918,7 @@
           "deliveryEnd": "2026-11-30"
         }
       ],
-      "lastSuccessAt": "2026-11-06T04:30:01.416Z"
+      "lastSuccessAt": "2026-11-06T04:40:00.726Z"
     },
     {
       "id": "elk-creek",
@@ -3933,7 +3933,7 @@
         "Data provided by StoneX. All prices delayed 10 minutes.",
         "Market data: CME Group"
       ],
-      "sourceUpdated": "11/05/26 10:19 PM",
+      "sourceUpdated": "11/05/26 10:29 PM",
       "crops": [
         {
           "name": "Corn",
@@ -3967,9 +3967,9 @@
               "deliveryEnd": "2027-01-31",
               "delivery": "01/01/27-01/31/27",
               "basisMonth": "Mar 27",
-              "futuresChange": 0,
+              "futuresChange": -0.0025,
               "basis": -0.57,
-              "cash": 3.98
+              "cash": 3.97
             },
             {
               "crop": "Corn",
@@ -3977,9 +3977,9 @@
               "deliveryEnd": "2027-02-28",
               "delivery": "02/01/27-02/28/27",
               "basisMonth": "Mar 27",
-              "futuresChange": 0,
+              "futuresChange": -0.0025,
               "basis": -0.53,
-              "cash": 4.02
+              "cash": 4.01
             },
             {
               "crop": "Corn",
@@ -3987,9 +3987,9 @@
               "deliveryEnd": "2027-03-31",
               "delivery": "03/01/27-03/31/27",
               "basisMonth": "Mar 27",
-              "futuresChange": 0,
+              "futuresChange": -0.0025,
               "basis": -0.5,
-              "cash": 4.05
+              "cash": 4.04
             },
             {
               "crop": "Corn",
@@ -4135,7 +4135,7 @@
               "deliveryEnd": "2026-10-31",
               "delivery": "10/01/26-10/31/26",
               "basisMonth": "Dec 26",
-              "futuresChange": -0.045,
+              "futuresChange": -0.05,
               "basis": -0.75,
               "cash": 5.56
             },
@@ -4145,7 +4145,7 @@
               "deliveryEnd": "2026-11-30",
               "delivery": "11/01/26-11/30/26",
               "basisMonth": "Dec 26",
-              "futuresChange": -0.045,
+              "futuresChange": -0.05,
               "basis": -0.75,
               "cash": 5.56
             },
@@ -4155,20 +4155,20 @@
               "deliveryEnd": "2027-07-31",
               "delivery": "07/01/27-07/31/27",
               "basisMonth": "Jul 27",
-              "futuresChange": -0.0425,
+              "futuresChange": -0.045,
               "basis": -0.8,
               "cash": 5.64
             }
           ],
           "cash": 5.56,
           "basis": -0.75,
-          "futuresChange": -0.045,
+          "futuresChange": -0.05,
           "basisMonth": "Dec 26",
           "deliveryStart": "2026-11-01",
           "deliveryEnd": "2026-11-30"
         }
       ],
-      "lastSuccessAt": "2026-11-06T04:30:01.416Z"
+      "lastSuccessAt": "2026-11-06T04:40:00.726Z"
     },
     {
       "id": "elmwood",
@@ -4183,7 +4183,7 @@
         "Data provided by StoneX. All prices delayed 10 minutes.",
         "Market data: CME Group"
       ],
-      "sourceUpdated": "11/05/26 10:19 PM",
+      "sourceUpdated": "11/05/26 10:29 PM",
       "crops": [
         {
           "name": "Corn",
@@ -4217,9 +4217,9 @@
               "deliveryEnd": "2027-01-31",
               "delivery": "01/01/27-01/31/27",
               "basisMonth": "Mar 27",
-              "futuresChange": 0,
+              "futuresChange": -0.0025,
               "basis": -0.55,
-              "cash": 4
+              "cash": 3.99
             },
             {
               "crop": "Corn",
@@ -4227,9 +4227,9 @@
               "deliveryEnd": "2027-02-28",
               "delivery": "02/01/27-02/28/27",
               "basisMonth": "Mar 27",
-              "futuresChange": 0,
+              "futuresChange": -0.0025,
               "basis": -0.51,
-              "cash": 4.04
+              "cash": 4.03
             },
             {
               "crop": "Corn",
@@ -4237,9 +4237,9 @@
               "deliveryEnd": "2027-03-31",
               "delivery": "03/01/27-03/31/27",
               "basisMonth": "Mar 27",
-              "futuresChange": 0,
+              "futuresChange": -0.0025,
               "basis": -0.48,
-              "cash": 4.07
+              "cash": 4.06
             },
             {
               "crop": "Corn",
@@ -4374,7 +4374,7 @@
           "deliveryEnd": "2026-11-30"
         }
       ],
-      "lastSuccessAt": "2026-11-06T04:30:01.416Z"
+      "lastSuccessAt": "2026-11-06T04:40:00.726Z"
     },
     {
       "id": "garrison",
@@ -4389,7 +4389,7 @@
         "Data provided by StoneX. All prices delayed 10 minutes.",
         "Market data: CME Group"
       ],
-      "sourceUpdated": "11/05/26 10:19 PM",
+      "sourceUpdated": "11/05/26 10:29 PM",
       "crops": [
         {
           "name": "Corn",
@@ -4423,9 +4423,9 @@
               "deliveryEnd": "2027-01-31",
               "delivery": "01/01/27-01/31/27",
               "basisMonth": "Mar 27",
-              "futuresChange": 0,
+              "futuresChange": -0.0025,
               "basis": -0.47,
-              "cash": 4.08
+              "cash": 4.07
             },
             {
               "crop": "Corn",
@@ -4433,9 +4433,9 @@
               "deliveryEnd": "2027-02-28",
               "delivery": "02/01/27-02/28/27",
               "basisMonth": "Mar 27",
-              "futuresChange": 0,
+              "futuresChange": -0.0025,
               "basis": -0.43,
-              "cash": 4.12
+              "cash": 4.11
             },
             {
               "crop": "Corn",
@@ -4443,9 +4443,9 @@
               "deliveryEnd": "2027-03-31",
               "delivery": "03/01/27-03/31/27",
               "basisMonth": "Mar 27",
-              "futuresChange": 0,
+              "futuresChange": -0.0025,
               "basis": -0.4,
-              "cash": 4.15
+              "cash": 4.14
             },
             {
               "crop": "Corn",
@@ -4580,7 +4580,7 @@
           "deliveryEnd": "2026-11-30"
         }
       ],
-      "lastSuccessAt": "2026-11-06T04:30:01.416Z"
+      "lastSuccessAt": "2026-11-06T04:40:00.726Z"
     },
     {
       "id": "green-plains-cc",
@@ -4595,7 +4595,7 @@
         "Data provided by StoneX. All prices delayed 10 minutes.",
         "Market data: CME Group"
       ],
-      "sourceUpdated": "11/05/26 10:19 PM",
+      "sourceUpdated": "11/05/26 10:29 PM",
       "crops": [
         {
           "name": "Corn",
@@ -4629,9 +4629,9 @@
               "deliveryEnd": "2027-01-31",
               "delivery": "01/01/27-01/31/27",
               "basisMonth": "Mar 27",
-              "futuresChange": 0,
+              "futuresChange": -0.0025,
               "basis": -0.22,
-              "cash": 4.33
+              "cash": 4.32
             },
             {
               "crop": "Corn",
@@ -4639,9 +4639,9 @@
               "deliveryEnd": "2027-02-28",
               "delivery": "02/01/27-02/28/27",
               "basisMonth": "Mar 27",
-              "futuresChange": 0,
+              "futuresChange": -0.0025,
               "basis": -0.18,
-              "cash": 4.37
+              "cash": 4.36
             },
             {
               "crop": "Corn",
@@ -4662,7 +4662,7 @@
           "deliveryEnd": "2026-11-30"
         }
       ],
-      "lastSuccessAt": "2026-11-06T04:30:01.416Z"
+      "lastSuccessAt": "2026-11-06T04:40:00.726Z"
     },
     {
       "id": "greenwood",
@@ -4677,7 +4677,7 @@
         "Data provided by StoneX. All prices delayed 10 minutes.",
         "Market data: CME Group"
       ],
-      "sourceUpdated": "11/05/26 10:19 PM",
+      "sourceUpdated": "11/05/26 10:29 PM",
       "crops": [
         {
           "name": "Corn",
@@ -4711,9 +4711,9 @@
               "deliveryEnd": "2027-01-31",
               "delivery": "01/01/27-01/31/27",
               "basisMonth": "Mar 27",
-              "futuresChange": 0,
+              "futuresChange": -0.0025,
               "basis": -0.5,
-              "cash": 4.05
+              "cash": 4.04
             },
             {
               "crop": "Corn",
@@ -4721,9 +4721,9 @@
               "deliveryEnd": "2027-02-28",
               "delivery": "02/01/27-02/28/27",
               "basisMonth": "Mar 27",
-              "futuresChange": 0,
+              "futuresChange": -0.0025,
               "basis": -0.46,
-              "cash": 4.09
+              "cash": 4.08
             },
             {
               "crop": "Corn",
@@ -4731,9 +4731,9 @@
               "deliveryEnd": "2027-03-31",
               "delivery": "03/01/27-03/31/27",
               "basisMonth": "Mar 27",
-              "futuresChange": 0,
+              "futuresChange": -0.0025,
               "basis": -0.43,
-              "cash": 4.12
+              "cash": 4.11
             },
             {
               "crop": "Corn",
@@ -4868,7 +4868,7 @@
           "deliveryEnd": "2026-11-30"
         }
       ],
-      "lastSuccessAt": "2026-11-06T04:30:01.416Z"
+      "lastSuccessAt": "2026-11-06T04:40:00.726Z"
     },
     {
       "id": "lincoln",
@@ -4883,7 +4883,7 @@
         "Data provided by StoneX. All prices delayed 10 minutes.",
         "Market data: CME Group"
       ],
-      "sourceUpdated": "11/05/26 10:19 PM",
+      "sourceUpdated": "11/05/26 10:29 PM",
       "crops": [
         {
           "name": "Corn",
@@ -4917,9 +4917,9 @@
               "deliveryEnd": "2027-01-31",
               "delivery": "01/01/27-01/31/27",
               "basisMonth": "Mar 27",
-              "futuresChange": 0,
+              "futuresChange": -0.0025,
               "basis": -0.42,
-              "cash": 4.13
+              "cash": 4.12
             },
             {
               "crop": "Corn",
@@ -4927,9 +4927,9 @@
               "deliveryEnd": "2027-02-28",
               "delivery": "02/01/27-02/28/27",
               "basisMonth": "Mar 27",
-              "futuresChange": 0,
+              "futuresChange": -0.0025,
               "basis": -0.38,
-              "cash": 4.17
+              "cash": 4.16
             },
             {
               "crop": "Corn",
@@ -4937,9 +4937,9 @@
               "deliveryEnd": "2027-03-31",
               "delivery": "03/01/27-03/31/27",
               "basisMonth": "Mar 27",
-              "futuresChange": 0,
+              "futuresChange": -0.0025,
               "basis": -0.35,
-              "cash": 4.2
+              "cash": 4.19
             },
             {
               "crop": "Corn",
@@ -5074,7 +5074,7 @@
           "deliveryEnd": "2026-11-30"
         }
       ],
-      "lastSuccessAt": "2026-11-06T04:30:01.416Z"
+      "lastSuccessAt": "2026-11-06T04:40:00.726Z"
     },
     {
       "id": "manley",
@@ -5089,7 +5089,7 @@
         "Data provided by StoneX. All prices delayed 10 minutes.",
         "Market data: CME Group"
       ],
-      "sourceUpdated": "11/05/26 10:19 PM",
+      "sourceUpdated": "11/05/26 10:29 PM",
       "crops": [
         {
           "name": "Corn",
@@ -5123,9 +5123,9 @@
               "deliveryEnd": "2027-01-31",
               "delivery": "01/01/27-01/31/27",
               "basisMonth": "Mar 27",
-              "futuresChange": 0,
+              "futuresChange": -0.0025,
               "basis": -0.55,
-              "cash": 4
+              "cash": 3.99
             },
             {
               "crop": "Corn",
@@ -5133,9 +5133,9 @@
               "deliveryEnd": "2027-02-28",
               "delivery": "02/01/27-02/28/27",
               "basisMonth": "Mar 27",
-              "futuresChange": 0,
+              "futuresChange": -0.0025,
               "basis": -0.51,
-              "cash": 4.04
+              "cash": 4.03
             },
             {
               "crop": "Corn",
@@ -5143,9 +5143,9 @@
               "deliveryEnd": "2027-03-31",
               "delivery": "03/01/27-03/31/27",
               "basisMonth": "Mar 27",
-              "futuresChange": 0,
+              "futuresChange": -0.0025,
               "basis": -0.48,
-              "cash": 4.07
+              "cash": 4.06
             },
             {
               "crop": "Corn",
@@ -5280,7 +5280,7 @@
           "deliveryEnd": "2026-11-30"
         }
       ],
-      "lastSuccessAt": "2026-11-06T04:30:01.416Z"
+      "lastSuccessAt": "2026-11-06T04:40:00.726Z"
     },
     {
       "id": "mead",
@@ -5295,7 +5295,7 @@
         "Data provided by StoneX. All prices delayed 10 minutes.",
         "Market data: CME Group"
       ],
-      "sourceUpdated": "11/05/26 10:19 PM",
+      "sourceUpdated": "11/05/26 10:29 PM",
       "crops": [
         {
           "name": "Corn",
@@ -5329,9 +5329,9 @@
               "deliveryEnd": "2027-01-31",
               "delivery": "01/01/27-01/31/27",
               "basisMonth": "Mar 27",
-              "futuresChange": 0,
+              "futuresChange": -0.0025,
               "basis": -0.41,
-              "cash": 4.14
+              "cash": 4.13
             },
             {
               "crop": "Corn",
@@ -5339,9 +5339,9 @@
               "deliveryEnd": "2027-02-28",
               "delivery": "02/01/27-02/28/27",
               "basisMonth": "Mar 27",
-              "futuresChange": 0,
+              "futuresChange": -0.0025,
               "basis": -0.37,
-              "cash": 4.18
+              "cash": 4.17
             },
             {
               "crop": "Corn",
@@ -5349,9 +5349,9 @@
               "deliveryEnd": "2027-03-31",
               "delivery": "03/01/27-03/31/27",
               "basisMonth": "Mar 27",
-              "futuresChange": 0,
+              "futuresChange": -0.0025,
               "basis": -0.34,
-              "cash": 4.21
+              "cash": 4.2
             },
             {
               "crop": "Corn",
@@ -5486,7 +5486,7 @@
           "deliveryEnd": "2026-11-30"
         }
       ],
-      "lastSuccessAt": "2026-11-06T04:30:01.416Z"
+      "lastSuccessAt": "2026-11-06T04:40:00.726Z"
     },
     {
       "id": "murdock",
@@ -5501,7 +5501,7 @@
         "Data provided by StoneX. All prices delayed 10 minutes.",
         "Market data: CME Group"
       ],
-      "sourceUpdated": "11/05/26 10:19 PM",
+      "sourceUpdated": "11/05/26 10:29 PM",
       "crops": [
         {
           "name": "Corn",
@@ -5535,9 +5535,9 @@
               "deliveryEnd": "2027-01-31",
               "delivery": "01/01/27-01/31/27",
               "basisMonth": "Mar 27",
-              "futuresChange": 0,
+              "futuresChange": -0.0025,
               "basis": -0.55,
-              "cash": 4
+              "cash": 3.99
             },
             {
               "crop": "Corn",
@@ -5545,9 +5545,9 @@
               "deliveryEnd": "2027-02-28",
               "delivery": "02/01/27-02/28/27",
               "basisMonth": "Mar 27",
-              "futuresChange": 0,
+              "futuresChange": -0.0025,
               "basis": -0.51,
-              "cash": 4.04
+              "cash": 4.03
             },
             {
               "crop": "Corn",
@@ -5555,9 +5555,9 @@
               "deliveryEnd": "2027-03-31",
               "delivery": "03/01/27-03/31/27",
               "basisMonth": "Mar 27",
-              "futuresChange": 0,
+              "futuresChange": -0.0025,
               "basis": -0.48,
-              "cash": 4.07
+              "cash": 4.06
             },
             {
               "crop": "Corn",
@@ -5703,7 +5703,7 @@
               "deliveryEnd": "2026-10-31",
               "delivery": "10/01/26-10/31/26",
               "basisMonth": "Dec 26",
-              "futuresChange": -0.045,
+              "futuresChange": -0.05,
               "basis": -0.73,
               "cash": 5.58
             },
@@ -5713,7 +5713,7 @@
               "deliveryEnd": "2026-11-30",
               "delivery": "11/01/26-11/30/26",
               "basisMonth": "Dec 26",
-              "futuresChange": -0.045,
+              "futuresChange": -0.05,
               "basis": -0.73,
               "cash": 5.58
             },
@@ -5723,20 +5723,20 @@
               "deliveryEnd": "2027-07-31",
               "delivery": "07/01/27-07/31/27",
               "basisMonth": "Jul 27",
-              "futuresChange": -0.0425,
+              "futuresChange": -0.045,
               "basis": -0.8,
               "cash": 5.64
             }
           ],
           "cash": 5.58,
           "basis": -0.73,
-          "futuresChange": -0.045,
+          "futuresChange": -0.05,
           "basisMonth": "Dec 26",
           "deliveryStart": "2026-11-01",
           "deliveryEnd": "2026-11-30"
         }
       ],
-      "lastSuccessAt": "2026-11-06T04:30:01.416Z"
+      "lastSuccessAt": "2026-11-06T04:40:00.726Z"
     },
     {
       "id": "mynard",
@@ -5751,7 +5751,7 @@
         "Data provided by StoneX. All prices delayed 10 minutes.",
         "Market data: CME Group"
       ],
-      "sourceUpdated": "11/05/26 10:19 PM",
+      "sourceUpdated": "11/05/26 10:29 PM",
       "crops": [
         {
           "name": "Corn",
@@ -5785,9 +5785,9 @@
               "deliveryEnd": "2027-01-31",
               "delivery": "01/01/27-01/31/27",
               "basisMonth": "Mar 27",
-              "futuresChange": 0,
+              "futuresChange": -0.0025,
               "basis": -0.51,
-              "cash": 4.04
+              "cash": 4.03
             },
             {
               "crop": "Corn",
@@ -5795,9 +5795,9 @@
               "deliveryEnd": "2027-02-28",
               "delivery": "02/01/27-02/28/27",
               "basisMonth": "Mar 27",
-              "futuresChange": 0,
+              "futuresChange": -0.0025,
               "basis": -0.47,
-              "cash": 4.08
+              "cash": 4.07
             },
             {
               "crop": "Corn",
@@ -5805,9 +5805,9 @@
               "deliveryEnd": "2027-03-31",
               "delivery": "03/01/27-03/31/27",
               "basisMonth": "Mar 27",
-              "futuresChange": 0,
+              "futuresChange": -0.0025,
               "basis": -0.44,
-              "cash": 4.11
+              "cash": 4.1
             },
             {
               "crop": "Corn",
@@ -5942,7 +5942,7 @@
           "deliveryEnd": "2026-11-30"
         }
       ],
-      "lastSuccessAt": "2026-11-06T04:30:01.416Z"
+      "lastSuccessAt": "2026-11-06T04:40:00.726Z"
     },
     {
       "id": "nebraska-city",
@@ -5957,7 +5957,7 @@
         "Data provided by StoneX. All prices delayed 10 minutes.",
         "Market data: CME Group"
       ],
-      "sourceUpdated": "11/05/26 10:19 PM",
+      "sourceUpdated": "11/05/26 10:29 PM",
       "crops": [
         {
           "name": "Corn",
@@ -5991,9 +5991,9 @@
               "deliveryEnd": "2027-01-31",
               "delivery": "01/01/27-01/31/27",
               "basisMonth": "Mar 27",
-              "futuresChange": 0,
+              "futuresChange": -0.0025,
               "basis": -0.47,
-              "cash": 4.08
+              "cash": 4.07
             },
             {
               "crop": "Corn",
@@ -6001,9 +6001,9 @@
               "deliveryEnd": "2027-02-28",
               "delivery": "02/01/27-02/28/27",
               "basisMonth": "Mar 27",
-              "futuresChange": 0,
+              "futuresChange": -0.0025,
               "basis": -0.43,
-              "cash": 4.12
+              "cash": 4.11
             },
             {
               "crop": "Corn",
@@ -6011,9 +6011,9 @@
               "deliveryEnd": "2027-03-31",
               "delivery": "03/01/27-03/31/27",
               "basisMonth": "Mar 27",
-              "futuresChange": 0,
+              "futuresChange": -0.0025,
               "basis": -0.4,
-              "cash": 4.15
+              "cash": 4.14
             },
             {
               "crop": "Corn",
@@ -6148,7 +6148,7 @@
           "deliveryEnd": "2026-11-30"
         }
       ],
-      "lastSuccessAt": "2026-11-06T04:30:01.416Z"
+      "lastSuccessAt": "2026-11-06T04:40:00.726Z"
     },
     {
       "id": "norfolk-crush",
@@ -6163,7 +6163,7 @@
         "Data provided by StoneX. All prices delayed 10 minutes.",
         "Market data: CME Group"
       ],
-      "sourceUpdated": "11/05/26 10:19 PM",
+      "sourceUpdated": "11/05/26 10:29 PM",
       "crops": [
         {
           "name": "Soybeans",
@@ -6260,7 +6260,7 @@
           "deliveryEnd": "2026-11-30"
         }
       ],
-      "lastSuccessAt": "2026-11-06T04:30:01.416Z"
+      "lastSuccessAt": "2026-11-06T04:40:00.726Z"
     },
     {
       "id": "north-bend",
@@ -6275,7 +6275,7 @@
         "Data provided by StoneX. All prices delayed 10 minutes.",
         "Market data: CME Group"
       ],
-      "sourceUpdated": "11/05/26 10:19 PM",
+      "sourceUpdated": "11/05/26 10:29 PM",
       "crops": [
         {
           "name": "Corn",
@@ -6309,9 +6309,9 @@
               "deliveryEnd": "2027-01-31",
               "delivery": "01/01/27-01/31/27",
               "basisMonth": "Mar 27",
-              "futuresChange": 0,
+              "futuresChange": -0.0025,
               "basis": -0.42,
-              "cash": 4.13
+              "cash": 4.12
             },
             {
               "crop": "Corn",
@@ -6319,9 +6319,9 @@
               "deliveryEnd": "2027-02-28",
               "delivery": "02/01/27-02/28/27",
               "basisMonth": "Mar 27",
-              "futuresChange": 0,
+              "futuresChange": -0.0025,
               "basis": -0.38,
-              "cash": 4.17
+              "cash": 4.16
             },
             {
               "crop": "Corn",
@@ -6329,9 +6329,9 @@
               "deliveryEnd": "2027-03-31",
               "delivery": "03/01/27-03/31/27",
               "basisMonth": "Mar 27",
-              "futuresChange": 0,
+              "futuresChange": -0.0025,
               "basis": -0.35,
-              "cash": 4.2
+              "cash": 4.19
             },
             {
               "crop": "Corn",
@@ -6372,7 +6372,7 @@
           "deliveryEnd": "2026-11-30"
         }
       ],
-      "lastSuccessAt": "2026-11-06T04:30:01.416Z"
+      "lastSuccessAt": "2026-11-06T04:40:00.726Z"
     },
     {
       "id": "osceola",
@@ -6387,7 +6387,7 @@
         "Data provided by StoneX. All prices delayed 10 minutes.",
         "Market data: CME Group"
       ],
-      "sourceUpdated": "11/05/26 10:19 PM",
+      "sourceUpdated": "11/05/26 10:29 PM",
       "crops": [
         {
           "name": "Corn",
@@ -6421,9 +6421,9 @@
               "deliveryEnd": "2027-01-31",
               "delivery": "01/01/27-01/31/27",
               "basisMonth": "Mar 27",
-              "futuresChange": 0,
+              "futuresChange": -0.0025,
               "basis": -0.47,
-              "cash": 4.08
+              "cash": 4.07
             },
             {
               "crop": "Corn",
@@ -6431,9 +6431,9 @@
               "deliveryEnd": "2027-02-28",
               "delivery": "02/01/27-02/28/27",
               "basisMonth": "Mar 27",
-              "futuresChange": 0,
+              "futuresChange": -0.0025,
               "basis": -0.43,
-              "cash": 4.12
+              "cash": 4.11
             },
             {
               "crop": "Corn",
@@ -6441,9 +6441,9 @@
               "deliveryEnd": "2027-03-31",
               "delivery": "03/01/27-03/31/27",
               "basisMonth": "Mar 27",
-              "futuresChange": 0,
+              "futuresChange": -0.0025,
               "basis": -0.4,
-              "cash": 4.15
+              "cash": 4.14
             },
             {
               "crop": "Corn",
@@ -6578,7 +6578,7 @@
           "deliveryEnd": "2026-11-30"
         }
       ],
-      "lastSuccessAt": "2026-11-06T04:30:01.416Z"
+      "lastSuccessAt": "2026-11-06T04:40:00.726Z"
     },
     {
       "id": "otoe",
@@ -6593,7 +6593,7 @@
         "Data provided by StoneX. All prices delayed 10 minutes.",
         "Market data: CME Group"
       ],
-      "sourceUpdated": "11/05/26 10:19 PM",
+      "sourceUpdated": "11/05/26 10:29 PM",
       "crops": [
         {
           "name": "Corn",
@@ -6627,9 +6627,9 @@
               "deliveryEnd": "2027-01-31",
               "delivery": "01/01/27-01/31/27",
               "basisMonth": "Mar 27",
-              "futuresChange": 0,
+              "futuresChange": -0.0025,
               "basis": -0.6,
-              "cash": 3.95
+              "cash": 3.94
             },
             {
               "crop": "Corn",
@@ -6637,9 +6637,9 @@
               "deliveryEnd": "2027-02-28",
               "delivery": "02/01/27-02/28/27",
               "basisMonth": "Mar 27",
-              "futuresChange": 0,
+              "futuresChange": -0.0025,
               "basis": -0.56,
-              "cash": 3.99
+              "cash": 3.98
             },
             {
               "crop": "Corn",
@@ -6647,9 +6647,9 @@
               "deliveryEnd": "2027-03-31",
               "delivery": "03/01/27-03/31/27",
               "basisMonth": "Mar 27",
-              "futuresChange": 0,
+              "futuresChange": -0.0025,
               "basis": -0.53,
-              "cash": 4.02
+              "cash": 4.01
             },
             {
               "crop": "Corn",
@@ -6784,7 +6784,7 @@
           "deliveryEnd": "2026-11-30"
         }
       ],
-      "lastSuccessAt": "2026-11-06T04:30:01.416Z"
+      "lastSuccessAt": "2026-11-06T04:40:00.726Z"
     },
     {
       "id": "palmyra",
@@ -6799,7 +6799,7 @@
         "Data provided by StoneX. All prices delayed 10 minutes.",
         "Market data: CME Group"
       ],
-      "sourceUpdated": "11/05/26 10:19 PM",
+      "sourceUpdated": "11/05/26 10:29 PM",
       "crops": [
         {
           "name": "Corn",
@@ -6833,9 +6833,9 @@
               "deliveryEnd": "2027-01-31",
               "delivery": "01/01/27-01/31/27",
               "basisMonth": "Mar 27",
-              "futuresChange": 0,
+              "futuresChange": -0.0025,
               "basis": -0.55,
-              "cash": 4
+              "cash": 3.99
             },
             {
               "crop": "Corn",
@@ -6843,9 +6843,9 @@
               "deliveryEnd": "2027-02-28",
               "delivery": "02/01/27-02/28/27",
               "basisMonth": "Mar 27",
-              "futuresChange": 0,
+              "futuresChange": -0.0025,
               "basis": -0.51,
-              "cash": 4.04
+              "cash": 4.03
             },
             {
               "crop": "Corn",
@@ -6853,9 +6853,9 @@
               "deliveryEnd": "2027-03-31",
               "delivery": "03/01/27-03/31/27",
               "basisMonth": "Mar 27",
-              "futuresChange": 0,
+              "futuresChange": -0.0025,
               "basis": -0.48,
-              "cash": 4.07
+              "cash": 4.06
             },
             {
               "crop": "Corn",
@@ -6990,7 +6990,7 @@
           "deliveryEnd": "2026-11-30"
         }
       ],
-      "lastSuccessAt": "2026-11-06T04:30:01.416Z"
+      "lastSuccessAt": "2026-11-06T04:40:00.726Z"
     },
     {
       "id": "prague",
@@ -7005,7 +7005,7 @@
         "Data provided by StoneX. All prices delayed 10 minutes.",
         "Market data: CME Group"
       ],
-      "sourceUpdated": "11/05/26 10:19 PM",
+      "sourceUpdated": "11/05/26 10:29 PM",
       "crops": [
         {
           "name": "Corn",
@@ -7039,9 +7039,9 @@
               "deliveryEnd": "2027-01-31",
               "delivery": "01/01/27-01/31/27",
               "basisMonth": "Mar 27",
-              "futuresChange": 0,
+              "futuresChange": -0.0025,
               "basis": -0.47,
-              "cash": 4.08
+              "cash": 4.07
             },
             {
               "crop": "Corn",
@@ -7049,9 +7049,9 @@
               "deliveryEnd": "2027-02-28",
               "delivery": "02/01/27-02/28/27",
               "basisMonth": "Mar 27",
-              "futuresChange": 0,
+              "futuresChange": -0.0025,
               "basis": -0.43,
-              "cash": 4.12
+              "cash": 4.11
             },
             {
               "crop": "Corn",
@@ -7059,9 +7059,9 @@
               "deliveryEnd": "2027-03-31",
               "delivery": "03/01/27-03/31/27",
               "basisMonth": "Mar 27",
-              "futuresChange": 0,
+              "futuresChange": -0.0025,
               "basis": -0.4,
-              "cash": 4.15
+              "cash": 4.14
             },
             {
               "crop": "Corn",
@@ -7196,7 +7196,7 @@
           "deliveryEnd": "2026-11-30"
         }
       ],
-      "lastSuccessAt": "2026-11-06T04:30:01.416Z"
+      "lastSuccessAt": "2026-11-06T04:40:00.726Z"
     },
     {
       "id": "schuyler",
@@ -7211,7 +7211,7 @@
         "Data provided by StoneX. All prices delayed 10 minutes.",
         "Market data: CME Group"
       ],
-      "sourceUpdated": "11/05/26 10:19 PM",
+      "sourceUpdated": "11/05/26 10:29 PM",
       "crops": [
         {
           "name": "Corn",
@@ -7245,9 +7245,9 @@
               "deliveryEnd": "2027-01-31",
               "delivery": "01/01/27-01/31/27",
               "basisMonth": "Mar 27",
-              "futuresChange": 0,
+              "futuresChange": -0.0025,
               "basis": -0.42,
-              "cash": 4.13
+              "cash": 4.12
             },
             {
               "crop": "Corn",
@@ -7255,9 +7255,9 @@
               "deliveryEnd": "2027-02-28",
               "delivery": "02/01/27-02/28/27",
               "basisMonth": "Mar 27",
-              "futuresChange": 0,
+              "futuresChange": -0.0025,
               "basis": -0.38,
-              "cash": 4.17
+              "cash": 4.16
             },
             {
               "crop": "Corn",
@@ -7265,9 +7265,9 @@
               "deliveryEnd": "2027-03-31",
               "delivery": "03/01/27-03/31/27",
               "basisMonth": "Mar 27",
-              "futuresChange": 0,
+              "futuresChange": -0.0025,
               "basis": -0.35,
-              "cash": 4.2
+              "cash": 4.19
             },
             {
               "crop": "Corn",
@@ -7413,7 +7413,7 @@
               "deliveryEnd": "2026-10-31",
               "delivery": "10/01/26-10/31/26",
               "basisMonth": "Dec 26",
-              "futuresChange": -0.045,
+              "futuresChange": -0.05,
               "basis": -0.73,
               "cash": 5.58
             },
@@ -7423,7 +7423,7 @@
               "deliveryEnd": "2026-11-30",
               "delivery": "11/01/26-11/30/26",
               "basisMonth": "Dec 26",
-              "futuresChange": -0.045,
+              "futuresChange": -0.05,
               "basis": -0.73,
               "cash": 5.58
             },
@@ -7433,20 +7433,20 @@
               "deliveryEnd": "2027-07-31",
               "delivery": "07/01/27-07/31/27",
               "basisMonth": "Jul 27",
-              "futuresChange": -0.0425,
+              "futuresChange": -0.045,
               "basis": -0.8,
               "cash": 5.64
             }
           ],
           "cash": 5.58,
           "basis": -0.73,
-          "futuresChange": -0.045,
+          "futuresChange": -0.05,
           "basisMonth": "Dec 26",
           "deliveryStart": "2026-11-01",
           "deliveryEnd": "2026-11-30"
         }
       ],
-      "lastSuccessAt": "2026-11-06T04:30:01.416Z"
+      "lastSuccessAt": "2026-11-06T04:40:00.726Z"
     },
     {
       "id": "silver-creek",
@@ -7461,7 +7461,7 @@
         "Data provided by StoneX. All prices delayed 10 minutes.",
         "Market data: CME Group"
       ],
-      "sourceUpdated": "11/05/26 10:19 PM",
+      "sourceUpdated": "11/05/26 10:29 PM",
       "crops": [
         {
           "name": "Corn",
@@ -7495,9 +7495,9 @@
               "deliveryEnd": "2027-01-31",
               "delivery": "01/01/27-01/31/27",
               "basisMonth": "Mar 27",
-              "futuresChange": 0,
+              "futuresChange": -0.0025,
               "basis": -0.42,
-              "cash": 4.13
+              "cash": 4.12
             },
             {
               "crop": "Corn",
@@ -7505,9 +7505,9 @@
               "deliveryEnd": "2027-02-28",
               "delivery": "02/01/27-02/28/27",
               "basisMonth": "Mar 27",
-              "futuresChange": 0,
+              "futuresChange": -0.0025,
               "basis": -0.38,
-              "cash": 4.17
+              "cash": 4.16
             },
             {
               "crop": "Corn",
@@ -7515,9 +7515,9 @@
               "deliveryEnd": "2027-03-31",
               "delivery": "03/01/27-03/31/27",
               "basisMonth": "Mar 27",
-              "futuresChange": 0,
+              "futuresChange": -0.0025,
               "basis": -0.35,
-              "cash": 4.2
+              "cash": 4.19
             },
             {
               "crop": "Corn",
@@ -7652,7 +7652,7 @@
           "deliveryEnd": "2026-11-30"
         }
       ],
-      "lastSuccessAt": "2026-11-06T04:30:01.416Z"
+      "lastSuccessAt": "2026-11-06T04:40:00.726Z"
     },
     {
       "id": "sire-cb",
@@ -7667,7 +7667,7 @@
         "Data provided by StoneX. All prices delayed 10 minutes.",
         "Market data: CME Group"
       ],
-      "sourceUpdated": "11/05/26 10:19 PM",
+      "sourceUpdated": "11/05/26 10:29 PM",
       "crops": [
         {
           "name": "Corn",
@@ -7701,9 +7701,9 @@
               "deliveryEnd": "2027-01-31",
               "delivery": "01/01/27-01/31/27",
               "basisMonth": "Mar 27",
-              "futuresChange": 0,
+              "futuresChange": -0.0025,
               "basis": -0.19,
-              "cash": 4.36
+              "cash": 4.35
             },
             {
               "crop": "Corn",
@@ -7711,9 +7711,9 @@
               "deliveryEnd": "2027-02-28",
               "delivery": "02/01/27-02/28/27",
               "basisMonth": "Mar 27",
-              "futuresChange": 0,
+              "futuresChange": -0.0025,
               "basis": -0.16,
-              "cash": 4.39
+              "cash": 4.38
             },
             {
               "crop": "Corn",
@@ -7721,9 +7721,9 @@
               "deliveryEnd": "2027-03-31",
               "delivery": "03/01/27-03/31/27",
               "basisMonth": "Mar 27",
-              "futuresChange": 0,
+              "futuresChange": -0.0025,
               "basis": -0.12,
-              "cash": 4.43
+              "cash": 4.42
             },
             {
               "crop": "Corn",
@@ -7764,7 +7764,7 @@
           "deliveryEnd": "2026-11-30"
         }
       ],
-      "lastSuccessAt": "2026-11-06T04:30:01.416Z"
+      "lastSuccessAt": "2026-11-06T04:40:00.726Z"
     },
     {
       "id": "st-mary",
@@ -7779,7 +7779,7 @@
         "Data provided by StoneX. All prices delayed 10 minutes.",
         "Market data: CME Group"
       ],
-      "sourceUpdated": "11/05/26 10:19 PM",
+      "sourceUpdated": "11/05/26 10:29 PM",
       "crops": [
         {
           "name": "Corn",
@@ -7813,9 +7813,9 @@
               "deliveryEnd": "2027-01-31",
               "delivery": "01/01/27-01/31/27",
               "basisMonth": "Mar 27",
-              "futuresChange": 0,
+              "futuresChange": -0.0025,
               "basis": -0.57,
-              "cash": 3.98
+              "cash": 3.97
             },
             {
               "crop": "Corn",
@@ -7823,9 +7823,9 @@
               "deliveryEnd": "2027-02-28",
               "delivery": "02/01/27-02/28/27",
               "basisMonth": "Mar 27",
-              "futuresChange": 0,
+              "futuresChange": -0.0025,
               "basis": -0.53,
-              "cash": 4.02
+              "cash": 4.01
             },
             {
               "crop": "Corn",
@@ -7833,9 +7833,9 @@
               "deliveryEnd": "2027-03-31",
               "delivery": "03/01/27-03/31/27",
               "basisMonth": "Mar 27",
-              "futuresChange": 0,
+              "futuresChange": -0.0025,
               "basis": -0.5,
-              "cash": 4.05
+              "cash": 4.04
             },
             {
               "crop": "Corn",
@@ -7970,7 +7970,7 @@
           "deliveryEnd": "2026-11-30"
         }
       ],
-      "lastSuccessAt": "2026-11-06T04:30:01.416Z"
+      "lastSuccessAt": "2026-11-06T04:40:00.726Z"
     },
     {
       "id": "syracuse",
@@ -7985,7 +7985,7 @@
         "Data provided by StoneX. All prices delayed 10 minutes.",
         "Market data: CME Group"
       ],
-      "sourceUpdated": "11/05/26 10:19 PM",
+      "sourceUpdated": "11/05/26 10:29 PM",
       "crops": [
         {
           "name": "Corn",
@@ -8019,9 +8019,9 @@
               "deliveryEnd": "2027-01-31",
               "delivery": "01/01/27-01/31/27",
               "basisMonth": "Mar 27",
-              "futuresChange": 0,
+              "futuresChange": -0.0025,
               "basis": -0.46,
-              "cash": 4.09
+              "cash": 4.08
             },
             {
               "crop": "Corn",
@@ -8029,9 +8029,9 @@
               "deliveryEnd": "2027-02-28",
               "delivery": "02/01/27-02/28/27",
               "basisMonth": "Mar 27",
-              "futuresChange": 0,
+              "futuresChange": -0.0025,
               "basis": -0.42,
-              "cash": 4.13
+              "cash": 4.12
             },
             {
               "crop": "Corn",
@@ -8039,9 +8039,9 @@
               "deliveryEnd": "2027-03-31",
               "delivery": "03/01/27-03/31/27",
               "basisMonth": "Mar 27",
-              "futuresChange": 0,
+              "futuresChange": -0.0025,
               "basis": -0.39,
-              "cash": 4.16
+              "cash": 4.15
             },
             {
               "crop": "Corn",
@@ -8082,7 +8082,7 @@
           "deliveryEnd": "2026-11-30"
         }
       ],
-      "lastSuccessAt": "2026-11-06T04:30:01.416Z"
+      "lastSuccessAt": "2026-11-06T04:40:00.726Z"
     },
     {
       "id": "tarnov",
@@ -8097,7 +8097,7 @@
         "Data provided by StoneX. All prices delayed 10 minutes.",
         "Market data: CME Group"
       ],
-      "sourceUpdated": "11/05/26 10:19 PM",
+      "sourceUpdated": "11/05/26 10:29 PM",
       "crops": [
         {
           "name": "Corn",
@@ -8131,9 +8131,9 @@
               "deliveryEnd": "2027-01-31",
               "delivery": "01/01/27-01/31/27",
               "basisMonth": "Mar 27",
-              "futuresChange": 0,
+              "futuresChange": -0.0025,
               "basis": -0.47,
-              "cash": 4.08
+              "cash": 4.07
             },
             {
               "crop": "Corn",
@@ -8141,9 +8141,9 @@
               "deliveryEnd": "2027-02-28",
               "delivery": "02/01/27-02/28/27",
               "basisMonth": "Mar 27",
-              "futuresChange": 0,
+              "futuresChange": -0.0025,
               "basis": -0.43,
-              "cash": 4.12
+              "cash": 4.11
             },
             {
               "crop": "Corn",
@@ -8151,9 +8151,9 @@
               "deliveryEnd": "2027-03-31",
               "delivery": "03/01/27-03/31/27",
               "basisMonth": "Mar 27",
-              "futuresChange": 0,
+              "futuresChange": -0.0025,
               "basis": -0.4,
-              "cash": 4.15
+              "cash": 4.14
             },
             {
               "crop": "Corn",
@@ -8288,7 +8288,7 @@
           "deliveryEnd": "2026-11-30"
         }
       ],
-      "lastSuccessAt": "2026-11-06T04:30:01.416Z"
+      "lastSuccessAt": "2026-11-06T04:40:00.726Z"
     },
     {
       "id": "tecumsech",
@@ -8303,7 +8303,7 @@
         "Data provided by StoneX. All prices delayed 10 minutes.",
         "Market data: CME Group"
       ],
-      "sourceUpdated": "11/05/26 10:19 PM",
+      "sourceUpdated": "11/05/26 10:29 PM",
       "crops": [
         {
           "name": "Corn",
@@ -8337,9 +8337,9 @@
               "deliveryEnd": "2027-01-31",
               "delivery": "01/01/27-01/31/27",
               "basisMonth": "Mar 27",
-              "futuresChange": 0,
+              "futuresChange": -0.0025,
               "basis": -0.57,
-              "cash": 3.98
+              "cash": 3.97
             },
             {
               "crop": "Corn",
@@ -8347,9 +8347,9 @@
               "deliveryEnd": "2027-02-28",
               "delivery": "02/01/27-02/28/27",
               "basisMonth": "Mar 27",
-              "futuresChange": 0,
+              "futuresChange": -0.0025,
               "basis": -0.53,
-              "cash": 4.02
+              "cash": 4.01
             },
             {
               "crop": "Corn",
@@ -8357,9 +8357,9 @@
               "deliveryEnd": "2027-03-31",
               "delivery": "03/01/27-03/31/27",
               "basisMonth": "Mar 27",
-              "futuresChange": 0,
+              "futuresChange": -0.0025,
               "basis": -0.5,
-              "cash": 4.05
+              "cash": 4.04
             },
             {
               "crop": "Corn",
@@ -8505,7 +8505,7 @@
               "deliveryEnd": "2026-10-31",
               "delivery": "10/01/26-10/31/26",
               "basisMonth": "Dec 26",
-              "futuresChange": -0.045,
+              "futuresChange": -0.05,
               "basis": -0.75,
               "cash": 5.56
             },
@@ -8515,7 +8515,7 @@
               "deliveryEnd": "2026-11-30",
               "delivery": "11/01/26-11/30/26",
               "basisMonth": "Dec 26",
-              "futuresChange": -0.045,
+              "futuresChange": -0.05,
               "basis": -0.75,
               "cash": 5.56
             },
@@ -8525,20 +8525,20 @@
               "deliveryEnd": "2027-07-31",
               "delivery": "07/01/27-07/31/27",
               "basisMonth": "Jul 27",
-              "futuresChange": -0.0425,
+              "futuresChange": -0.045,
               "basis": -0.8,
               "cash": 5.64
             }
           ],
           "cash": 5.56,
           "basis": -0.75,
-          "futuresChange": -0.045,
+          "futuresChange": -0.05,
           "basisMonth": "Dec 26",
           "deliveryStart": "2026-11-01",
           "deliveryEnd": "2026-11-30"
         }
       ],
-      "lastSuccessAt": "2026-11-06T04:30:01.416Z"
+      "lastSuccessAt": "2026-11-06T04:40:00.726Z"
     },
     {
       "id": "tecumseh-north",
@@ -8553,7 +8553,7 @@
         "Data provided by StoneX. All prices delayed 10 minutes.",
         "Market data: CME Group"
       ],
-      "sourceUpdated": "11/05/26 10:19 PM",
+      "sourceUpdated": "11/05/26 10:29 PM",
       "crops": [
         {
           "name": "Corn",
@@ -8587,9 +8587,9 @@
               "deliveryEnd": "2027-01-31",
               "delivery": "01/01/27-01/31/27",
               "basisMonth": "Mar 27",
-              "futuresChange": 0,
+              "futuresChange": -0.0025,
               "basis": -0.52,
-              "cash": 4.03
+              "cash": 4.02
             },
             {
               "crop": "Corn",
@@ -8597,9 +8597,9 @@
               "deliveryEnd": "2027-02-28",
               "delivery": "02/01/27-02/28/27",
               "basisMonth": "Mar 27",
-              "futuresChange": 0,
+              "futuresChange": -0.0025,
               "basis": -0.48,
-              "cash": 4.07
+              "cash": 4.06
             },
             {
               "crop": "Corn",
@@ -8607,9 +8607,9 @@
               "deliveryEnd": "2027-03-31",
               "delivery": "03/01/27-03/31/27",
               "basisMonth": "Mar 27",
-              "futuresChange": 0,
+              "futuresChange": -0.0025,
               "basis": -0.45,
-              "cash": 4.1
+              "cash": 4.09
             },
             {
               "crop": "Corn",
@@ -8650,7 +8650,7 @@
           "deliveryEnd": "2026-11-30"
         }
       ],
-      "lastSuccessAt": "2026-11-06T04:30:01.416Z"
+      "lastSuccessAt": "2026-11-06T04:40:00.726Z"
     },
     {
       "id": "wahoo",
@@ -8665,7 +8665,7 @@
         "Data provided by StoneX. All prices delayed 10 minutes.",
         "Market data: CME Group"
       ],
-      "sourceUpdated": "11/05/26 10:19 PM",
+      "sourceUpdated": "11/05/26 10:29 PM",
       "crops": [
         {
           "name": "Corn",
@@ -8699,9 +8699,9 @@
               "deliveryEnd": "2027-01-31",
               "delivery": "01/01/27-01/31/27",
               "basisMonth": "Mar 27",
-              "futuresChange": 0,
+              "futuresChange": -0.0025,
               "basis": -0.48,
-              "cash": 4.07
+              "cash": 4.06
             },
             {
               "crop": "Corn",
@@ -8709,9 +8709,9 @@
               "deliveryEnd": "2027-02-28",
               "delivery": "02/01/27-02/28/27",
               "basisMonth": "Mar 27",
-              "futuresChange": 0,
+              "futuresChange": -0.0025,
               "basis": -0.44,
-              "cash": 4.11
+              "cash": 4.1
             },
             {
               "crop": "Corn",
@@ -8719,9 +8719,9 @@
               "deliveryEnd": "2027-03-31",
               "delivery": "03/01/27-03/31/27",
               "basisMonth": "Mar 27",
-              "futuresChange": 0,
+              "futuresChange": -0.0025,
               "basis": -0.41,
-              "cash": 4.14
+              "cash": 4.13
             },
             {
               "crop": "Corn",
@@ -8856,7 +8856,7 @@
           "deliveryEnd": "2026-11-30"
         }
       ],
-      "lastSuccessAt": "2026-11-06T04:30:01.416Z"
+      "lastSuccessAt": "2026-11-06T04:40:00.726Z"
     },
     {
       "id": "walton",
@@ -8871,7 +8871,7 @@
         "Data provided by StoneX. All prices delayed 10 minutes.",
         "Market data: CME Group"
       ],
-      "sourceUpdated": "11/05/26 10:19 PM",
+      "sourceUpdated": "11/05/26 10:29 PM",
       "crops": [
         {
           "name": "Corn",
@@ -8905,9 +8905,9 @@
               "deliveryEnd": "2027-01-31",
               "delivery": "01/01/27-01/31/27",
               "basisMonth": "Mar 27",
-              "futuresChange": 0,
+              "futuresChange": -0.0025,
               "basis": -0.55,
-              "cash": 4
+              "cash": 3.99
             },
             {
               "crop": "Corn",
@@ -8915,9 +8915,9 @@
               "deliveryEnd": "2027-02-28",
               "delivery": "02/01/27-02/28/27",
               "basisMonth": "Mar 27",
-              "futuresChange": 0,
+              "futuresChange": -0.0025,
               "basis": -0.51,
-              "cash": 4.04
+              "cash": 4.03
             },
             {
               "crop": "Corn",
@@ -8925,9 +8925,9 @@
               "deliveryEnd": "2027-03-31",
               "delivery": "03/01/27-03/31/27",
               "basisMonth": "Mar 27",
-              "futuresChange": 0,
+              "futuresChange": -0.0025,
               "basis": -0.48,
-              "cash": 4.07
+              "cash": 4.06
             },
             {
               "crop": "Corn",
@@ -9062,7 +9062,7 @@
           "deliveryEnd": "2026-11-30"
         }
       ],
-      "lastSuccessAt": "2026-11-06T04:30:01.416Z"
+      "lastSuccessAt": "2026-11-06T04:40:00.726Z"
     },
     {
       "id": "waverly",
@@ -9077,7 +9077,7 @@
         "Data provided by StoneX. All prices delayed 10 minutes.",
         "Market data: CME Group"
       ],
-      "sourceUpdated": "11/05/26 10:19 PM",
+      "sourceUpdated": "11/05/26 10:29 PM",
       "crops": [
         {
           "name": "Corn",
@@ -9111,9 +9111,9 @@
               "deliveryEnd": "2027-01-31",
               "delivery": "01/01/27-01/31/27",
               "basisMonth": "Mar 27",
-              "futuresChange": 0,
+              "futuresChange": -0.0025,
               "basis": -0.47,
-              "cash": 4.08
+              "cash": 4.07
             },
             {
               "crop": "Corn",
@@ -9121,9 +9121,9 @@
               "deliveryEnd": "2027-02-28",
               "delivery": "02/01/27-02/28/27",
               "basisMonth": "Mar 27",
-              "futuresChange": 0,
+              "futuresChange": -0.0025,
               "basis": -0.43,
-              "cash": 4.12
+              "cash": 4.11
             },
             {
               "crop": "Corn",
@@ -9131,9 +9131,9 @@
               "deliveryEnd": "2027-03-31",
               "delivery": "03/01/27-03/31/27",
               "basisMonth": "Mar 27",
-              "futuresChange": 0,
+              "futuresChange": -0.0025,
               "basis": -0.4,
-              "cash": 4.15
+              "cash": 4.14
             },
             {
               "crop": "Corn",
@@ -9268,7 +9268,7 @@
           "deliveryEnd": "2026-11-30"
         }
       ],
-      "lastSuccessAt": "2026-11-06T04:30:01.416Z"
+      "lastSuccessAt": "2026-11-06T04:40:00.726Z"
     },
     {
       "id": "weston",
@@ -9283,7 +9283,7 @@
         "Data provided by StoneX. All prices delayed 10 minutes.",
         "Market data: CME Group"
       ],
-      "sourceUpdated": "11/05/26 10:19 PM",
+      "sourceUpdated": "11/05/26 10:29 PM",
       "crops": [
         {
           "name": "Corn",
@@ -9317,9 +9317,9 @@
               "deliveryEnd": "2027-01-31",
               "delivery": "01/01/27-01/31/27",
               "basisMonth": "Mar 27",
-              "futuresChange": 0,
+              "futuresChange": -0.0025,
               "basis": -0.5,
-              "cash": 4.05
+              "cash": 4.04
             },
             {
               "crop": "Corn",
@@ -9327,9 +9327,9 @@
               "deliveryEnd": "2027-02-28",
               "delivery": "02/01/27-02/28/27",
               "basisMonth": "Mar 27",
-              "futuresChange": 0,
+              "futuresChange": -0.0025,
               "basis": -0.46,
-              "cash": 4.09
+              "cash": 4.08
             },
             {
               "crop": "Corn",
@@ -9337,9 +9337,9 @@
               "deliveryEnd": "2027-03-31",
               "delivery": "03/01/27-03/31/27",
               "basisMonth": "Mar 27",
-              "futuresChange": 0,
+              "futuresChange": -0.0025,
               "basis": -0.43,
-              "cash": 4.12
+              "cash": 4.11
             },
             {
               "crop": "Corn",
@@ -9474,7 +9474,7 @@
           "deliveryEnd": "2026-11-30"
         }
       ],
-      "lastSuccessAt": "2026-11-06T04:30:01.416Z"
+      "lastSuccessAt": "2026-11-06T04:40:00.726Z"
     },
     {
       "id": "yanka-david-city",
@@ -9490,7 +9490,7 @@
         "Data provided by StoneX. All prices delayed 10 minutes.",
         "Market data: CME Group"
       ],
-      "sourceUpdated": "11/05/26 10:19 PM",
+      "sourceUpdated": "11/05/26 10:29 PM",
       "crops": [
         {
           "name": "Corn",
@@ -9524,9 +9524,9 @@
               "deliveryEnd": "2027-01-31",
               "delivery": "01/01/27-01/31/27",
               "basisMonth": "Mar 27",
-              "futuresChange": 0,
+              "futuresChange": -0.0025,
               "basis": -0.45,
-              "cash": 4.1
+              "cash": 4.09
             },
             {
               "crop": "Corn",
@@ -9534,9 +9534,9 @@
               "deliveryEnd": "2027-02-28",
               "delivery": "02/01/27-02/28/27",
               "basisMonth": "Mar 27",
-              "futuresChange": 0,
+              "futuresChange": -0.0025,
               "basis": -0.41,
-              "cash": 4.14
+              "cash": 4.13
             },
             {
               "crop": "Corn",
@@ -9544,9 +9544,9 @@
               "deliveryEnd": "2027-03-31",
               "delivery": "03/01/27-03/31/27",
               "basisMonth": "Mar 27",
-              "futuresChange": 0,
+              "futuresChange": -0.0025,
               "basis": -0.38,
-              "cash": 4.17
+              "cash": 4.16
             },
             {
               "crop": "Corn",
@@ -9683,7 +9683,7 @@
           "location": "David City - Elevator"
         }
       ],
-      "lastSuccessAt": "2026-11-06T04:30:01.416Z"
+      "lastSuccessAt": "2026-11-06T04:40:00.726Z"
     }
   ]
 }
