@@ -1,6 +1,8 @@
 {
-  "checkedAt": "2026-11-09T13:00:01.001Z",
-  "ok": true,
-  "problems": [],
-  "summary": "55 widget locations, 52 pages; hidden (no bids): Howells - CPM, Martell. Widget updated 11/09/26 06:50 AM."
+  "checkedAt": "2026-11-09T13:10:00.913Z",
+  "ok": false,
+  "problems": [
+    "Could not read Frontier's cash bids widget: page.goto: Timeout 60000ms exceeded.\nCall log:\n  - navigating to \"https://www.frontiercooperative.com/grain/cash-bids\", waiting until \"domcontentloaded\"\n"
+  ],
+  "summary": null
 }
